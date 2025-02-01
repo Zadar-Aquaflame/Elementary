@@ -1,0 +1,7 @@
+// 1.20.1	2025-01-29T15:41:59.2835664	Registries
+0ac7f44090866e338614c95f01ff283b4e6b16df data/elementary/forge/biome_modifier/add_emberstone_ore.json
+ed768f63e5899804cac424d854a9391185ae50cd data/elementary/forge/biome_modifier/add_nether_emberstone_ore.json
+5df4b650e597f49d9a9458dd9135470002c7fcd6 data/elementary/worldgen/configured_feature/emberstone_ore.json
+b7942b7d00456b696f7dff1746b2c0fecd1686ff data/elementary/worldgen/configured_feature/nether_emberstone_ore.json
+3b9c221cc5f34bf7b5fc4668bdaf5ad377626062 data/elementary/worldgen/placed_feature/emberstone_ore_placed.json
+85371a9ec4643efb8c66e7fc6bad40c8ddeeb258 data/elementary/worldgen/placed_feature/nether_emberstone_ore_placed.json
