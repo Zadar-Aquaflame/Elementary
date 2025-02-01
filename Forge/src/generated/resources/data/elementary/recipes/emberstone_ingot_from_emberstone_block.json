@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "elementary:emberstone_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "elementary:emberstone_ingot"
+  }
+}

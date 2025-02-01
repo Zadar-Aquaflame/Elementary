@@ -1,0 +1,35 @@
+package fr.zadar.elementary.data;
+
+import fr.zadar.elementary.ElementaryForge;
+import fr.zadar.elementary.block.ModBlocks;
+import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
+
+public class BlockStates extends BlockStateProvider {
+    public BlockStates(PackOutput output, ExistingFileHelper exFileHelper) {
+        super(output, ElementaryForge.MOD_ID, exFileHelper);
+    }
+
+    @Override
+    protected void registerStatesAndModels() {
+        blockWithItem(ModBlocks.EMBERSTONE_BLOCK);
+        blockWithItem(ModBlocks.RAW_EMBERSTONE_BLOCK);
+
+        blockWithItem(ModBlocks.EMBERSTONE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_EMBERSTONE_ORE);
+        blockWithItem(ModBlocks.NETHER_EMBERSTONE_ORE);
+
+        blockWithItem(ModBlocks.HYDROSTONE_BLOCK);
+        blockWithItem(ModBlocks.RAW_HYDROSTONE_BLOCK);
+
+        blockWithItem(ModBlocks.HYDROSTONE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
+    }
+
+    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+}

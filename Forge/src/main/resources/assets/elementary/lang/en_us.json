@@ -1,0 +1,34 @@
+{
+  "item.elementary.emberstone_ingot": "Emberstone Ingot",
+  "item.elementary.raw_emberstone": "Raw Emberstone",
+
+  "block.elementary.emberstone_block": "Emberstone Block",
+  "block.elementary.raw_emberstone_block": "Raw Emberstone Block",
+
+  "block.elementary.emberstone_ore": "Emberstone Ore",
+  "block.elementary.deepslate_emberstone_ore": "Deepslate Emberstone Ore",
+  "block.elementary.nether_emberstone_ore": "Nether Emberstone Ore",
+
+  "item.elementary.emberstone_sword": "Emberstone Sword",
+  "item.elementary.emberstone_pickaxe": "Emberstone Pickaxe",
+  "item.elementary.emberstone_axe": "Emberstone Axe",
+  "item.elementary.emberstone_shovel": "Emberstone Shovel",
+  "item.elementary.emberstone_hoe": "Emberstone Hoe",
+
+  "item.elementary.emberstone_helmet": "Emberstone Helmet",
+  "item.elementary.emberstone_chestplate": "Emberstone Chestplate",
+  "item.elementary.emberstone_leggings": "Emberstone Leggings",
+  "item.elementary.emberstone_boots": "Emberstone Boots",
+
+  "tooltip.elementary.emberstone_tool": "Can burn entities",
+  "tooltip.elementary.emberstone_armor": "Increase the protection against fire",
+
+  "item.elementary.hydrostone_ingot": "Hydrostone Ingot",
+  "item.elementary.raw_hydrostone": "Raw Hydrostone",
+
+  "item.elementary.hydrostone_sword": "Hydrostone Sword",
+  "item.elementary.hydrostone_pickaxe": "Hydrostone Pickaxe",
+  "item.elementary.hydrostone_axe": "Hydrostone Axe",
+  "item.elementary.hydrostone_shovel": "Hydrostone Shovel",
+  "item.elementary.hydrostone_hoe": "Hydrostone Hoe"
+}

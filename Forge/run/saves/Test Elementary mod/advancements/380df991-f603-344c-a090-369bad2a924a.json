@@ -1,0 +1,132 @@
+{
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/raw_emberstone_block_from_raw_emberstone": {
+    "criteria": {
+      "has_raw_emberstone": "2025-01-29 15:43:54 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_deepslate_emberstone_ore_smelting": {
+    "criteria": {
+      "has_emberstone_ore": "2025-01-29 15:43:31 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_emberstone_ore_blasting": {
+    "criteria": {
+      "has_emberstone_ore": "2025-01-29 15:43:30 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_raw_emberstone_blasting": {
+    "criteria": {
+      "has_raw_emberstone": "2025-01-29 15:43:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2025-01-29 15:43:21 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-01-29 15:42:58 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_emberstone_ore_smelting": {
+    "criteria": {
+      "has_emberstone_ore": "2025-01-29 15:43:30 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_pine_taiga": "2025-01-29 15:43:05 +0100",
+      "minecraft:river": "2025-01-29 15:43:03 +0100",
+      "minecraft:stony_shore": "2025-01-29 15:43:06 +0100",
+      "minecraft:old_growth_spruce_taiga": "2025-01-29 15:42:59 +0100"
+    },
+    "done": false
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_deepslate_emberstone_ore_blasting": {
+    "criteria": {
+      "has_deepslate_emberstone_ore": "2025-01-29 15:43:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_raw_emberstone_smelting": {
+    "criteria": {
+      "has_raw_emberstone": "2025-01-29 15:43:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-01-29 15:43:18 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/raw_emberstone_from_raw_emberstone_block": {
+    "criteria": {
+      "has_raw_emberstone_block": "2025-01-29 15:43:54 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2025-01-29 15:43:06 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

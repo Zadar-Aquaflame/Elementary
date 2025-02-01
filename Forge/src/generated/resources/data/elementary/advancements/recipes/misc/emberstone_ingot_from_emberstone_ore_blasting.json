@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_emberstone_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementary:emberstone_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "elementary:emberstone_ingot_from_emberstone_ore_blasting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_emberstone_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "elementary:emberstone_ingot_from_emberstone_ore_blasting"
+    ]
+  },
+  "sends_telemetry_event": false
+}
