@@ -30,5 +30,10 @@
   "item.elementary.hydrostone_pickaxe": "Hydrostone Pickaxe",
   "item.elementary.hydrostone_axe": "Hydrostone Axe",
   "item.elementary.hydrostone_shovel": "Hydrostone Shovel",
-  "item.elementary.hydrostone_hoe": "Hydrostone Hoe"
+  "item.elementary.hydrostone_hoe": "Hydrostone Hoe",
+
+  "item.elementary.wandering_flame_spawn_egg": "Wandering Flame Spawn Egg",
+  "entity.elementary.wandering_flame": "Wandering Flame",
+
+  "block.elementary.elements_improvement": "Elements Improvement"
 }

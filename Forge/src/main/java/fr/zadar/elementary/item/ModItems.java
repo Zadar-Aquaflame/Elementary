@@ -3,6 +3,7 @@ package fr.zadar.elementary.item;
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.item.custom.ModArmorEffect;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -40,13 +41,13 @@ public class ModItems {
     public static final RegistryObject<Item> HYDROSTONE_SWORD = ITEMS.register("hydrostone_sword",
             () -> new SwordItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> HYDROSTONE_PICKAXE = ITEMS.register("hydrostone_pickaxe",
-            () -> new SwordItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> HYDROSTONE_AXE = ITEMS.register("hydrostone_axe",
-            () -> new SwordItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> HYDROSTONE_SHOVEL = ITEMS.register("hydrostone_shovel",
-            () -> new SwordItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> HYDROSTONE_HOE = ITEMS.register("hydrostone_hoe",
-            () -> new SwordItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.HYDROSTONE, 6, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> HYDROSTONE_HELMET = ITEMS.register("hydrostone_helmet",
             () -> new ModArmorEffect(ModArmorMaterial.HYDROSTONE, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -56,6 +57,7 @@ public class ModItems {
             () -> new ModArmorEffect(ModArmorMaterial.HYDROSTONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> HYDROSTONE_BOOTS = ITEMS.register("hydrostone_boots",
             () -> new ModArmorEffect(ModArmorMaterial.HYDROSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ElementaryForge.LOGGER.info("Registering Items for " + ElementaryForge.MOD_ID);

@@ -1,6 +1,7 @@
 package fr.zadar.elementary.block;
 
 import fr.zadar.elementary.ElementaryForge;
+import fr.zadar.elementary.block.custom.ElementsImprovementBlock;
 import fr.zadar.elementary.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -39,6 +40,9 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> DEEPSLATE_HYDROSTONE_ORE = registerBlock("deepslate_hydrostone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ELEMENTS_IMPROVEMENT = registerBlock("elements_improvement",
+            () -> new ElementsImprovementBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -5,6 +5,7 @@ import fr.zadar.elementary.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -27,6 +28,8 @@ public class BlockStates extends BlockStateProvider {
 
         blockWithItem(ModBlocks.HYDROSTONE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
+
+        simpleBlockWithItem(ModBlocks.ELEMENTS_IMPROVEMENT.get(), new ModelFile.UncheckedModelFile(modLoc("block/elements_improvement")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

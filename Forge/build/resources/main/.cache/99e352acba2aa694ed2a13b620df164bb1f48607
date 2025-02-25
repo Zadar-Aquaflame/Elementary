@@ -1,6 +1,7 @@
-// 1.20.1	2025-01-29T15:41:59.279567	Block States: elementary
+// 1.20.1	2025-02-25T19:20:35.2237579	Block States: elementary
 71feee6c4372497e43df948f6e19061fb31949e2 assets/elementary/blockstates/deepslate_emberstone_ore.json
 2a3201ea10b7271a1dec6c3c36653b37c7da10b3 assets/elementary/blockstates/deepslate_hydrostone_ore.json
+7eeded862c32ea3f0e9a678c1099fffb589b4103 assets/elementary/blockstates/elements_improvement.json
 06bb38967090c2c98a574a706a9c362272be33ac assets/elementary/blockstates/emberstone_block.json
 da85435bfddf391b42e542538381d493b9e36d4c assets/elementary/blockstates/emberstone_ore.json
 402c6870b77a91ccc24c7d7f6cd82a44add3a150 assets/elementary/blockstates/hydrostone_block.json
@@ -19,6 +20,7 @@ a567326f330465cb6fc40727ba69870fa6165c10 assets/elementary/models/block/nether_e
 6d527ae808d15de0efeeb4646fb0951f90f03bf9 assets/elementary/models/block/raw_hydrostone_block.json
 266b29e74074e4b1d0bd96b998013afcd06d0041 assets/elementary/models/item/deepslate_emberstone_ore.json
 c28e4cc59b5e003988f4f61c466b243a8d31f377 assets/elementary/models/item/deepslate_hydrostone_ore.json
+3655d02448a0efe06e7b4171ddcde209413dda74 assets/elementary/models/item/elements_improvement.json
 81ea6e2563c834765f7fc6cc4600d378bd5eace9 assets/elementary/models/item/emberstone_block.json
 d4f11e03fa6efdd445b284ef70c689c5468b0374 assets/elementary/models/item/emberstone_ore.json
 2b9ee76f6e581d41df3f3623f06c603f5f2991ec assets/elementary/models/item/hydrostone_block.json

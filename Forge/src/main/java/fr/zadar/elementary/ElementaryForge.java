@@ -2,8 +2,12 @@ package fr.zadar.elementary;
 
 import com.mojang.logging.LogUtils;
 import fr.zadar.elementary.block.ModBlocks;
-import fr.zadar.elementary.entity.ModEntities;
+import fr.zadar.elementary.block.entity.ModBlockEntities;
 import fr.zadar.elementary.item.ModItems;
+import fr.zadar.elementary.recipe.ModRecipes;
+import fr.zadar.elementary.screen.ElementsImprovementScreen;
+import fr.zadar.elementary.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,7 +33,9 @@ public class ElementaryForge {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModEntities.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -37,7 +43,7 @@ public class ElementaryForge {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
@@ -92,6 +98,10 @@ public class ElementaryForge {
             event.accept(ModItems.HYDROSTONE_AXE);
             event.accept(ModItems.HYDROSTONE_HOE);
         }
+
+        if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(ModBlocks.ELEMENTS_IMPROVEMENT);
+        }
     }
 
     @SubscribeEvent
@@ -103,7 +113,7 @@ public class ElementaryForge {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            MenuScreens.register(ModMenuTypes.ELEMENTS_IMPROVEMENT_MENU.get(), ElementsImprovementScreen::new);
         }
     }
 }
