@@ -1,34 +1,36 @@
-[25févr.2025 19:25:48.406] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Lucas\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.12, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, elementary, --all, --output, D:\sources\Mods Minecraft\Elementary\Forge\src\generated\resources, --existing, D:\sources\Mods Minecraft\Elementary\Forge\src\main\resources]
-[25févr.2025 19:25:48.426] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.13 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[25févr.2025 19:25:48.635] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[25févr.2025 19:25:48.697] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Lucas/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[25févr.2025 19:25:49.115] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.12\f6b9f7f45e33548b47f78d9f54c7b4eb1e94e9bd\javafmllanguage-1.20.1-47.3.12.jar is missing mods.toml file
-[25févr.2025 19:25:49.118] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.12\81de74e1180787af25604b6ecb3728fc485bd3c7\lowcodelanguage-1.20.1-47.3.12.jar is missing mods.toml file
-[25févr.2025 19:25:49.120] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.12\1ff4ed058e0774b82d8da352d9e051e6d2a154eb\mclanguage-1.20.1-47.3.12.jar is missing mods.toml file
-[25févr.2025 19:25:49.123] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.12\9a4d9f99e106aa2358cdbe6777921855d353371\fmlcore-1.20.1-47.3.12.jar is missing mods.toml file
-[25févr.2025 19:25:49.285] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[25févr.2025 19:25:50.975] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Lucas\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, elementary, --all, --output, D:\sources\Mods Minecraft\Elementary\Forge\src\generated\resources, --existing, D:\sources\Mods Minecraft\Elementary\Forge\src\main\resources]
-[25févr.2025 19:25:51.584] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [elementary]
-[25févr.2025 19:25:57.041] [modloading-worker-0/INFO] [fr.zadar.elementary.ElementaryForge/]: Mod Elementary started successfully
-[25févr.2025 19:25:57.061] [modloading-worker-0/INFO] [fr.zadar.elementary.ElementaryForge/]: Registering Items for elementary
-[25févr.2025 19:25:57.072] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.12, for MC 1.20.1 with MCP 20230612.114412
-[25févr.2025 19:25:57.079] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.12 Initialized
-[25févr.2025 19:25:57.080] [modloading-worker-0/INFO] [fr.zadar.elementary.ElementaryForge/]: Registering Blocks for elementary
-[25févr.2025 19:25:57.657] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Lucas/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_official_1.20.1/forge-1.20.1-47.3.12_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[25févr.2025 19:25:57.658] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Lucas/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_official_1.20.1/forge-1.20.1-47.3.12_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[25févr.2025 19:25:58.078] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id elementary
-[25févr.2025 19:25:58.187] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id elementary finished after 107 ms
-[25févr.2025 19:25:58.187] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id elementary
-[25févr.2025 19:25:58.189] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id elementary finished after 2 ms
-[25févr.2025 19:25:58.190] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[25févr.2025 19:25:58.254] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 64 ms
-[25févr.2025 19:25:58.254] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[25févr.2025 19:25:58.319] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 64 ms
-[25févr.2025 19:25:58.319] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: elementary
-[25févr.2025 19:25:58.428] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: elementary finished after 108 ms
-[25févr.2025 19:25:58.428] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: elementary
-[25févr.2025 19:25:58.484] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: elementary finished after 55 ms
-[25févr.2025 19:25:58.484] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[25févr.2025 19:25:58.507] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 23 ms
-[25févr.2025 19:25:58.507] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 430 ms
-[25févr.2025 19:25:58.516] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 228, old count: 228, new count: 229, removed stale: 0, written: 0
+[28févr.2025 18:56:54.305] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Lucas\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.12, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, elementary, --all, --output, D:\sources\Mods Minecraft\Elementary\Forge\src\generated\resources, --existing, D:\sources\Mods Minecraft\Elementary\Forge\src\main\resources]
+[28févr.2025 18:56:54.313] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.13 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[28févr.2025 18:56:54.506] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[28févr.2025 18:56:54.561] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Lucas/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[28févr.2025 18:56:54.968] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.12\f6b9f7f45e33548b47f78d9f54c7b4eb1e94e9bd\javafmllanguage-1.20.1-47.3.12.jar is missing mods.toml file
+[28févr.2025 18:56:54.971] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.12\81de74e1180787af25604b6ecb3728fc485bd3c7\lowcodelanguage-1.20.1-47.3.12.jar is missing mods.toml file
+[28févr.2025 18:56:54.974] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.12\1ff4ed058e0774b82d8da352d9e051e6d2a154eb\mclanguage-1.20.1-47.3.12.jar is missing mods.toml file
+[28févr.2025 18:56:54.977] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lucas\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.12\9a4d9f99e106aa2358cdbe6777921855d353371\fmlcore-1.20.1-47.3.12.jar is missing mods.toml file
+[28févr.2025 18:56:55.095] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[28févr.2025 18:56:56.920] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Lucas\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, elementary, --all, --output, D:\sources\Mods Minecraft\Elementary\Forge\src\generated\resources, --existing, D:\sources\Mods Minecraft\Elementary\Forge\src\main\resources]
+[28févr.2025 18:56:57.652] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [elementary]
+[28févr.2025 18:57:02.506] [modloading-worker-0/INFO] [fr.zadar.elementary.ElementaryForge/]: Mod Elementary started successfully
+[28févr.2025 18:57:02.534] [modloading-worker-0/INFO] [fr.zadar.elementary.ElementaryForge/]: Registering Items for elementary
+[28févr.2025 18:57:02.545] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.12, for MC 1.20.1 with MCP 20230612.114412
+[28févr.2025 18:57:02.546] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.12 Initialized
+[28févr.2025 18:57:02.553] [modloading-worker-0/INFO] [fr.zadar.elementary.ElementaryForge/]: Registering Blocks for elementary
+[28févr.2025 18:57:02.963] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[28févr.2025 18:57:02.978] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 8.677 ms
+[28févr.2025 18:57:03.444] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Lucas/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_official_1.20.1/forge-1.20.1-47.3.12_mapped_official_1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[28févr.2025 18:57:03.445] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Lucas/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.12_mapped_official_1.20.1/forge-1.20.1-47.3.12_mapped_official_1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[28févr.2025 18:57:03.786] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id elementary
+[28févr.2025 18:57:03.936] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id elementary finished after 148 ms
+[28févr.2025 18:57:03.936] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id elementary
+[28févr.2025 18:57:03.938] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id elementary finished after 1 ms
+[28févr.2025 18:57:03.938] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[28févr.2025 18:57:03.977] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 38 ms
+[28févr.2025 18:57:03.977] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[28févr.2025 18:57:04.026] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 48 ms
+[28févr.2025 18:57:04.026] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: elementary
+[28févr.2025 18:57:04.131] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: elementary finished after 104 ms
+[28févr.2025 18:57:04.131] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: elementary
+[28févr.2025 18:57:04.185] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: elementary finished after 54 ms
+[28févr.2025 18:57:04.185] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[28févr.2025 18:57:04.204] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 18 ms
+[28févr.2025 18:57:04.204] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 419 ms
+[28févr.2025 18:57:04.212] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 243, old count: 243, new count: 244, removed stale: 0, written: 2

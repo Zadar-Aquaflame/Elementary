@@ -25,7 +25,9 @@ public class BlockTags extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_EMBERSTONE_ORE.get(),
                         ModBlocks.NETHER_EMBERSTONE_ORE.get(),
                         ModBlocks.HYDROSTONE_ORE.get(),
-                        ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get());
+                        ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get(),
+                        ModBlocks.FIRE_CRYSTAL_ORE.get(),
+                        ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE.get());
 
         this.tag(net.minecraft.tags.BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.EMBERSTONE_BLOCK.get(),
@@ -34,6 +36,8 @@ public class BlockTags extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_EMBERSTONE_ORE.get(),
                         ModBlocks.NETHER_EMBERSTONE_ORE.get(),
                         ModBlocks.HYDROSTONE_ORE.get(),
-                        ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get());
+                        ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get(),
+                        ModBlocks.FIRE_CRYSTAL_ORE.get(),
+                        ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE.get());
     }
 }

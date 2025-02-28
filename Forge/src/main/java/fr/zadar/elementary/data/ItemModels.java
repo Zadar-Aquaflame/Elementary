@@ -67,6 +67,8 @@ public class ItemModels extends ItemModelProvider {
         trimmedArmorItem(ModItems.HYDROSTONE_CHESTPLATE);
         trimmedArmorItem(ModItems.HYDROSTONE_LEGGINGS);
         trimmedArmorItem(ModItems.HYDROSTONE_BOOTS);
+
+        simpleItem(ModItems.FIRE_CRYSTAL);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

@@ -58,6 +58,8 @@ public class ModItems {
     public static final RegistryObject<Item> HYDROSTONE_BOOTS = ITEMS.register("hydrostone_boots",
             () -> new ModArmorEffect(ModArmorMaterial.HYDROSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> FIRE_CRYSTAL = ITEMS.register("fire_crystal", () -> new Item(new Item.Properties().fireResistant()));
+
 
     public static void register(IEventBus eventBus) {
         ElementaryForge.LOGGER.info("Registering Items for " + ElementaryForge.MOD_ID);

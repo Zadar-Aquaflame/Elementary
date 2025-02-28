@@ -23,7 +23,7 @@ public class PlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, EMBERSTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ConfiguredFeatures.EMBERSTONE_ORE_KEY),
-                OrePlacement.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-35), YOffset.fixed(30))));
+                OrePlacement.modifiersWithCount(7, HeightRangePlacementModifier.uniform(YOffset.fixed(-35), YOffset.fixed(30))));
         register(context, NETHER_EMBERSTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ConfiguredFeatures.NETHER_EMBERSTONE_ORE_KEY),
                 OrePlacement.modifiersWithCount(10, HeightRangePlacementModifier.uniform(YOffset.fixed(30), YOffset.fixed(90))));
         register(context, HYDROSTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ConfiguredFeatures.HYDROSTONE_ORE_KEY),

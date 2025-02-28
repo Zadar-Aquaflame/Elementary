@@ -43,6 +43,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ELEMENTS_IMPROVEMENT = registerBlock("elements_improvement",
             () -> new ElementsImprovementBlock(BlockBehaviour.Properties.copy(Blocks.OBSIDIAN).noOcclusion()));
+    public static final RegistryObject<Block> FIRE_CRYSTAL_ORE = registerBlock("fire_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DEEPSLATE_FIRE_CRYSTAL_ORE = registerBlock("deepslate_fire_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE).requiresCorrectToolForDrops()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

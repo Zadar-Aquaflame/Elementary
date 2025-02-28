@@ -1,0 +1,118 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-02-27 11:28:01 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:taiga": "2025-02-27 11:28:02 +0100",
+      "minecraft:river": "2025-02-27 11:28:06 +0100"
+    },
+    "done": false
+  },
+  "elementary:recipes/tools/raw_emberstone_block": {
+    "criteria": {
+      "has_item": "2025-02-27 11:28:59 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_raw_emberstone_blasting": {
+    "criteria": {
+      "has_raw_emberstone": "2025-02-27 11:28:59 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_raw_emberstone_smelting": {
+    "criteria": {
+      "has_raw_emberstone": "2025-02-27 11:28:59 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/raw_emberstone_from_raw_emberstone_block": {
+    "criteria": {
+      "has_raw_emberstone_block": "2025-02-27 11:28:59 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_shovel": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_hoe": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_axe": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_sword": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_block": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_chestplate": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_boots": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_emberstone_block": {
+    "criteria": {
+      "has_emberstone_block": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_pickaxe": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_helmet": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_leggings": {
+    "criteria": {
+      "has_item": "2025-02-27 15:18:34 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2025-02-27 15:49:34 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2025-02-27 15:49:34 +0100"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-24T15:53:30.3859012	Item Models: elementary
+// 1.20.1	2025-02-28T17:46:04.3373715	Item Models: elementary
 f4729ccd6f1ccb1f3888a2c9b2635c0a11d22bfd assets/elementary/models/item/emberstone_axe.json
 ae8181cd2d0e7d8bfdbe2bf6f2348f902ead2baf assets/elementary/models/item/emberstone_boots.json
 59620fed9fc1ce887ad2fa2819dd0fcbe2ef8d3b assets/elementary/models/item/emberstone_boots_amethyst_trim.json
@@ -49,6 +49,7 @@ cd2921d1a4bc63612c6b70847ccf0498a79adee8 assets/elementary/models/item/emberston
 197033ad08b14004df8e15941aab776a6622abde assets/elementary/models/item/emberstone_pickaxe.json
 9fd6f52c8872dbd09dd138c12f89299de0b9d26f assets/elementary/models/item/emberstone_shovel.json
 7cc1ed5283859cb0717d4fa72a921d128c29e558 assets/elementary/models/item/emberstone_sword.json
+b28796c268b54ab6abfd6f1bc191e913444ebe03 assets/elementary/models/item/fire_crystal.json
 e27065773b10e689cd357c0838bf04f124193056 assets/elementary/models/item/hydrostone_axe.json
 226b952e264ae085db9b842df20e886777010c68 assets/elementary/models/item/hydrostone_boots.json
 258e2fd6d869985518e12279302efa53ed4a87a3 assets/elementary/models/item/hydrostone_boots_amethyst_trim.json

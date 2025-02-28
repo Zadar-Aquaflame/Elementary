@@ -15,6 +15,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class BiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_EMBERSTONE_ORE = registerKey("add_emberstone_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_EMBERSTONE_ORE = registerKey("add_nether_emberstone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_HYDROSTONE_ORE = registerKey("add_hydrostone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_FIRE_CRYSTAL_ORE = registerKey("add_fire_crystal_ore");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -24,10 +26,17 @@ public class BiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.EMBERSTONE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
-
         context.register(ADD_NETHER_EMBERSTONE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.NETHER_EMBERSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_HYDROSTONE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OCEAN),
+                HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.HYDROSTONE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_FIRE_CRYSTAL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.FIRE_CRYSTAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

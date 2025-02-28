@@ -15,6 +15,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -158,6 +159,21 @@ public class ElementsImprovementBlockEntity extends BlockEntity implements MenuP
         if (recipe.isEmpty()) {
             return false;
         }
+
+        ItemStack input1 = this.itemHandler.getStackInSlot(INPUT_SLOT);
+        ItemStack input2 = this.itemHandler.getStackInSlot(INPUT_SLOT_2);
+
+        if (input1.isEmpty() || input2.isEmpty()) {
+            return false;
+        }
+
+        Ingredient ingredient1 = recipe.get().getIngredients().get(0);
+        Ingredient ingredient2 = recipe.get().getIngredients().get(1);
+
+        if (!ingredient1.test(input1) || !ingredient2.test(input2)) {
+            return false;
+        }
+
         ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
 
         return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
@@ -166,7 +182,7 @@ public class ElementsImprovementBlockEntity extends BlockEntity implements MenuP
     private Optional<ElementsImprovementRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
         for (int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
 
         return this.level.getRecipeManager().getRecipeFor(ElementsImprovementRecipe.Type.INSTANCE, inventory, level);
@@ -187,5 +203,4 @@ public class ElementsImprovementBlockEntity extends BlockEntity implements MenuP
     private void increaseCraftingProgress() {
         progress++;
     }
-
 }

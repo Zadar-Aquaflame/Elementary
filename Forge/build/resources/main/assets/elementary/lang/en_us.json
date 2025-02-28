@@ -26,14 +26,18 @@
   "item.elementary.hydrostone_ingot": "Hydrostone Ingot",
   "item.elementary.raw_hydrostone": "Raw Hydrostone",
 
+  "item.elementary.hydrostone_block": "Hydrostone Block",
+  "item.elementary.raw_hydrostone_block": "Raw Hydrostone Block",
+
   "item.elementary.hydrostone_sword": "Hydrostone Sword",
   "item.elementary.hydrostone_pickaxe": "Hydrostone Pickaxe",
   "item.elementary.hydrostone_axe": "Hydrostone Axe",
   "item.elementary.hydrostone_shovel": "Hydrostone Shovel",
   "item.elementary.hydrostone_hoe": "Hydrostone Hoe",
 
-  "item.elementary.wandering_flame_spawn_egg": "Wandering Flame Spawn Egg",
-  "entity.elementary.wandering_flame": "Wandering Flame",
+  "block.elementary.elements_improvement": "Elements Improvement",
 
-  "block.elementary.elements_improvement": "Elements Improvement"
+  "item.elementary.fire_crystal": "Fire Crystal",
+  "block.elementary.fire_crystal_ore": "Fire Crystal Ore",
+  "block.elementary.deepslate_fire_crystal_ore": "Deepslate Fire Crystal Ore"
 }

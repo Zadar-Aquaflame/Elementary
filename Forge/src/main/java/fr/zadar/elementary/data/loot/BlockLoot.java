@@ -43,6 +43,11 @@ public class BlockLoot extends BlockLootSubProvider {
                 block -> oreDrops(ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get(), ModItems.RAW_HYDROSTONE.get()));
 
         this.dropSelf(ModBlocks.ELEMENTS_IMPROVEMENT.get());
+
+        this.add(ModBlocks.FIRE_CRYSTAL_ORE.get(),
+                block -> oreDrops(ModBlocks.FIRE_CRYSTAL_ORE.get(), ModItems.FIRE_CRYSTAL.get()));
+        this.add(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE.get(),
+                block -> oreDrops(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE.get(), ModItems.FIRE_CRYSTAL.get()));
     }
 
     protected LootTable.Builder oreDrops(Block pBlock, Item item) {

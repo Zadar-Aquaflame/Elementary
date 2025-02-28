@@ -19,8 +19,8 @@ public class ElementsImprovementRecipe implements Recipe<SimpleContainer> {
     private final ItemStack output;
     private final ResourceLocation id;
 
-    public ElementsImprovementRecipe(NonNullList<Ingredient> inputItem, ItemStack output, ResourceLocation id) {
-        this.inputItems = inputItem;
+    public ElementsImprovementRecipe(NonNullList<Ingredient> inputItems, ItemStack output, ResourceLocation id) {
+        this.inputItems = inputItems;
         this.output = output;
         this.id = id;
     }
@@ -35,12 +35,17 @@ public class ElementsImprovementRecipe implements Recipe<SimpleContainer> {
     }
 
     @Override
+    public NonNullList<Ingredient> getIngredients() {
+        return inputItems;
+    }
+
+    @Override
     public ItemStack assemble(SimpleContainer container, RegistryAccess registryAccess) {
         return output.copy();
     }
 
     @Override
-    public boolean canCraftInDimensions(int width, int height) {
+    public boolean canCraftInDimensions(int i, int i1) {
         return true;
     }
 
@@ -75,16 +80,16 @@ public class ElementsImprovementRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public ElementsImprovementRecipe fromJson(ResourceLocation recipeId, JsonObject serializedRecipe) {
-            ItemStack outPut = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(serializedRecipe, "output"));
+            ItemStack result = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(serializedRecipe, "result"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(serializedRecipe, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(2, Ingredient.EMPTY);
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new ElementsImprovementRecipe(inputs, outPut, recipeId);
+            return new ElementsImprovementRecipe(inputs, result, recipeId);
         }
 
         @Override

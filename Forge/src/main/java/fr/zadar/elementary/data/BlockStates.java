@@ -30,6 +30,9 @@ public class BlockStates extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
 
         simpleBlockWithItem(ModBlocks.ELEMENTS_IMPROVEMENT.get(), new ModelFile.UncheckedModelFile(modLoc("block/elements_improvement")));
+
+        blockWithItem(ModBlocks.FIRE_CRYSTAL_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

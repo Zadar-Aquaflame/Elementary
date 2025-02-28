@@ -1,9 +1,11 @@
-// 1.20.1	2025-02-25T19:20:35.2267544	Loot Tables
+// 1.20.1	2025-02-28T17:46:04.3352829	Loot Tables
 c920a33d6a6b0b2710a5a43472f43e852ab8efbd data/elementary/loot_tables/blocks/deepslate_emberstone_ore.json
+d75e5a8df628cb886e0b4d0f19ada74c8156ff10 data/elementary/loot_tables/blocks/deepslate_fire_crystal_ore.json
 0f39b4f8a3bc5feeda87b69c120e48a997e4eba8 data/elementary/loot_tables/blocks/deepslate_hydrostone_ore.json
 52f6871a3d402f29cd1b59a49d7ee874d26e724c data/elementary/loot_tables/blocks/elements_improvement.json
 e91587bdf8d3e1d2d0ba06c5696134f5f4935384 data/elementary/loot_tables/blocks/emberstone_block.json
 5fa5ce66e169876062b6340303a78bc1c7e4c089 data/elementary/loot_tables/blocks/emberstone_ore.json
+5b0767b307c7cd34ef520fea6a748197ddf0c48a data/elementary/loot_tables/blocks/fire_crystal_ore.json
 996ffaf35b639c23a0404cf3078dcd033b7f0183 data/elementary/loot_tables/blocks/hydrostone_block.json
 6c97bd95b2a7b1533289e587f197435bb8b0ed61 data/elementary/loot_tables/blocks/hydrostone_ore.json
 a531a858ad6443c08497b0df4560b649a82f39e8 data/elementary/loot_tables/blocks/nether_emberstone_ore.json

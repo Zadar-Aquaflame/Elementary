@@ -18,14 +18,20 @@ import java.util.List;
 public class PlacedFeatures {
     public static final ResourceKey<PlacedFeature> EMBERSTONE_ORE_PLACED_KEY = registerKey("emberstone_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_EMBERSTONE_ORE_PLACED_KEY = registerKey("nether_emberstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> HYDROSTONE_ORE_PLACED_KEY = registerKey("hydrostone_ore_placed");
+    public static final ResourceKey<PlacedFeature> FIRE_CRYSTAL_ORE_PLACED_KEY = registerKey("fire_crystal_ore_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, EMBERSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeatures.OVERWORLD_EMBERSTONE_ORE_KEY),
-                OrePlacement.commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.absolute(-35), VerticalAnchor.absolute(30))));
+                OrePlacement.commonOrePlacement(7, HeightRangePlacement.uniform(VerticalAnchor.absolute(-35), VerticalAnchor.absolute(30))));
         register(context, NETHER_EMBERSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeatures.NETHER_EMBERSTONE_ORE_KEY),
                 OrePlacement.commonOrePlacement(10, HeightRangePlacement.uniform(VerticalAnchor.absolute(30), VerticalAnchor.absolute(90))));
+        register(context, HYDROSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeatures.OVERWORLD_HYDROSTONE_ORE_KEY),
+                OrePlacement.commonOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(20))));
+        register(context, FIRE_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeatures.FIRE_CRYSTAL_ORE_KEY),
+                OrePlacement.commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.absolute(-35), VerticalAnchor.absolute(20))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

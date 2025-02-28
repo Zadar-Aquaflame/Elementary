@@ -8,13 +8,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModRecipes {
-    public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
+    public static final DeferredRegister<RecipeSerializer<?>> SERIALIZER =
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, ElementaryForge.MOD_ID);
 
     public static final RegistryObject<RecipeSerializer<ElementsImprovementRecipe>> ELEMENTS_IMPROVEMENT_SERIALIZER =
-            SERIALIZERS.register("elements_improvement_serializer", () -> ElementsImprovementRecipe.Serializer.INSTANCE);
+            SERIALIZER.register("elements_improvement", () -> ElementsImprovementRecipe.Serializer.INSTANCE);
 
     public static void register(IEventBus eventBus) {
-        SERIALIZERS.register(eventBus);
+        SERIALIZER.register(eventBus);
     }
 }
