@@ -20,6 +20,9 @@ public class AddCreativeTabs {
             event.accept(ModItems.HYDROSTONE_INGOT);
             event.accept(ModItems.RAW_HYDROSTONE);
             event.accept(ModItems.FIRE_CRYSTAL);
+            event.accept(ModItems.MYSTIC_ASH);
+            event.accept(ModItems.HEAT_ESSENCE);
+            event.accept(ModItems.ETHEREAL_HEART);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -71,6 +74,10 @@ public class AddCreativeTabs {
 
         if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(ModBlocks.ELEMENTS_IMPROVEMENT);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.FLAME_SPIRIT_SPAWN_EGG);
         }
     }
 }

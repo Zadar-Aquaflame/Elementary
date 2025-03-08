@@ -21,7 +21,7 @@ public class ElementsImprovementScreen extends AbstractContainerScreen<ElementsI
     protected void init() {
         super.init();
         this.inventoryLabelY = 10000;
-        this.titleLabelY = 10000;
+        this.titleLabelY = 5;
     }
 
     @Override

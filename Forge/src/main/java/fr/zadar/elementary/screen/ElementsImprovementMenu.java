@@ -2,6 +2,7 @@ package fr.zadar.elementary.screen;
 
 import fr.zadar.elementary.block.ModBlocks;
 import fr.zadar.elementary.block.entity.ElementsImprovementBlockEntity;
+import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

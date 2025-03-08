@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: elementary
+Specification-Vendor: Zadar
+Specification-Version: 1
+Implementation-Title: Forge
+Implementation-Version: 1.0.0
+Implementation-Vendor: Zadar
+Implementation-Timestamp: 2025-03-03T15:24:11+0100
+

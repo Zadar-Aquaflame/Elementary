@@ -1,6 +1,7 @@
 package fr.zadar.elementary.item;
 
 import fr.zadar.elementary.ElementaryForge;
+import fr.zadar.elementary.entity.ModEntities;
 import fr.zadar.elementary.item.custom.ModArmorEffect;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -58,7 +59,13 @@ public class ModItems {
     public static final RegistryObject<Item> HYDROSTONE_BOOTS = ITEMS.register("hydrostone_boots",
             () -> new ModArmorEffect(ModArmorMaterial.HYDROSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> FLAME_SPIRIT_SPAWN_EGG = ITEMS.register("flame_spirit_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.FLAME_SPIRIT, 0x504948, 0xD66D03, new Item.Properties()));
+
     public static final RegistryObject<Item> FIRE_CRYSTAL = ITEMS.register("fire_crystal", () -> new Item(new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> MYSTIC_ASH = ITEMS.register("mystic_ash", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HEAT_ESSENCE = ITEMS.register("heat_essence", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ETHEREAL_HEART = ITEMS.register("ethereal_heart", () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

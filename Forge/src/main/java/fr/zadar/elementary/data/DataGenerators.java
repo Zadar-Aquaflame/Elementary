@@ -2,6 +2,7 @@ package fr.zadar.elementary.data;
 
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.data.loot.BlockLoot;
+import fr.zadar.elementary.data.loot.EntityLoot;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -30,7 +31,8 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new ItemTags(output, lookupProvider, blockTags.contentsGetter(), helper));
         generator.addProvider(event.includeServer(), new Recipes(output));
         generator.addProvider(event.includeServer(), new LootTableProvider(output, Collections.emptySet(), List.of(
-                new LootTableProvider.SubProviderEntry(BlockLoot::new, LootContextParamSets.BLOCK)
+                new LootTableProvider.SubProviderEntry(BlockLoot::new, LootContextParamSets.BLOCK),
+                new LootTableProvider.SubProviderEntry(EntityLoot::new, LootContextParamSets.ENTITY)
         )));
 
         BlockStates blockStates = new BlockStates(output, helper);

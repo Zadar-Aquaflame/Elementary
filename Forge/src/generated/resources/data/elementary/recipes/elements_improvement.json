@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "A": {
+      "item": "minecraft:blackstone"
+    },
+    "B": {
+      "item": "elementary:ethereal_heart"
+    },
+    "S": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    " S ",
+    "S#S",
+    "ABA"
+  ],
+  "result": {
+    "item": "elementary:elements_improvement"
+  },
+  "show_notification": true
+}

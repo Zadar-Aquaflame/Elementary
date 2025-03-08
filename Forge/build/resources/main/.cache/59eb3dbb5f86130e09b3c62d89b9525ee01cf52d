@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-28T17:46:04.3352829	Loot Tables
+// 1.20.1	2025-03-07T14:29:59.787903	Loot Tables
 c920a33d6a6b0b2710a5a43472f43e852ab8efbd data/elementary/loot_tables/blocks/deepslate_emberstone_ore.json
 d75e5a8df628cb886e0b4d0f19ada74c8156ff10 data/elementary/loot_tables/blocks/deepslate_fire_crystal_ore.json
 0f39b4f8a3bc5feeda87b69c120e48a997e4eba8 data/elementary/loot_tables/blocks/deepslate_hydrostone_ore.json
@@ -11,3 +11,4 @@ e91587bdf8d3e1d2d0ba06c5696134f5f4935384 data/elementary/loot_tables/blocks/embe
 a531a858ad6443c08497b0df4560b649a82f39e8 data/elementary/loot_tables/blocks/nether_emberstone_ore.json
 33950cc9be8fcb6704a7f52e45c211f80c9bb65b data/elementary/loot_tables/blocks/raw_emberstone_block.json
 73cc653416080f7342833e8fce1ee4232a48d76a data/elementary/loot_tables/blocks/raw_hydrostone_block.json
+b5a40c0387bfb8a3d2d808c1162eb1fa6bf8fd27 data/elementary/loot_tables/entities/flame_spirit.json

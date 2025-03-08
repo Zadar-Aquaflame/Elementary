@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-28T17:46:04.3373715	Item Models: elementary
+// 1.20.1	2025-03-08T18:53:16.2478075	Item Models: elementary
 f4729ccd6f1ccb1f3888a2c9b2635c0a11d22bfd assets/elementary/models/item/emberstone_axe.json
 ae8181cd2d0e7d8bfdbe2bf6f2348f902ead2baf assets/elementary/models/item/emberstone_boots.json
 59620fed9fc1ce887ad2fa2819dd0fcbe2ef8d3b assets/elementary/models/item/emberstone_boots_amethyst_trim.json
@@ -49,7 +49,10 @@ cd2921d1a4bc63612c6b70847ccf0498a79adee8 assets/elementary/models/item/emberston
 197033ad08b14004df8e15941aab776a6622abde assets/elementary/models/item/emberstone_pickaxe.json
 9fd6f52c8872dbd09dd138c12f89299de0b9d26f assets/elementary/models/item/emberstone_shovel.json
 7cc1ed5283859cb0717d4fa72a921d128c29e558 assets/elementary/models/item/emberstone_sword.json
+ab5e0d5ef71a6ecd87cdc793b2c9ca127c6ede57 assets/elementary/models/item/ethereal_heart.json
 b28796c268b54ab6abfd6f1bc191e913444ebe03 assets/elementary/models/item/fire_crystal.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/elementary/models/item/flame_spirit_spawn_egg.json
+47bc7f458ff9794949c9e5e736ab5d138a83b604 assets/elementary/models/item/heat_essence.json
 e27065773b10e689cd357c0838bf04f124193056 assets/elementary/models/item/hydrostone_axe.json
 226b952e264ae085db9b842df20e886777010c68 assets/elementary/models/item/hydrostone_boots.json
 258e2fd6d869985518e12279302efa53ed4a87a3 assets/elementary/models/item/hydrostone_boots_amethyst_trim.json
@@ -100,5 +103,6 @@ cade3dcff506ae0e61a5bcac780eb7d4efa354fb assets/elementary/models/item/hydroston
 f16f1e88fb29ff4e4b70b00827235a9cf3d7b176 assets/elementary/models/item/hydrostone_pickaxe.json
 3bd05e68e7b3c432990d0b5da36bdcd960cd2697 assets/elementary/models/item/hydrostone_shovel.json
 055d6aca87df8d8cb797b64a0f2cf002e7f07372 assets/elementary/models/item/hydrostone_sword.json
+af2f5d5c6afa82d9d2aea9b5900a17fe6fa2cf9a assets/elementary/models/item/mystic_ash.json
 6281f15915860038d8ffbf5320ca71cc4f2c4c74 assets/elementary/models/item/raw_emberstone.json
 e1fab8dd9abcb28c8560b18b5839587236214c49 assets/elementary/models/item/raw_hydrostone.json

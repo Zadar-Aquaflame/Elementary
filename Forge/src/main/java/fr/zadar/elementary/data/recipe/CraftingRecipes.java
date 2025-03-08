@@ -11,6 +11,7 @@ import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.ItemLike;
 import org.jetbrains.annotations.NotNull;
 
@@ -30,6 +31,17 @@ public class CraftingRecipes {
         recipeFullBlock(consumer, ModItems.RAW_EMBERSTONE.get(), ModBlocks.RAW_EMBERSTONE_BLOCK.get());
         recipeFullBlock(consumer, ModItems.HYDROSTONE_INGOT.get(), ModBlocks.HYDROSTONE_BLOCK.get());
         recipeFullBlock(consumer, ModItems.RAW_HYDROSTONE.get(), ModBlocks.RAW_HYDROSTONE_BLOCK.get());
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELEMENTS_IMPROVEMENT.get())
+                .pattern(" S ")
+                .pattern("S#S")
+                .pattern("ABA")
+                .define('S', Items.OBSIDIAN)
+                .define('#', Items.GOLD_INGOT)
+                .define('A', Items.BLACKSTONE)
+                .define('B', ModItems.ETHEREAL_HEART.get())
+                .unlockedBy("has_item", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.ETHEREAL_HEART.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "elements_improvement"));
     }
 
     private static void recipesItems(Consumer<FinishedRecipe> consumer) {
@@ -42,6 +54,16 @@ public class CraftingRecipes {
                 .requires(ModBlocks.RAW_EMBERSTONE_BLOCK.get())
                 .unlockedBy("has_raw_emberstone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_EMBERSTONE.get()))
                 .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "raw_emberstone_from_raw_emberstone_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.HYDROSTONE_INGOT.get(), 9)
+                .requires(ModBlocks.HYDROSTONE_BLOCK.get())
+                .unlockedBy("has_emberstone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.HYDROSTONE_INGOT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "hydrostone_ingot_from_hydrostone_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_HYDROSTONE.get(), 9)
+                .requires(ModBlocks.RAW_HYDROSTONE_BLOCK.get())
+                .unlockedBy("has_raw_emberstone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_HYDROSTONE.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "raw_hydrostone_from_raw_hydrostone_block"));
     }
 
     private static void recipesTools(Consumer<FinishedRecipe> consumer) {

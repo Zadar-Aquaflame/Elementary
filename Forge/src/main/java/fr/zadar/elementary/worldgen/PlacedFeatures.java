@@ -31,7 +31,7 @@ public class PlacedFeatures {
         register(context, HYDROSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeatures.OVERWORLD_HYDROSTONE_ORE_KEY),
                 OrePlacement.commonOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.absolute(-10), VerticalAnchor.absolute(20))));
         register(context, FIRE_CRYSTAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeatures.FIRE_CRYSTAL_ORE_KEY),
-                OrePlacement.commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.absolute(-35), VerticalAnchor.absolute(20))));
+                OrePlacement.commonOrePlacement(5, HeightRangePlacement.uniform(VerticalAnchor.absolute(-35), VerticalAnchor.absolute(20))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

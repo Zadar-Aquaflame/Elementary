@@ -69,6 +69,11 @@ public class ItemModels extends ItemModelProvider {
         trimmedArmorItem(ModItems.HYDROSTONE_BOOTS);
 
         simpleItem(ModItems.FIRE_CRYSTAL);
+        simpleItem(ModItems.MYSTIC_ASH);
+        simpleItem(ModItems.HEAT_ESSENCE);
+        simpleItem(ModItems.ETHEREAL_HEART);
+
+        withExistingParent(ModItems.FLAME_SPIRIT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

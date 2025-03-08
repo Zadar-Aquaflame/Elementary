@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_emberstone_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementary:hydrostone_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "elementary:hydrostone_ingot_from_hydrostone_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_emberstone_block",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "elementary:hydrostone_ingot_from_hydrostone_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#forge:is_hot",
+  "spawners": {
+    "type": "elementary:flame_spirit",
+    "maxCount": 2,
+    "minCount": 1,
+    "weight": 20
+  }
+}

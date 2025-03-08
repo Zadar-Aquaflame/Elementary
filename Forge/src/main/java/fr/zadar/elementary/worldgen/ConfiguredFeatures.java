@@ -43,7 +43,7 @@ public class ConfiguredFeatures {
         register(context, NETHER_EMBERSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceable,
                 ModBlocks.NETHER_EMBERSTONE_ORE.get().defaultBlockState(), 6));
         register(context, OVERWORLD_HYDROSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldHydrostoneOres, 4));
-        register(context, FIRE_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFireCrystalOres, 3));
+        register(context, FIRE_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFireCrystalOres, 4));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
