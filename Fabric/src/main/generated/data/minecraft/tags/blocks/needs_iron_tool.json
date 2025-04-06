@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "elementary:emberstone_block",
+    "elementary:raw_emberstone_block",
+    "elementary:emberstone_ore",
+    "elementary:deepslate_emberstone_ore",
+    "elementary:nether_emberstone_ore",
+    "elementary:hydrostone_block",
+    "elementary:raw_hydrostone_block",
+    "elementary:hydrostone_ore",
+    "elementary:deepslate_hydrostone_ore",
+    "elementary:fire_crystal_ore",
+    "elementary:deepslate_fire_crystal_ore"
+  ]
+}

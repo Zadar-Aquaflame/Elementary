@@ -17,6 +17,8 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(ElementsImprovementBlockEntity::new, ModBlocks.ELEMENTS_IMPROVEMENT.get()).build(null));
 
     public static void register(IEventBus eventBus) {
+        ElementaryForge.LOGGER.info("Registering Block Entities for " + ElementaryForge.MOD_ID);
+
         BLOCK_ENTITIES.register(eventBus);
     }
 }

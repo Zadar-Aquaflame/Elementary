@@ -1,16 +1,13 @@
 package fr.zadar.elementary.block;
 
 import fr.zadar.elementary.ElementaryFabric;
+import fr.zadar.elementary.block.custom.ElementsImprovementBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -35,36 +32,24 @@ public class ModBlocks {
     public static final Block DEEPSLATE_HYDROSTONE_ORE = registerBlock("deepslate_hydrostone_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE), UniformIntProvider.create(2, 6)));
 
-
-    private static void addBlockToBuildingBlockTab(FabricItemGroupEntries entries) {
-        entries.add(EMBERSTONE_BLOCK);
-        entries.add(HYDROSTONE_BLOCK);
-    }
-
-    private static void addBlockToNaturalBlockTab(FabricItemGroupEntries entries) {
-        entries.add(RAW_EMBERSTONE_BLOCK);
-        entries.add(EMBERSTONE_ORE);
-        entries.add(DEEPSLATE_EMBERSTONE_ORE);
-        entries.add(NETHER_EMBERSTONE_ORE);
-        entries.add(RAW_HYDROSTONE_BLOCK);
-        entries.add(HYDROSTONE_ORE);
-        entries.add(DEEPSLATE_HYDROSTONE_ORE);
-    }
+    public static final Block ELEMENTS_IMPROVEMENT = registerBlock("elements_improvement",
+            new ElementsImprovementBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).nonOpaque()));
+    public static final Block FIRE_CRYSTAL_ORE = registerBlock("fire_crystal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE), UniformIntProvider.create(1, 4)));
+    public static final Block DEEPSLATE_FIRE_CRYSTAL_ORE = registerBlock("deepslate_fire_crystal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE), UniformIntProvider.create(1, 4)));
 
     private static Block registerBlock(String id, Block block) {
         registerBlockItem(id, block);
         return Registry.register(Registries.BLOCK, new Identifier(ElementaryFabric.MOD_ID, id), block);
     }
 
-    private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(ElementaryFabric.MOD_ID, name),
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, new Identifier(ElementaryFabric.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings()));
     }
 
     public static void registerModBlock() {
         ElementaryFabric.LOGGER.info("Registering Blocks for " + ElementaryFabric.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModBlocks::addBlockToBuildingBlockTab);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addBlockToNaturalBlockTab);
     }
 }

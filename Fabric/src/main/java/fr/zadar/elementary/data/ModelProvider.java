@@ -6,8 +6,12 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModelProvider extends FabricModelProvider {
     public ModelProvider(FabricDataOutput output) {
@@ -28,6 +32,10 @@ public class ModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HYDROSTONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
+
+        blockStateModelGenerator.registerSimpleState(ModBlocks.ELEMENTS_IMPROVEMENT);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.FIRE_CRYSTAL_ORE);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
     }
 
     @Override
@@ -54,5 +62,19 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HYDROSTONE_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HYDROSTONE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.HYDROSTONE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_BOOTS);
+
+        itemModelGenerator.register(ModItems.FIRE_CRYSTAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MYSTIC_ASH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HEAT_ESSENCE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ETHEREAL_HEART, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.FLAME_SPIRIT_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+
     }
 }

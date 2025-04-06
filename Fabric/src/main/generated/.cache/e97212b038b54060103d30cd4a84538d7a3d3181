@@ -1,0 +1,10 @@
+// 1.20.1	2025-04-05T11:21:42.2684504	Elementary/Block Loot Tables
+5c6ff77d8dfe5e1b1cd91cc723d8eac9a8c25897 data\elementary\loot_tables\blocks\emberstone_ore.json
+8877951a3b8ac260384fe55fa52fa989ece29a7e data\elementary\loot_tables\blocks\deepslate_emberstone_ore.json
+e6a032d8e00a7feb45c85c6d434549d32b9229c4 data\elementary\loot_tables\blocks\emberstone_block.json
+75ac84942c0b14b712f476c04901869e63d58491 data\elementary\loot_tables\blocks\hydrostone_block.json
+b2938f8bb929a21b3535c804cb4d387b6171c476 data\elementary\loot_tables\blocks\raw_emberstone_block.json
+c62d2236a4fd383c77709bddd76e8102dcbce939 data\elementary\loot_tables\blocks\hydrostone_ore.json
+877da58b11fef24ec2769f1f53c4ebb4882b9d15 data\elementary\loot_tables\blocks\deepslate_hydrostone_ore.json
+bd5935fe72471baa5a6742784192d4d9cbc63ff9 data\elementary\loot_tables\blocks\raw_hydrostone_block.json
+28435f4cb385d0ac8a8728452ff9f9c5d5051b29 data\elementary\loot_tables\blocks\nether_emberstone_ore.json

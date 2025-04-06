@@ -49,9 +49,9 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE).requiresCorrectToolForDrops()));
 
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
+    private static <T extends Block> RegistryObject<T> registerBlock(String id, Supplier<T> block){
+        RegistryObject<T> toReturn = BLOCKS.register(id, block);
+        registerBlockItem(id, toReturn);
         return toReturn;
     }
 

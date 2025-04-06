@@ -11,5 +11,95 @@
     },
     "done": false
   },
+  "elementary:recipes/combat/emberstone_helmet_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_pickaxe_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_shovel_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/raw_emberstone_block_": {
+    "criteria": {
+      "has_raw_emberstone": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_block_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/combat/emberstone_sword_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/combat/emberstone_axe_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/combat/emberstone_boots_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/combat/emberstone_chestplate_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_blasting_raw_emberstone": {
+    "criteria": {
+      "has_raw_emberstone": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/misc/emberstone_ingot_from_smelting_raw_emberstone": {
+    "criteria": {
+      "has_raw_emberstone": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/combat/emberstone_leggings_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "elementary:recipes/tools/emberstone_hoe_": {
+    "criteria": {
+      "has_emberstone_ingot": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2025-03-25 18:18:24 +0100"
+    },
+    "done": true
+  },
   "DataVersion": 3465
 }

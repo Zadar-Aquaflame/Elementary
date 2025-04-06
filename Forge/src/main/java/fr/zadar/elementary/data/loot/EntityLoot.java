@@ -27,6 +27,6 @@ public class EntityLoot extends EntityLootSubProvider {
                         .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0, 1))))
                 .add(LootItem.lootTableItem(ModItems.FIRE_CRYSTAL.get())
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(0, 1)))
-                        .when(LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(0.1f, 0.2f)))));
+                        .when(LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(0.2f, 0.2f)))));
     }
 }

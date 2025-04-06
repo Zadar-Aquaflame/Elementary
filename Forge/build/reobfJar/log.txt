@@ -139,13 +139,14 @@ Processing entries
 Conflicting propagated mapping for fr/zadar/elementary/block/entity/ElementsImprovementBlockEntity$1/getCount()I from net/minecraft/world/inventory/ContainerData/getCount()I: getCount -> m_6499_
 Conflicting propagated mapping for fr/zadar/elementary/block/entity/ElementsImprovementBlockEntity$1/get(I)I from net/minecraft/world/inventory/ContainerData/get(I)I: get -> m_6413_
 Conflicting propagated mapping for fr/zadar/elementary/block/entity/ElementsImprovementBlockEntity$1/set(II)V from net/minecraft/world/inventory/ContainerData/set(II)V: set -> m_8050_
+Conflicting propagated mapping for fr/zadar/elementary/data/loot/EntityLoot/generate()V from net/minecraft/data/loot/EntityLootSubProvider/generate()V: generate -> m_246942_
 Conflicting propagated mapping for fr/zadar/elementary/data/loot/BlockLoot/generate()V from net/minecraft/data/loot/BlockLootSubProvider/generate()V: generate -> m_245660_
-Conflicting propagated mapping for net/minecraftforge/client/model/generators/ModelProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture; from net/minecraft/data/DataProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture;: run -> m_213708_
-Conflicting propagated mapping for net/minecraftforge/client/model/generators/ItemModelProvider/getName()Ljava/lang/String; from net/minecraft/data/DataProvider/getName()Ljava/lang/String;: getName -> m_6055_
 Conflicting propagated mapping for net/minecraftforge/client/model/generators/BlockStateProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture; from net/minecraft/data/DataProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture;: run -> m_213708_
 Conflicting propagated mapping for net/minecraftforge/client/model/generators/BlockStateProvider/getName()Ljava/lang/String; from net/minecraft/data/DataProvider/getName()Ljava/lang/String;: getName -> m_6055_
+Conflicting propagated mapping for net/minecraftforge/client/model/generators/ModelProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture; from net/minecraft/data/DataProvider/run(Lnet/minecraft/data/CachedOutput;)Ljava/util/concurrent/CompletableFuture;: run -> m_213708_
 Conflicting propagated mapping for fr/zadar/elementary/data/BlockTags/addTags(Lnet/minecraft/core/HolderLookup$Provider;)V from net/minecraft/data/tags/TagsProvider/addTags(Lnet/minecraft/core/HolderLookup$Provider;)V: addTags -> m_6577_
 Conflicting propagated mapping for fr/zadar/elementary/data/ItemTags/addTags(Lnet/minecraft/core/HolderLookup$Provider;)V from net/minecraft/data/tags/TagsProvider/addTags(Lnet/minecraft/core/HolderLookup$Provider;)V: addTags -> m_6577_
+Conflicting propagated mapping for net/minecraftforge/client/model/generators/ItemModelProvider/getName()Ljava/lang/String; from net/minecraft/data/DataProvider/getName()Ljava/lang/String;: getName -> m_6055_
 Conflicting propagated mapping for fr/zadar/elementary/block/entity/ElementsImprovementBlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/load(Lnet/minecraft/nbt/CompoundTag;)V: load -> m_142466_
 Conflicting propagated mapping for fr/zadar/elementary/block/entity/ElementsImprovementBlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V from net/minecraft/world/level/block/entity/BlockEntity/saveAdditional(Lnet/minecraft/nbt/CompoundTag;)V: saveAdditional -> m_183515_
 Conflicting propagated mapping for fr/zadar/elementary/block/entity/ElementsImprovementBlockEntity/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuConstructor/createMenu(ILnet/minecraft/world/entity/player/Inventory;Lnet/minecraft/world/entity/player/Player;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: createMenu -> m_7208_
@@ -169,13 +170,13 @@ Conflicting propagated mapping for net/minecraftforge/client/model/generators/Bl
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritModel/root()Lnet/minecraft/client/model/geom/ModelPart; from net/minecraft/client/model/HierarchicalModel/root()Lnet/minecraft/client/model/geom/ModelPart;: root -> m_142109_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritModel/setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V from net/minecraft/client/model/EntityModel/setupAnim(Lnet/minecraft/world/entity/Entity;FFFFF)V: setupAnim -> m_6973_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritModel/renderToBuffer(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V from net/minecraft/client/model/HierarchicalModel/renderToBuffer(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFF)V: renderToBuffer -> m_7695_
+Conflicting propagated mapping for net/minecraftforge/event/BuildCreativeModeTabContentsEvent/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V from net/minecraft/world/item/CreativeModeTab$Output/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V: accept -> m_246267_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritRenderer/shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z from net/minecraft/client/renderer/entity/MobRenderer/shouldShowName(Lnet/minecraft/world/entity/LivingEntity;)Z: shouldShowName -> m_6512_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritRenderer/render(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V from net/minecraft/client/renderer/entity/MobRenderer/render(Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V: render -> m_7392_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritRenderer/shouldShowName(Lnet/minecraft/world/entity/Entity;)Z from net/minecraft/client/renderer/entity/MobRenderer/shouldShowName(Lnet/minecraft/world/entity/Entity;)Z: shouldShowName -> m_6512_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritRenderer/render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V from net/minecraft/client/renderer/entity/MobRenderer/render(Lnet/minecraft/world/entity/LivingEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V: render -> m_7392_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritRenderer/render(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V from net/minecraft/client/renderer/entity/MobRenderer/render(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V: render -> m_7392_
 Conflicting propagated mapping for fr/zadar/elementary/entity/client/FlameSpiritRenderer/getTextureLocation(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation; from net/minecraft/client/renderer/entity/EntityRenderer/getTextureLocation(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation;: getTextureLocation -> m_5478_
-Conflicting propagated mapping for net/minecraftforge/event/BuildCreativeModeTabContentsEvent/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V from net/minecraft/world/item/CreativeModeTab$Output/accept(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/CreativeModeTab$TabVisibility;)V: accept -> m_246267_
 Conflicting propagated mapping for fr/zadar/elementary/item/ModArmorMaterial/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient; from net/minecraft/world/item/ArmorMaterial/getRepairIngredient()Lnet/minecraft/world/item/crafting/Ingredient;: getRepairIngredient -> m_6230_
 Conflicting propagated mapping for fr/zadar/elementary/item/ModArmorMaterial/getEnchantmentValue()I from net/minecraft/world/item/ArmorMaterial/getEnchantmentValue()I: getEnchantmentValue -> m_6646_
 Conflicting propagated mapping for fr/zadar/elementary/item/ModArmorMaterial/getKnockbackResistance()F from net/minecraft/world/item/ArmorMaterial/getKnockbackResistance()F: getKnockbackResistance -> m_6649_
@@ -194,16 +195,15 @@ Conflicting propagated mapping for net/minecraftforge/common/ForgeTier/getAttack
 Conflicting propagated mapping for fr/zadar/elementary/recipe/ElementsImprovementRecipe$Serializer/fromJson(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/crafting/Recipe; from net/minecraft/world/item/crafting/RecipeSerializer/fromJson(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)Lnet/minecraft/world/item/crafting/Recipe;: fromJson -> m_6729_
 Conflicting propagated mapping for fr/zadar/elementary/recipe/ElementsImprovementRecipe$Serializer/fromNetwork(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Recipe; from net/minecraft/world/item/crafting/RecipeSerializer/fromNetwork(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/FriendlyByteBuf;)Lnet/minecraft/world/item/crafting/Recipe;: fromNetwork -> m_8005_
 Conflicting propagated mapping for fr/zadar/elementary/recipe/ElementsImprovementRecipe$Serializer/toNetwork(Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/Recipe;)V from net/minecraft/world/item/crafting/RecipeSerializer/toNetwork(Lnet/minecraft/network/FriendlyByteBuf;Lnet/minecraft/world/item/crafting/Recipe;)V: toNetwork -> m_6178_
+Conflicting propagated mapping for fr/zadar/elementary/screen/ElementsImprovementMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
+Conflicting propagated mapping for fr/zadar/elementary/screen/ElementsImprovementMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
 Conflicting propagated mapping for fr/zadar/elementary/screen/ElementsImprovementScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/render(Lnet/minecraft/client/gui/GuiGraphics;IIF)V: render -> m_88315_
 Conflicting propagated mapping for fr/zadar/elementary/screen/ElementsImprovementScreen/init()V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/init()V: init -> m_7856_
 Conflicting propagated mapping for fr/zadar/elementary/screen/ElementsImprovementScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V from net/minecraft/client/gui/screens/inventory/AbstractContainerScreen/renderBg(Lnet/minecraft/client/gui/GuiGraphics;FII)V: renderBg -> m_7286_
-Conflicting propagated mapping for fr/zadar/elementary/screen/ElementsImprovementMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z from net/minecraft/world/inventory/AbstractContainerMenu/stillValid(Lnet/minecraft/world/entity/player/Player;)Z: stillValid -> m_6875_
-Conflicting propagated mapping for fr/zadar/elementary/screen/ElementsImprovementMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack; from net/minecraft/world/inventory/AbstractContainerMenu/quickMoveStack(Lnet/minecraft/world/entity/player/Player;I)Lnet/minecraft/world/item/ItemStack;: quickMoveStack -> m_7648_
 Conflicting propagated mapping for net/minecraftforge/network/IContainerFactory/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu; from net/minecraft/world/inventory/MenuType$MenuSupplier/create(ILnet/minecraft/world/entity/player/Inventory;)Lnet/minecraft/world/inventory/AbstractContainerMenu;: create -> m_39994_
 Conflicting propagated mapping for net/minecraft/world/entity/LivingEntity/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V from net/minecraft/world/entity/player/Player/lambda$addAdditionalSaveData$3(Lnet/minecraft/nbt/CompoundTag;Lnet/minecraft/nbt/Tag;)V: lambda$addAdditionalSaveData$3 -> m_219754_
 Conflicting propagated mapping for fr/zadar/elementary/entity/custom/FlameSpiritEntity/getHurtSound(Lnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/sounds/SoundEvent; from net/minecraft/world/entity/monster/Monster/getHurtSound(Lnet/minecraft/world/damagesource/DamageSource;)Lnet/minecraft/sounds/SoundEvent;: getHurtSound -> m_7975_
 Conflicting propagated mapping for fr/zadar/elementary/entity/custom/FlameSpiritEntity/tick()V from net/minecraft/world/entity/Mob/tick()V: tick -> m_8119_
-Conflicting propagated mapping for fr/zadar/elementary/entity/custom/FlameSpiritEntity/defineSynchedData()V from net/minecraft/world/entity/Mob/defineSynchedData()V: defineSynchedData -> m_8097_
 Conflicting propagated mapping for fr/zadar/elementary/entity/custom/FlameSpiritEntity/getDeathSound()Lnet/minecraft/sounds/SoundEvent; from net/minecraft/world/entity/monster/Monster/getDeathSound()Lnet/minecraft/sounds/SoundEvent;: getDeathSound -> m_5592_
 Conflicting propagated mapping for fr/zadar/elementary/entity/custom/FlameSpiritEntity/getAmbientSound()Lnet/minecraft/sounds/SoundEvent; from net/minecraft/world/entity/Mob/getAmbientSound()Lnet/minecraft/sounds/SoundEvent;: getAmbientSound -> m_7515_
 Conflicting propagated mapping for fr/zadar/elementary/entity/custom/FlameSpiritEntity/registerGoals()V from net/minecraft/world/entity/Mob/registerGoals()V: registerGoals -> m_8099_
@@ -318,9 +318,11 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   assets/elementary/models/item/emberstone_pickaxe.json
   assets/elementary/models/item/emberstone_shovel.json
   assets/elementary/models/item/emberstone_sword.json
+  assets/elementary/models/item/ethereal_heart.json
   assets/elementary/models/item/fire_crystal.json
   assets/elementary/models/item/fire_crystal_ore.json
   assets/elementary/models/item/flame_spirit_spawn_egg.json
+  assets/elementary/models/item/heat_essence.json
   assets/elementary/models/item/hydrostone_axe.json
   assets/elementary/models/item/hydrostone_block.json
   assets/elementary/models/item/hydrostone_boots.json
@@ -408,7 +410,9 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   assets/elementary/textures/item/emberstone_pickaxe.png
   assets/elementary/textures/item/emberstone_shovel.png
   assets/elementary/textures/item/emberstone_sword.png
+  assets/elementary/textures/item/ethereal_heart.png
   assets/elementary/textures/item/fire_crystal.png
+  assets/elementary/textures/item/heat_essence.png
   assets/elementary/textures/item/hydrostone_axe.png
   assets/elementary/textures/item/hydrostone_boots.png
   assets/elementary/textures/item/hydrostone_chestplate.png
@@ -433,6 +437,7 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/advancements/
   data/elementary/advancements/recipes/
   data/elementary/advancements/recipes/misc/
+  data/elementary/advancements/recipes/misc/elements_improvement.json
   data/elementary/advancements/recipes/misc/emberstone_ingot_from_deepslate_emberstone_ore_blasting.json
   data/elementary/advancements/recipes/misc/emberstone_ingot_from_deepslate_emberstone_ore_smelting.json
   data/elementary/advancements/recipes/misc/emberstone_ingot_from_emberstone_block.json
@@ -444,11 +449,13 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/advancements/recipes/misc/emberstone_ingot_from_raw_emberstone_smelting.json
   data/elementary/advancements/recipes/misc/hydrostone_ingot_from_deepslate_hydrostone_ore_blasting.json
   data/elementary/advancements/recipes/misc/hydrostone_ingot_from_deepslate_hydrostone_ore_smelting.json
+  data/elementary/advancements/recipes/misc/hydrostone_ingot_from_hydrostone_block.json
   data/elementary/advancements/recipes/misc/hydrostone_ingot_from_hydrostone_ore_blasting.json
   data/elementary/advancements/recipes/misc/hydrostone_ingot_from_hydrostone_ore_smelting.json
   data/elementary/advancements/recipes/misc/hydrostone_ingot_from_raw_hydrostone_blasting.json
   data/elementary/advancements/recipes/misc/hydrostone_ingot_from_raw_hydrostone_smelting.json
   data/elementary/advancements/recipes/misc/raw_emberstone_from_raw_emberstone_block.json
+  data/elementary/advancements/recipes/misc/raw_hydrostone_from_raw_hydrostone_block.json
   data/elementary/advancements/recipes/tools/
   data/elementary/advancements/recipes/tools/emberstone_axe.json
   data/elementary/advancements/recipes/tools/emberstone_block.json
@@ -478,6 +485,7 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/forge/biome_modifier/add_fire_crystal_ore.json
   data/elementary/forge/biome_modifier/add_hydrostone_ore.json
   data/elementary/forge/biome_modifier/add_nether_emberstone_ore.json
+  data/elementary/forge/biome_modifier/spawn_flame_spirit.json
   data/elementary/loot_tables/
   data/elementary/loot_tables/blocks/
   data/elementary/loot_tables/blocks/deepslate_emberstone_ore.json
@@ -492,7 +500,10 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/loot_tables/blocks/nether_emberstone_ore.json
   data/elementary/loot_tables/blocks/raw_emberstone_block.json
   data/elementary/loot_tables/blocks/raw_hydrostone_block.json
+  data/elementary/loot_tables/entities/
+  data/elementary/loot_tables/entities/flame_spirit.json
   data/elementary/recipes/
+  data/elementary/recipes/elements_improvement.json
   data/elementary/recipes/emberstone_axe.json
   data/elementary/recipes/emberstone_block.json
   data/elementary/recipes/emberstone_boots.json
@@ -501,7 +512,6 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/recipes/emberstone_hoe.json
   data/elementary/recipes/emberstone_ingot_from_deepslate_emberstone_ore_blasting.json
   data/elementary/recipes/emberstone_ingot_from_deepslate_emberstone_ore_smelting.json
-  data/elementary/recipes/emberstone_ingot_from_element.json
   data/elementary/recipes/emberstone_ingot_from_emberstone_block.json
   data/elementary/recipes/emberstone_ingot_from_emberstone_ore_blasting.json
   data/elementary/recipes/emberstone_ingot_from_emberstone_ore_smelting.json
@@ -513,6 +523,7 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/recipes/emberstone_pickaxe.json
   data/elementary/recipes/emberstone_shovel.json
   data/elementary/recipes/emberstone_sword.json
+  data/elementary/recipes/heat_essence_from_elements_improvement.json
   data/elementary/recipes/hydrostone_axe.json
   data/elementary/recipes/hydrostone_block.json
   data/elementary/recipes/hydrostone_boots.json
@@ -521,6 +532,7 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/recipes/hydrostone_hoe.json
   data/elementary/recipes/hydrostone_ingot_from_deepslate_hydrostone_ore_blasting.json
   data/elementary/recipes/hydrostone_ingot_from_deepslate_hydrostone_ore_smelting.json
+  data/elementary/recipes/hydrostone_ingot_from_hydrostone_block.json
   data/elementary/recipes/hydrostone_ingot_from_hydrostone_ore_blasting.json
   data/elementary/recipes/hydrostone_ingot_from_hydrostone_ore_smelting.json
   data/elementary/recipes/hydrostone_ingot_from_raw_hydrostone_blasting.json
@@ -532,6 +544,7 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   data/elementary/recipes/raw_emberstone_block.json
   data/elementary/recipes/raw_emberstone_from_raw_emberstone_block.json
   data/elementary/recipes/raw_hydrostone_block.json
+  data/elementary/recipes/raw_hydrostone_from_raw_hydrostone_block.json
   data/elementary/tags/
   data/elementary/tags/items/
   data/elementary/tags/items/is_emberstone_armor.json
@@ -570,7 +583,7 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   fr/zadar/elementary/block/entity/ModBlockEntities.class
   fr/zadar/elementary/compat/
   fr/zadar/elementary/compat/ElementsImprovementCategory.class
-  fr/zadar/elementary/compat/JeiElementaryPlugin.class
+  fr/zadar/elementary/compat/JEIElementaryPlugin.class
   fr/zadar/elementary/data/
   fr/zadar/elementary/data/BlockStates.class
   fr/zadar/elementary/data/BlockTags.class
@@ -582,6 +595,7 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   fr/zadar/elementary/data/WorldGenProvider.class
   fr/zadar/elementary/data/loot/
   fr/zadar/elementary/data/loot/BlockLoot.class
+  fr/zadar/elementary/data/loot/EntityLoot.class
   fr/zadar/elementary/data/recipe/
   fr/zadar/elementary/data/recipe/BlastingRecipes.class
   fr/zadar/elementary/data/recipe/CraftingRecipes.class
@@ -598,9 +612,9 @@ Writing Output: D:\sources\Mods Minecraft\Elementary\Forge\build\reobfJar\output
   fr/zadar/elementary/entity/custom/FlameSpiritEntity.class
   fr/zadar/elementary/event/
   fr/zadar/elementary/event/AddCreativeTabs.class
-  fr/zadar/elementary/event/EventHandler.class
-  fr/zadar/elementary/event/ModEventBusClientEvents.class
-  fr/zadar/elementary/event/ModEventBusEvents.class
+  fr/zadar/elementary/event/MobEvent.class
+  fr/zadar/elementary/event/MobEventClient.class
+  fr/zadar/elementary/event/PutEntityOnFire.class
   fr/zadar/elementary/item/
   fr/zadar/elementary/item/ModArmorMaterial.class
   fr/zadar/elementary/item/ModItems.class

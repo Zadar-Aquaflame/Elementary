@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "elementary:hydrostone_ingot"
+    }
+  },
+  "pattern": [
+    "SS",
+    "# ",
+    "# "
+  ],
+  "result": {
+    "item": "elementary:hydrostone_hoe"
+  },
+  "show_notification": true
+}

@@ -15,7 +15,7 @@ import net.minecraft.world.item.crafting.RecipeManager;
 import java.util.List;
 
 @JeiPlugin
-public class JeiElementaryPlugin implements IModPlugin {
+public class JEIElementaryPlugin implements IModPlugin {
     @Override
     public ResourceLocation getPluginUid() {
         return new ResourceLocation(ElementaryForge.MOD_ID, "jei_plugin");

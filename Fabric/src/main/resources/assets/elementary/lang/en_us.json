@@ -20,15 +20,31 @@
   "item.elementary.emberstone_leggings": "Emberstone Leggings",
   "item.elementary.emberstone_boots": "Emberstone Boots",
 
-  "tooltip.elementary.emberstone_tool": "Can burn entities",
-  "tooltip.elementary.emberstone_armor": "Increase the protection against fire",
-
   "item.elementary.hydrostone_ingot": "Hydrostone Ingot",
   "item.elementary.raw_hydrostone": "Raw Hydrostone",
+
+  "block.elementary.hydrostone_block": "Hydrostone Block",
+  "block.elementary.raw_hydrostone_block": "Raw Hydrostone Block",
+
+  "block.elementary.hydrostone_ore": "Hydrostone Ore",
+  "block.elementary.deepslate_hydrostone_ore": "Deepslate Hydrostone Ore",
 
   "item.elementary.hydrostone_sword": "Hydrostone Sword",
   "item.elementary.hydrostone_pickaxe": "Hydrostone Pickaxe",
   "item.elementary.hydrostone_axe": "Hydrostone Axe",
   "item.elementary.hydrostone_shovel": "Hydrostone Shovel",
-  "item.elementary.hydrostone_hoe": "Hydrostone Hoe"
+  "item.elementary.hydrostone_hoe": "Hydrostone Hoe",
+
+  "block.elementary.elements_improvement": "Elements Improvement",
+
+  "block.elementary.fire_crystal_ore": "Fire Crystal Ore",
+  "block.elementary.deepslate_fire_crystal_ore": "Deepslate Fire Crystal Ore",
+
+  "item.elementary.fire_crystal": "Fire Crystal",
+  "item.elementary.mystic_ash": "Mystic Ash",
+  "item.elementary.heat_essence": "Heat Essence",
+  "item.elementary.ethereal_heart": "Ethereal Heart",
+
+  "entity.elementary.flame_spirit": "Flame Spirit",
+  "item.elementary.flame_spirit_spawn_egg": "Flame Spirit Spawn Egg"
 }

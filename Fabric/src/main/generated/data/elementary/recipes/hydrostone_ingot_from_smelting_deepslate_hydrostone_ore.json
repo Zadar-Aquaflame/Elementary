@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.3,
+  "group": "hydrostone_ingot",
+  "ingredient": {
+    "item": "elementary:deepslate_hydrostone_ore"
+  },
+  "result": "elementary:hydrostone_ingot"
+}

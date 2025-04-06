@@ -18,6 +18,7 @@ public class PlacedFeatures {
     public static final RegistryKey<PlacedFeature> EMBERSTONE_ORE_PLACED_KEY = registryKey("emberstone_ore_placed");
     public static final RegistryKey<PlacedFeature> NETHER_EMBERSTONE_ORE_PLACED_KEY = registryKey("nether_emberstone_ore_placed");
     public static final RegistryKey<PlacedFeature> HYDROSTONE_ORE_PLACED_KEY = registryKey("hydrostone_ore_placed");
+    public static final RegistryKey<PlacedFeature> FIRE_CRYSTAL_ORE_PLACED_KEY = registryKey("fire_crystal_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -28,6 +29,8 @@ public class PlacedFeatures {
                 OrePlacement.modifiersWithCount(10, HeightRangePlacementModifier.uniform(YOffset.fixed(30), YOffset.fixed(90))));
         register(context, HYDROSTONE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ConfiguredFeatures.HYDROSTONE_ORE_KEY),
                 OrePlacement.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-10), YOffset.fixed(20))));
+        register(context, FIRE_CRYSTAL_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ConfiguredFeatures.FIRE_CRYSTAL_ORE_KEY),
+                OrePlacement.modifiersWithCount(5, HeightRangePlacementModifier.uniform(YOffset.fixed(-35), YOffset.fixed(20))));
     }
 
     public static RegistryKey<PlacedFeature> registryKey(String name) {

@@ -20,6 +20,7 @@ public class ConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> EMBERSTONE_ORE_KEY = registryKey("emberstone_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_EMBERSTONE_ORE_KEY = registryKey("nether_emberstone_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> HYDROSTONE_ORE_KEY = registryKey("hydrostone_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FIRE_CRYSTAL_ORE_KEY = registryKey("fire_crystal_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -32,6 +33,9 @@ public class ConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldHydrostoneOre =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceable, ModBlocks.HYDROSTONE_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceable, ModBlocks.DEEPSLATE_HYDROSTONE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldFireCrystalOre =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceable, ModBlocks.FIRE_CRYSTAL_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceable, ModBlocks.FIRE_CRYSTAL_ORE.getDefaultState()));
 
         List<OreFeatureConfig.Target> netherEmberstoneOre =
                 List.of(OreFeatureConfig.createTarget(netherReplaceable, ModBlocks.NETHER_EMBERSTONE_ORE.getDefaultState()));
@@ -39,6 +43,7 @@ public class ConfiguredFeatures {
         register(context, EMBERSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldEmberstoneOre, 6));
         register(context, NETHER_EMBERSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherEmberstoneOre, 6));
         register(context, HYDROSTONE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldHydrostoneOre, 4));
+        register(context, FIRE_CRYSTAL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldFireCrystalOre, 4));
     }
 
 

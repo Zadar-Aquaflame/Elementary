@@ -2,7 +2,7 @@ package fr.zadar.elementary.entity.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import fr.zadar.elementary.entity.animations.ModAnimationDefinitions;
+import fr.zadar.elementary.entity.animations.FlameSpiritAnimations;
 import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
@@ -56,8 +56,8 @@ public class FlameSpiritModel<T extends Entity> extends HierarchicalModel<T> {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 
-		this.animateWalk(ModAnimationDefinitions.FLAME_SPIRIT_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-		this.animate(((FlameSpiritEntity) entity).idleAnimationState, ModAnimationDefinitions.FLAME_SPIRIT_IDLE, ageInTicks, 1f);
+		this.animateWalk(FlameSpiritAnimations.FLAME_SPIRIT_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+		this.animate(((FlameSpiritEntity) entity).idleAnimationState, FlameSpiritAnimations.FLAME_SPIRIT_IDLE, ageInTicks, 1f);
 	}
 
 	private void applyHeadRotation(float netHeadYaw, float headPitch, float ageInTicks) {

@@ -1,9 +1,17 @@
 package fr.zadar.elementary;
 
 import fr.zadar.elementary.block.ModBlocks;
+import fr.zadar.elementary.block.entity.ModBlockEntities;
+import fr.zadar.elementary.entity.ModEntities;
+import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
+import fr.zadar.elementary.event.Events;
 import fr.zadar.elementary.item.ModItems;
+import fr.zadar.elementary.recipe.ModRecipes;
+import fr.zadar.elementary.screen.ModScreenHandlers;
+import fr.zadar.elementary.world.gen.WorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,5 +25,13 @@ public class ElementaryFabric implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
+		ModRecipes.registerRecipes();
+		WorldGeneration.generateWorldGen();
+
+		Events.register();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.FLAME_SPIRIT, FlameSpiritEntity.createAttributes());
 	}
 }

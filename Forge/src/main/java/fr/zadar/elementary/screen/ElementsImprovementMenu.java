@@ -2,7 +2,6 @@ package fr.zadar.elementary.screen;
 
 import fr.zadar.elementary.block.ModBlocks;
 import fr.zadar.elementary.block.entity.ElementsImprovementBlockEntity;
-import net.minecraft.client.gui.screens.TitleScreen;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -75,7 +74,7 @@ public class ElementsImprovementMenu extends AbstractContainerMenu {
                     + TE_INVENTORY_SLOT_COUNT, false)) {
                 return ItemStack.EMPTY;
             }
-        } else if (pIndex < TE_INVENTORY_FIRST_SLOT_INDEX + TE_INVENTORY_SLOT_COUNT) {
+        } else if (pIndex < (TE_INVENTORY_FIRST_SLOT_INDEX + TE_INVENTORY_SLOT_COUNT)) {
             if (!moveItemStackTo(sourceStack, VANILLA_FIRST_SLOT_INDEX, VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT, false)) {
                 return ItemStack.EMPTY;
             }

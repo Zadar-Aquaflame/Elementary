@@ -50,8 +50,8 @@ public class BiomeModifiers {
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(SPAWN_FLAME_SPIRIT, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_HOT),
-                List.of(new MobSpawnSettings.SpawnerData(ModEntities.FLAME_SPIRIT.get(), 20, 1, 2))));
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.FLAME_SPIRIT.get(), 64, 1, 2))));
     }
 
 

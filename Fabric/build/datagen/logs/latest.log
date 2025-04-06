@@ -1,6 +1,10 @@
-[15:55:21] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.16.10
-[15:55:21] [main/INFO] (FabricLoader) Loading 46 mods:
+[11:21:31] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.16.10
+[11:21:31] [main/INFO] (FabricLoader) Loading 51 mods:
+	- architectury 9.0.7
+	- cloth-basic-math 0.6.1
+	- cloth-config 11.0.99
 	- elementary 1.0.0
+	- error_notifier 1.0.9
 	- fabric-api 0.92.3+1.20.1
 	- fabric-api-base 0.4.31+1802ada577
 	- fabric-api-lookup-api-v1 1.6.36+1802ada577
@@ -46,11 +50,44 @@
 	- java 17
 	- minecraft 1.20.1
 	- mixinextras 0.4.1
-[15:55:21] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Lucas/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[15:55:21] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[15:55:21] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
-[15:55:21] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[15:55:22] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[15:55:30] [main/INFO] (FabricDataGenHelper) Running data generator for elementary
-[15:55:30] [main/INFO] (Minecraft) All providers took: 0 ms
-[15:55:30] [main/INFO] (Minecraft) Caching: total files: 0, old count: 0, new count: 1, removed stale: 0, written: 0
+	- roughlyenoughitems 12.1.785
+[11:21:31] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Lucas/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/6a12aacc794f1078458433116e9ed42c1cc98096/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[11:21:32] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[11:21:32] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[11:21:32] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[11:21:33] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[11:21:41] [main/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:request_tags_c2s
+[11:21:41] [main/INFO] (REI) [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIPlugin
+[11:21:41] [main/INFO] (REI) [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIPlugin
+[11:21:41] [main/INFO] (REI) [REI] Registered plugin provider DefaultPlugin [roughlyenoughitems] for REIServerPlugin
+[11:21:41] [main/INFO] (REI) [REI] Registered plugin provider DefaultRuntimePlugin [roughlyenoughitems] for REIServerPlugin
+[11:21:41] [main/INFO] (REI) [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIServerPlugin
+[11:21:41] [main/INFO] (REI) [REI] Registered plugin provider FabricFluidAPISupportPlugin for REIPlugin
+[11:21:41] [main/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:delete_item
+[11:21:41] [main/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item
+[11:21:41] [main/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item_grab
+[11:21:41] [main/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:create_item_hotbar
+[11:21:41] [main/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:move_items
+[11:21:41] [main/INFO] (NetworkManagerImpl) Registering C2S receiver with id roughlyenoughitems:move_items_new
+[11:21:41] [main/INFO] (elementary) Mod Elementary started successfully
+[11:21:41] [main/INFO] (elementary) Registering Items for elementary
+[11:21:41] [main/INFO] (elementary) Registering Blocks for elementary
+[11:21:41] [main/INFO] (elementary) Registering Block Entities for elementary
+[11:21:41] [main/INFO] (elementary) Registering Screen for elementary
+[11:21:41] [main/INFO] (FabricDataGenHelper) Running data generator for elementary
+[11:21:41] [main/INFO] (Minecraft) Starting provider: Elementary/Tags for minecraft:block
+[11:21:41] [main/INFO] (Minecraft) Elementary/Tags for minecraft:block finished after 125 ms
+[11:21:41] [main/INFO] (Minecraft) Starting provider: Elementary/Tags for minecraft:item
+[11:21:41] [main/INFO] (Minecraft) Elementary/Tags for minecraft:item finished after 6 ms
+[11:21:41] [main/INFO] (Minecraft) Starting provider: Elementary/Block Loot Tables
+[11:21:42] [main/INFO] (Minecraft) Elementary/Block Loot Tables finished after 66 ms
+[11:21:42] [main/INFO] (Minecraft) Starting provider: Elementary/minecraft:entity Loot Table
+[11:21:42] [main/INFO] (Minecraft) Elementary/minecraft:entity Loot Table finished after 21 ms
+[11:21:42] [main/INFO] (Minecraft) Starting provider: Elementary/Model Definitions
+[11:21:42] [main/INFO] (Minecraft) Elementary/Model Definitions finished after 137 ms
+[11:21:42] [main/INFO] (Minecraft) Starting provider: Elementary/Recipes
+[11:21:42] [main/INFO] (Minecraft) Elementary/Recipes finished after 58 ms
+[11:21:42] [main/INFO] (Minecraft) Starting provider: Elementary/World Gen
+[11:21:42] [main/INFO] (Minecraft) Elementary/World Gen finished after 15 ms
+[11:21:42] [main/INFO] (Minecraft) All providers took: 436 ms
+[11:21:42] [main/INFO] (Minecraft) Caching: total files: 229, old count: 221, new count: 230, removed stale: 0, written: 8

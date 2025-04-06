@@ -11,7 +11,9 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     EMBERSTONE("emberstone", 26, new int[] {4, 7, 6, 4}, 18,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1f, 0f, () -> Ingredient.ofItems(ModItems.EMBERSTONE_INGOT));
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1f, 0f, () -> Ingredient.ofItems(ModItems.EMBERSTONE_INGOT)),
+    HYDROSTONE("hydrostone", 27, new int[] {5, 7, 6, 5}, 19,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1f, 0.2f, () -> Ingredient.ofItems(ModItems.HYDROSTONE_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;

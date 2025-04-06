@@ -17,7 +17,9 @@ public class ModArmorEffect extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.EMBERSTONE, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,
-                            20, 1, false, false, true)).build();
+                            20, 1, false, false, true))
+                    .put(ModArmorMaterials.HYDROSTONE, new StatusEffectInstance(StatusEffects.REGENERATION,
+                            20, 0, false, false, true)).build();
 
     public ModArmorEffect(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);
