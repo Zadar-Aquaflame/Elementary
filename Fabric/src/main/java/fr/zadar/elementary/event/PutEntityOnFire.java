@@ -11,20 +11,23 @@ import java.util.Arrays;
 public class PutEntityOnFire {
     public PutEntityOnFire() {
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, damageSource, amount) -> {
-            if (entity != null && damageSource.getAttacker() instanceof LivingEntity) {
-                LivingEntity attacker = (LivingEntity) damageSource.getAttacker();
+            if (entity != null && damageSource.getAttacker() instanceof LivingEntity attacker) {
                 Item item = attacker.getEquippedStack(EquipmentSlot.MAINHAND).getItem();
                 if (isEmberstoneTool(item)) {
-                    igniteTarget(entity);
+                    igniteTarget(entity, 3);
+                }
+
+                if (isEmberiteTool(item)) {
+                    igniteTarget(entity, 5);
                 }
             }
             return true;
         });
     }
 
-    public static void igniteTarget(LivingEntity entity) {
+    public static void igniteTarget(LivingEntity entity, int time) {
         if (entity != null) {
-            entity.setFireTicks(60);
+            entity.setFireTicks(time * 20);
         }
     }
 
@@ -36,6 +39,16 @@ public class PutEntityOnFire {
                 ModItems.EMBERSTONE_AXE,
                 ModItems.EMBERSTONE_SHOVEL,
                 ModItems.EMBERSTONE_HOE
+        ).contains(item);
+    }
+
+    private static boolean isEmberiteTool(Item item) {
+        return Arrays.asList(
+                ModItems.EMBERITE_SWORD,
+                ModItems.EMBERITE_PICKAXE,
+                ModItems.EMBERITE_AXE,
+                ModItems.EMBERITE_SHOVEL,
+                ModItems.EMBERITE_HOE
         ).contains(item);
     }
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "elementary:emberite_ingot"
+    }
+  },
+  "pattern": [
+    "SS",
+    "#S",
+    "# "
+  ],
+  "result": {
+    "item": "elementary:emberite_axe"
+  },
+  "show_notification": true
+}

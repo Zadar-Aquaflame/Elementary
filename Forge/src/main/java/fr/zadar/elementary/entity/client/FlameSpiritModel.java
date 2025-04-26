@@ -56,8 +56,8 @@ public class FlameSpiritModel<T extends Entity> extends HierarchicalModel<T> {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 
-		this.animateWalk(FlameSpiritAnimations.FLAME_SPIRIT_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-		this.animate(((FlameSpiritEntity) entity).idleAnimationState, FlameSpiritAnimations.FLAME_SPIRIT_IDLE, ageInTicks, 1f);
+		this.animateWalk(FlameSpiritAnimations.WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
+		this.animate(((FlameSpiritEntity) entity).idleAnimationState, FlameSpiritAnimations.IDLE, ageInTicks, 1f);
 	}
 
 	private void applyHeadRotation(float netHeadYaw, float headPitch, float ageInTicks) {

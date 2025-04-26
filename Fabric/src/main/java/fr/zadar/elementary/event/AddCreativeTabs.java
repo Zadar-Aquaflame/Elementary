@@ -22,11 +22,13 @@ public class AddCreativeTabs {
         entries.add(ModItems.RAW_EMBERSTONE);
         entries.add(ModItems.HYDROSTONE_INGOT);
         entries.add(ModItems.RAW_HYDROSTONE);
-
         entries.add(ModItems.FIRE_CRYSTAL);
         entries.add(ModItems.MYSTIC_ASH);
         entries.add(ModItems.HEAT_ESSENCE);
         entries.add(ModItems.ETHEREAL_HEART);
+        entries.add(ModItems.EMBERITE_INGOT);
+        entries.add(ModItems.FIRE_FERROCRYSTAL_INGOT);
+        entries.add(ModItems.FIRE_FERROCRYSTAL_STICK);
     }
 
     private static void combatTab(FabricItemGroupEntries entries) {
@@ -43,6 +45,13 @@ public class AddCreativeTabs {
         entries.add(ModItems.HYDROSTONE_CHESTPLATE);
         entries.add(ModItems.HYDROSTONE_LEGGINGS);
         entries.add(ModItems.HYDROSTONE_BOOTS);
+
+        entries.add(ModItems.EMBERITE_SWORD);
+        entries.add(ModItems.EMBERITE_AXE);
+        entries.add(ModItems.EMBERITE_HELMET);
+        entries.add(ModItems.EMBERITE_CHESTPLATE);
+        entries.add(ModItems.EMBERITE_LEGGINGS);
+        entries.add(ModItems.EMBERITE_BOOTS);
     }
 
     private static void toolTab(FabricItemGroupEntries entries) {
@@ -55,6 +64,11 @@ public class AddCreativeTabs {
         entries.add(ModItems.HYDROSTONE_PICKAXE);
         entries.add(ModItems.HYDROSTONE_AXE);
         entries.add(ModItems.HYDROSTONE_HOE);
+
+        entries.add(ModItems.EMBERITE_SHOVEL);
+        entries.add(ModItems.EMBERITE_PICKAXE);
+        entries.add(ModItems.EMBERITE_AXE);
+        entries.add(ModItems.EMBERITE_HOE);
     }
 
     private static void buildingBlockTab(FabricItemGroupEntries entries) {
@@ -70,6 +84,8 @@ public class AddCreativeTabs {
         entries.add(ModBlocks.RAW_HYDROSTONE_BLOCK);
         entries.add(ModBlocks.HYDROSTONE_ORE);
         entries.add(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
+        entries.add(ModBlocks.FIRE_CRYSTAL_ORE);
+        entries.add(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
     }
 
     private static void functionalBlockTab(FabricItemGroupEntries entries) {

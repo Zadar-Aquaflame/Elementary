@@ -1,0 +1,14 @@
+{
+  "type": "elementary:elements_improvement",
+  "ingredients": [
+    {
+      "item": "elementary:hydrostone_ingot"
+    },
+    {
+      "item": "elementary:wave_essence"
+    }
+  ],
+  "result": {
+    "item": "elementary:aqualite_ingot"
+  }
+}

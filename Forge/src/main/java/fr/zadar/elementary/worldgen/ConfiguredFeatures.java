@@ -23,6 +23,7 @@ public class ConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_EMBERSTONE_ORE_KEY = registerKey("nether_emberstone_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_HYDROSTONE_ORE_KEY = registerKey("hydrostone_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> FIRE_CRYSTAL_ORE_KEY = registerKey("fire_crystal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WATER_CRYSTAL_ORE_KEY = registerKey("water_crystal_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -38,12 +39,16 @@ public class ConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldFireCrystalOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.FIRE_CRYSTAL_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldWaterCrystalOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.WATER_CRYSTAL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_EMBERSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldEmberstoneOres, 6));
         register(context, NETHER_EMBERSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceable,
                 ModBlocks.NETHER_EMBERSTONE_ORE.get().defaultBlockState(), 6));
         register(context, OVERWORLD_HYDROSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldHydrostoneOres, 4));
         register(context, FIRE_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFireCrystalOres, 4));
+        register(context, WATER_CRYSTAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldWaterCrystalOres, 4));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

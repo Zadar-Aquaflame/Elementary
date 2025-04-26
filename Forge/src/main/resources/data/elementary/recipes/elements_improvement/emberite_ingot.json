@@ -1,0 +1,14 @@
+{
+  "type": "elementary:elements_improvement",
+  "ingredients": [
+    {
+      "item": "elementary:emberstone_ingot"
+    },
+    {
+      "item": "elementary:heat_essence"
+    }
+  ],
+  "result": {
+    "item": "elementary:emberite_ingot"
+  }
+}

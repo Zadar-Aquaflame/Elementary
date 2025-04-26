@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "elementary:emberite_ingot"
+    },
+    "S": {
+      "item": "elementary:fire_ferrocrystal_stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "S",
+    "S"
+  ],
+  "result": {
+    "item": "elementary:emberite_shovel"
+  },
+  "show_notification": true
+}

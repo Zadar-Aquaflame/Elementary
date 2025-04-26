@@ -7,7 +7,8 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
     EMBERSTONE(4, 850, 3f, 4f, 18, () -> Ingredient.ofItems(ModItems.EMBERSTONE_INGOT)),
-    HYDROSTONE(4, 780, 4f, 6f, 19, () -> Ingredient.ofItems(ModItems.HYDROSTONE_INGOT));
+    HYDROSTONE(4, 780, 4f, 6f, 19, () -> Ingredient.ofItems(ModItems.HYDROSTONE_INGOT)),
+    EMBERITE(5, 1450, 5f, 6f, 20, () -> Ingredient.ofItems(ModItems.EMBERITE_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

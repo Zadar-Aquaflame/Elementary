@@ -7,6 +7,14 @@
     "elementary:hydrostone_helmet",
     "elementary:hydrostone_chestplate",
     "elementary:hydrostone_leggings",
-    "elementary:hydrostone_boots"
+    "elementary:hydrostone_boots",
+    "elementary:emberite_helmet",
+    "elementary:emberite_chestplate",
+    "elementary:emberite_leggings",
+    "elementary:emberite_boots",
+    "elementary:aqualite_helmet",
+    "elementary:aqualite_chestplate",
+    "elementary:aqualite_leggings",
+    "elementary:aqualite_boots"
   ]
 }

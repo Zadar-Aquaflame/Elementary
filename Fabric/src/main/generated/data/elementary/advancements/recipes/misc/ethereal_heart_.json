@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fire_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementary:fire_crystal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_mystic_ash": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementary:mystic_ash"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:ethereal_heart_"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_fire_crystal",
+      "has_mystic_ash",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:ethereal_heart_"
+    ]
+  },
+  "sends_telemetry_event": false
+}

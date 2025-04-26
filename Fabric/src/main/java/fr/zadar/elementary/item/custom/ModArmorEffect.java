@@ -19,7 +19,9 @@ public class ModArmorEffect extends ArmorItem {
                     .put(ModArmorMaterials.EMBERSTONE, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,
                             20, 1, false, false, true))
                     .put(ModArmorMaterials.HYDROSTONE, new StatusEffectInstance(StatusEffects.REGENERATION,
-                            20, 0, false, false, true)).build();
+                            20, 0, false, false, true))
+                    .put(ModArmorMaterials.EMBERITE, new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,
+                            60, 2, false, false, true)).build();
 
     public ModArmorEffect(ArmorMaterial material, Type type, Settings settings) {
         super(material, type, settings);

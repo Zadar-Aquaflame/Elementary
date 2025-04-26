@@ -11,14 +11,12 @@ import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.ItemLike;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
 
 public class CraftingRecipes {
-
     public static void register(Consumer<FinishedRecipe> consumer) {
         recipesBlocks(consumer);
         recipesItems(consumer);
@@ -64,6 +62,34 @@ public class CraftingRecipes {
                 .requires(ModBlocks.RAW_HYDROSTONE_BLOCK.get())
                 .unlockedBy("has_raw_emberstone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_HYDROSTONE.get()))
                 .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "raw_hydrostone_from_raw_hydrostone_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ETHEREAL_HEART.get())
+                .requires(ModItems.FIRE_CRYSTAL.get())
+                .requires(ModItems.MYSTIC_ASH.get())
+                .unlockedBy("has_fire_crystal", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.FIRE_CRYSTAL.get()))
+                .unlockedBy("has_mystic_ash", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MYSTIC_ASH.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "ethereal_heart"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_FERROCRYSTAL_STICK.get(), 4)
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModItems.FIRE_FERROCRYSTAL_INGOT.get())
+                .unlockedBy("has_fire_ferrocrystal_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.FIRE_FERROCRYSTAL_INGOT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "fire_ferrocrystal_stick"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ETHEREAL_HEART.get())
+                .requires(ModItems.WATER_CRYSTAL.get())
+                .requires(ModItems.TEAR_DROP.get())
+                .unlockedBy("has_water_crystal", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.WATER_CRYSTAL.get()))
+                .unlockedBy("has_tear_drop", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.TEAR_DROP.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "ethereal_heart_1"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WATER_FERROCRYSTAL_STICK.get(), 4)
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModItems.WATER_FERROCRYSTAL_INGOT.get())
+                .unlockedBy("has_water_ferrocrystal_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.WATER_FERROCRYSTAL_INGOT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "water_ferrocrystal_stick"));
     }
 
     private static void recipesTools(Consumer<FinishedRecipe> consumer) {
@@ -78,6 +104,18 @@ public class CraftingRecipes {
         recipeAxe(consumer, ModItems.HYDROSTONE_INGOT.get(), Items.STICK, ModItems.HYDROSTONE_AXE.get());
         recipeShovel(consumer, ModItems.HYDROSTONE_INGOT.get(), Items.STICK, ModItems.HYDROSTONE_SHOVEL.get());
         recipeHoe(consumer, ModItems.HYDROSTONE_INGOT.get(), Items.STICK, ModItems.HYDROSTONE_HOE.get());
+
+        recipeSword(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_SWORD.get());
+        recipePickaxe(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_PICKAXE.get());
+        recipeAxe(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_AXE.get());
+        recipeShovel(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_SHOVEL.get());
+        recipeHoe(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_HOE.get());
+
+        recipeSword(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_SWORD.get());
+        recipePickaxe(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_PICKAXE.get());
+        recipeAxe(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_AXE.get());
+        recipeShovel(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_SHOVEL.get());
+        recipeHoe(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_HOE.get());
     }
 
     private static void recipesArmor(Consumer<FinishedRecipe> consumer) {
@@ -90,6 +128,16 @@ public class CraftingRecipes {
         recipeChestplate(consumer, ModItems.HYDROSTONE_INGOT.get(), ModItems.HYDROSTONE_CHESTPLATE.get());
         recipeLeggings(consumer, ModItems.HYDROSTONE_INGOT.get(), ModItems.HYDROSTONE_LEGGINGS.get());
         recipeBoots(consumer, ModItems.HYDROSTONE_INGOT.get(), ModItems.HYDROSTONE_BOOTS.get());
+
+        recipeHelmet(consumer, ModItems.EMBERSTONE_INGOT.get(), ModItems.EMBERITE_HELMET.get());
+        recipeChestplate(consumer, ModItems.EMBERSTONE_INGOT.get(), ModItems.EMBERITE_CHESTPLATE.get());
+        recipeLeggings(consumer, ModItems.EMBERSTONE_INGOT.get(), ModItems.EMBERITE_LEGGINGS.get());
+        recipeBoots(consumer, ModItems.EMBERSTONE_INGOT.get(), ModItems.EMBERITE_BOOTS.get());
+
+        recipeHelmet(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.AQUALITE_HELMET.get());
+        recipeChestplate(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.AQUALITE_CHESTPLATE.get());
+        recipeLeggings(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.AQUALITE_LEGGINGS.get());
+        recipeBoots(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.AQUALITE_BOOTS.get());
     }
 
     private static void recipeSword(@NotNull final Consumer<FinishedRecipe> consumer, final Item material1, final Item material2, final ItemLike result) {

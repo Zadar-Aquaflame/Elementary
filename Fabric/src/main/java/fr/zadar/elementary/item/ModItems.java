@@ -63,6 +63,30 @@ public class ModItems {
     public static final Item HEAT_ESSENCE = registerItem("heat_essence", new Item(new Item.Settings()));
     public static final Item ETHEREAL_HEART = registerItem("ethereal_heart", new Item(new Item.Settings()));
 
+    public static final Item EMBERITE_INGOT = registerItem("emberite_ingot", new Item(new Item.Settings().fireproof()));
+    public static final Item FIRE_FERROCRYSTAL_INGOT = registerItem("fire_ferrocrystal_ingot", new Item(new Item.Settings()));
+    public static final Item FIRE_FERROCRYSTAL_STICK = registerItem("fire_ferrocrystal_stick", new Item(new Item.Settings()));
+
+    public static final Item EMBERITE_SWORD = registerItem("emberite_sword",
+            new SwordItem(ModToolMaterial.EMBERITE, 5, -2.4f, new Item.Settings().fireproof()));
+    public static final Item EMBERITE_PICKAXE = registerItem("emberite_pickaxe",
+            new PickaxeItem(ModToolMaterial.EMBERITE, 2, -2.4f, new Item.Settings().fireproof()));
+    public static final Item EMBERITE_AXE = registerItem("emberite_axe",
+            new AxeItem(ModToolMaterial.EMBERITE, 7, -2.4f, new Item.Settings().fireproof()));
+    public static final Item EMBERITE_SHOVEL = registerItem("emberite_shovel",
+            new ShovelItem(ModToolMaterial.EMBERITE, 2.5f, -2.4f, new Item.Settings().fireproof()));
+    public static final Item EMBERITE_HOE = registerItem("emberite_hoe",
+            new HoeItem(ModToolMaterial.EMBERITE, -6, -2.4f, new Item.Settings().fireproof()));
+
+    public static final Item EMBERITE_HELMET = registerItem("emberite_helmet",
+            new ModArmorEffect(ModArmorMaterials.EMBERITE, ArmorItem.Type.HELMET, new Item.Settings().fireproof()));
+    public static final Item EMBERITE_CHESTPLATE = registerItem("emberite_chestplate",
+            new ModArmorEffect(ModArmorMaterials.EMBERITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()));
+    public static final Item EMBERITE_LEGGINGS = registerItem("emberite_leggings",
+            new ModArmorEffect(ModArmorMaterials.EMBERITE, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
+    public static final Item EMBERITE_BOOTS = registerItem("emberite_boots",
+            new ModArmorEffect(ModArmorMaterials.EMBERITE, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()));
+
     private static Item registerItem(String id, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ElementaryFabric.MOD_ID, id), item);
     }

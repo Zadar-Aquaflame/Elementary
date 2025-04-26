@@ -5,6 +5,7 @@ import fr.zadar.elementary.block.ModBlocks;
 import fr.zadar.elementary.block.entity.ModBlockEntities;
 import fr.zadar.elementary.entity.ModEntities;
 import fr.zadar.elementary.entity.client.FlameSpiritRenderer;
+import fr.zadar.elementary.entity.client.GuardianOfTheWavesRenderer;
 import fr.zadar.elementary.item.ModItems;
 import fr.zadar.elementary.recipe.ModRecipes;
 import fr.zadar.elementary.screen.ElementsImprovementScreen;
@@ -54,6 +55,7 @@ public class ElementaryForge {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.FLAME_SPIRIT.get(), FlameSpiritRenderer::new);
+            EntityRenderers.register(ModEntities.GUARDIAN_OF_THE_WAVES.get(), GuardianOfTheWavesRenderer::new);
 
             MenuScreens.register(ModMenuTypes.ELEMENTS_IMPROVEMENT_MENU.get(), ElementsImprovementScreen::new);
         }

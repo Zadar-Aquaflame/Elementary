@@ -28,5 +28,9 @@ public class EntityLoot extends EntityLootSubProvider {
                 .add(LootItem.lootTableItem(ModItems.FIRE_CRYSTAL.get())
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(0, 1)))
                         .when(LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(0.2f, 0.2f)))));
+        add(ModEntities.GUARDIAN_OF_THE_WAVES.get(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                .add(LootItem.lootTableItem(ModItems.TEAR_DROP.get())
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(0, 1)))
+                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0, 1))))));
     }
 }

@@ -12,6 +12,10 @@ import java.util.Collections;
 import java.util.List;
 
 public class ElementsImprovementDisplay extends BasicDisplay {
+    public ElementsImprovementDisplay(List<EntryIngredient> inputs, List<EntryIngredient> outputs) {
+        super(inputs, outputs);
+    }
+
     public ElementsImprovementDisplay(ElementsImprovementRecipe recipe) {
         super(getInputList(recipe), List.of(EntryIngredient.of(EntryStacks.of(recipe.getOutput(null)))));
     }
@@ -30,5 +34,4 @@ public class ElementsImprovementDisplay extends BasicDisplay {
     public CategoryIdentifier<?> getCategoryIdentifier() {
         return ElementsImprovementCategory.ELEMENTS_IMPROVEMENT;
     }
-
 }

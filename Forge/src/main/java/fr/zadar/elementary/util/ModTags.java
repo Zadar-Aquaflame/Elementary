@@ -12,6 +12,8 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_EMBERSTONE_TOOL = tag("needs_emberstone_tool");
         public static final TagKey<Block> NEEDS_HYDROSTONE_TOOL = tag("needs_hydrostone_tool");
+        public static final TagKey<Block> NEEDS_EMBERITE_TOOL = tag("needs_emberite_tool");
+        public static final TagKey<Block> NEEDS_AQUALITE_TOOL = tag("needs_aqualite_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(ElementaryForge.MOD_ID, name));
@@ -19,8 +21,6 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> IS_EMBERSTONE_TOOL = tag("is_emberstone_tool");
-        public static final TagKey<Item> IS_EMBERSTONE_ARMOR = tag("is_emberstone_armor");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(ElementaryForge.MOD_ID, name));

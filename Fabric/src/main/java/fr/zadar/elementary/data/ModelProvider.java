@@ -34,8 +34,8 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
 
         blockStateModelGenerator.registerSimpleState(ModBlocks.ELEMENTS_IMPROVEMENT);
-        blockStateModelGenerator.registerSimpleState(ModBlocks.FIRE_CRYSTAL_ORE);
-        blockStateModelGenerator.registerSimpleState(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FIRE_CRYSTAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
     }
 
     @Override
@@ -68,13 +68,27 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_BOOTS);
 
+        itemModelGenerator.register(ModItems.FLAME_SPIRIT_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+
         itemModelGenerator.register(ModItems.FIRE_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.MYSTIC_ASH, Models.GENERATED);
         itemModelGenerator.register(ModItems.HEAT_ESSENCE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ETHEREAL_HEART, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.FLAME_SPIRIT_SPAWN_EGG,
-                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.EMBERITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FIRE_FERROCRYSTAL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FIRE_FERROCRYSTAL_STICK, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.EMBERITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.EMBERITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.EMBERITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.EMBERITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.EMBERITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.EMBERITE_HELMET);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMBERITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMBERITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMBERITE_BOOTS));
     }
 }

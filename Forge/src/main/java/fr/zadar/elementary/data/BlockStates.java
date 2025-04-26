@@ -33,6 +33,8 @@ public class BlockStates extends BlockStateProvider {
 
         blockWithItem(ModBlocks.FIRE_CRYSTAL_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
+        blockWithItem(ModBlocks.WATER_CRYSTAL_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

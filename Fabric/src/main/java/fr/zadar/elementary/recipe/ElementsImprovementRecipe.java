@@ -22,10 +22,12 @@ import java.util.List;
 public class ElementsImprovementRecipe implements Recipe<SimpleInventory> {
     private final ItemStack result;
     private final List<Ingredient> recipeItems;
+    private final Identifier id;
 
-    public ElementsImprovementRecipe(List<Ingredient> ingredients, ItemStack result) {
+    public ElementsImprovementRecipe(List<Ingredient> ingredients, ItemStack result, Identifier id) {
         this.result = result;
         this.recipeItems = ingredients;
+        this.id = id;
     }
 
     @Override
@@ -61,7 +63,8 @@ public class ElementsImprovementRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public Identifier getId() {
-        return new Identifier(ElementaryFabric.MOD_ID, Type.ID);
+        return id;
+        //return new Identifier(ElementaryFabric.MOD_ID, Type.ID);
     }
 
     @Override
@@ -108,7 +111,7 @@ public class ElementsImprovementRecipe implements Recipe<SimpleInventory> {
                 final JsonObject jsonResult = JsonHelper.getObject(json, "result");
                 final ItemStack result = new ItemStack(JsonHelper.getItem(jsonResult, "item"), JsonHelper.getInt(jsonResult, "count", 1));
 
-                return new ElementsImprovementRecipe(inputItems, result);
+                return new ElementsImprovementRecipe(inputItems, result, id);
             }
         }
 
@@ -120,7 +123,7 @@ public class ElementsImprovementRecipe implements Recipe<SimpleInventory> {
 
             ItemStack result = buf.readItemStack();
 
-            return new ElementsImprovementRecipe(ingredientList, result);
+            return new ElementsImprovementRecipe(ingredientList, result, id);
         }
 
         @Override

@@ -23,6 +23,15 @@ public class AddCreativeTabs {
             event.accept(ModItems.MYSTIC_ASH);
             event.accept(ModItems.HEAT_ESSENCE);
             event.accept(ModItems.ETHEREAL_HEART);
+            event.accept(ModItems.TEAR_DROP);
+            event.accept(ModItems.WATER_CRYSTAL);
+            event.accept(ModItems.WAVE_ESSENCE);
+            event.accept(ModItems.EMBERITE_INGOT);
+            event.accept(ModItems.FIRE_FERROCRYSTAL_INGOT);
+            event.accept(ModItems.FIRE_FERROCRYSTAL_STICK);
+            event.accept(ModItems.AQUALITE_INGOT);
+            event.accept(ModItems.WATER_FERROCRYSTAL_INGOT);
+            event.accept(ModItems.WATER_FERROCRYSTAL_STICK);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -42,6 +51,8 @@ public class AddCreativeTabs {
 
             event.accept(ModBlocks.FIRE_CRYSTAL_ORE);
             event.accept(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
+            event.accept(ModBlocks.WATER_CRYSTAL_ORE);
+            event.accept(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -58,6 +69,20 @@ public class AddCreativeTabs {
             event.accept(ModItems.HYDROSTONE_CHESTPLATE);
             event.accept(ModItems.HYDROSTONE_LEGGINGS);
             event.accept(ModItems.HYDROSTONE_BOOTS);
+
+            event.accept(ModItems.EMBERITE_SWORD);
+            event.accept(ModItems.EMBERITE_AXE);
+            event.accept(ModItems.EMBERITE_HELMET);
+            event.accept(ModItems.EMBERITE_CHESTPLATE);
+            event.accept(ModItems.EMBERITE_LEGGINGS);
+            event.accept(ModItems.EMBERITE_BOOTS);
+
+            event.accept(ModItems.AQUALITE_SWORD);
+            event.accept(ModItems.AQUALITE_AXE);
+            event.accept(ModItems.AQUALITE_HELMET);
+            event.accept(ModItems.AQUALITE_CHESTPLATE);
+            event.accept(ModItems.AQUALITE_LEGGINGS);
+            event.accept(ModItems.AQUALITE_BOOTS);
         }
 
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
@@ -70,6 +95,16 @@ public class AddCreativeTabs {
             event.accept(ModItems.HYDROSTONE_PICKAXE);
             event.accept(ModItems.HYDROSTONE_AXE);
             event.accept(ModItems.HYDROSTONE_HOE);
+
+            event.accept(ModItems.EMBERITE_SHOVEL);
+            event.accept(ModItems.EMBERITE_PICKAXE);
+            event.accept(ModItems.EMBERITE_AXE);
+            event.accept(ModItems.EMBERITE_HOE);
+
+            event.accept(ModItems.AQUALITE_SHOVEL);
+            event.accept(ModItems.AQUALITE_PICKAXE);
+            event.accept(ModItems.AQUALITE_AXE);
+            event.accept(ModItems.AQUALITE_HOE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
@@ -78,6 +113,7 @@ public class AddCreativeTabs {
 
         if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
             event.accept(ModItems.FLAME_SPIRIT_SPAWN_EGG);
+            event.accept(ModItems.GUARDIAN_OF_THE_WAVES_SPAWN_EGG);
         }
     }
 }

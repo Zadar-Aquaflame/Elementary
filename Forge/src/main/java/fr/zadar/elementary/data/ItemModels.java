@@ -19,7 +19,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.LinkedHashMap;
 
 public class ItemModels extends ItemModelProvider {
-    private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
+    private static final LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
     static {
         trimMaterials.put(TrimMaterials.QUARTZ, 0.1F);
         trimMaterials.put(TrimMaterials.IRON, 0.2F);
@@ -68,12 +68,46 @@ public class ItemModels extends ItemModelProvider {
         trimmedArmorItem(ModItems.HYDROSTONE_LEGGINGS);
         trimmedArmorItem(ModItems.HYDROSTONE_BOOTS);
 
+        simpleItem(ModItems.ETHEREAL_HEART);
         simpleItem(ModItems.FIRE_CRYSTAL);
         simpleItem(ModItems.MYSTIC_ASH);
         simpleItem(ModItems.HEAT_ESSENCE);
-        simpleItem(ModItems.ETHEREAL_HEART);
+        simpleItem(ModItems.TEAR_DROP);
+        simpleItem(ModItems.WATER_CRYSTAL);
+        simpleItem(ModItems.WAVE_ESSENCE);
+
+        simpleItem(ModItems.EMBERITE_INGOT);
+        simpleItem(ModItems.FIRE_FERROCRYSTAL_INGOT);
+        simpleItem(ModItems.FIRE_FERROCRYSTAL_STICK);
+
+        handheldItem(ModItems.EMBERITE_SWORD);
+        handheldItem(ModItems.EMBERITE_PICKAXE);
+        handheldItem(ModItems.EMBERITE_AXE);
+        handheldItem(ModItems.EMBERITE_SHOVEL);
+        handheldItem(ModItems.EMBERITE_HOE);
+
+        trimmedArmorItem(ModItems.EMBERITE_HELMET);
+        trimmedArmorItem(ModItems.EMBERITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.EMBERITE_LEGGINGS);
+        trimmedArmorItem(ModItems.EMBERITE_BOOTS);
+
+        simpleItem(ModItems.AQUALITE_INGOT);
+        simpleItem(ModItems.WATER_FERROCRYSTAL_INGOT);
+        simpleItem(ModItems.WATER_FERROCRYSTAL_STICK);
+
+        handheldItem(ModItems.AQUALITE_SWORD);
+        handheldItem(ModItems.AQUALITE_PICKAXE);
+        handheldItem(ModItems.AQUALITE_AXE);
+        handheldItem(ModItems.AQUALITE_SHOVEL);
+        handheldItem(ModItems.AQUALITE_HOE);
+
+        trimmedArmorItem(ModItems.AQUALITE_HELMET);
+        trimmedArmorItem(ModItems.AQUALITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.AQUALITE_LEGGINGS);
+        trimmedArmorItem(ModItems.AQUALITE_BOOTS);
 
         withExistingParent(ModItems.FLAME_SPIRIT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.GUARDIAN_OF_THE_WAVES_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

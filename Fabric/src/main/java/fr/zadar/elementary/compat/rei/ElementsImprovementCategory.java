@@ -41,7 +41,7 @@ public class ElementsImprovementCategory implements DisplayCategory<BasicDisplay
 
     @Override
     public List<Widget> setupDisplay(BasicDisplay display, Rectangle bounds) {
-        Point startPoint = new Point(bounds.getCenterX() - 50, bounds.getCenterY() - 20);
+        Point startPoint = new Point(bounds.getCenterX() - 50, bounds.getCenterY() - 33);
         List<Widget> widgets = new ArrayList<>();
         widgets.add(Widgets.createTexturedWidget(TEXTURE, new Rectangle(startPoint.x, startPoint.y, 97, 67)));
 
@@ -50,7 +50,7 @@ public class ElementsImprovementCategory implements DisplayCategory<BasicDisplay
         widgets.add(Widgets.createSlot(new Point(startPoint.x + 9, startPoint.y + 44))
                 .markInput().entries(display.getInputEntries().get(1)));
 
-        widgets.add(Widgets.createSlot(new Point(startPoint.x + 67, startPoint.y + 24))
+        widgets.add(Widgets.createSlot(new Point(startPoint.x + 69, startPoint.y + 26))
                 .entries(display.getOutputEntries().get(0)).disableBackground());
 
         return widgets;

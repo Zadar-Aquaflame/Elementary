@@ -2,12 +2,12 @@ package fr.zadar.elementary.data;
 
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.item.ModItems;
-import fr.zadar.elementary.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -18,30 +18,26 @@ public class ItemTags extends ItemTagsProvider {
     }
 
     @Override
-    protected void addTags(HolderLookup.Provider provider) {
+    protected void addTags(HolderLookup.@NotNull Provider provider) {
         this.tag(net.minecraft.tags.ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.EMBERSTONE_HELMET.get(),
                         ModItems.EMBERSTONE_CHESTPLATE.get(),
                         ModItems.EMBERSTONE_LEGGINGS.get(),
                         ModItems.EMBERSTONE_BOOTS.get(),
+
                         ModItems.HYDROSTONE_HELMET.get(),
                         ModItems.HYDROSTONE_CHESTPLATE.get(),
                         ModItems.HYDROSTONE_LEGGINGS.get(),
-                        ModItems.HYDROSTONE_BOOTS.get());
+                        ModItems.HYDROSTONE_BOOTS.get(),
 
-        this.tag(ModTags.Items.IS_EMBERSTONE_TOOL)
-                .add(ModItems.EMBERSTONE_SWORD.get(),
-                        ModItems.EMBERSTONE_PICKAXE.get(),
-                        ModItems.EMBERSTONE_AXE.get(),
-                        ModItems.EMBERSTONE_SHOVEL.get(),
-                        ModItems.EMBERSTONE_HOE.get());
+                        ModItems.EMBERITE_HELMET.get(),
+                        ModItems.EMBERITE_CHESTPLATE.get(),
+                        ModItems.EMBERITE_LEGGINGS.get(),
+                        ModItems.EMBERITE_BOOTS.get(),
 
-        this.tag(ModTags.Items.IS_EMBERSTONE_ARMOR)
-                .add(ModItems.EMBERSTONE_HELMET.get(),
-                        ModItems.EMBERSTONE_CHESTPLATE.get(),
-                        ModItems.EMBERSTONE_LEGGINGS.get(),
-                        ModItems.EMBERSTONE_BOOTS.get());
+                        ModItems.AQUALITE_HELMET.get(),
+                        ModItems.AQUALITE_CHESTPLATE.get(),
+                        ModItems.AQUALITE_LEGGINGS.get(),
+                        ModItems.AQUALITE_BOOTS.get());
     }
-
-
 }

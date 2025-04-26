@@ -1,0 +1,14 @@
+{
+  "type": "elementary:elements_improvement",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "elementary:heat_essence"
+    }
+  ],
+  "result": {
+    "item": "elementary:fire_ferrocrystal_ingot"
+  }
+}

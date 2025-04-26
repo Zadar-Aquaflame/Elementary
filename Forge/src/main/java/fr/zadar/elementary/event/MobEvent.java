@@ -2,8 +2,11 @@ package fr.zadar.elementary.event;
 
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.entity.ModEntities;
+import fr.zadar.elementary.entity.client.GuardianOfTheWavesModel;
 import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
+import fr.zadar.elementary.entity.custom.GuardianOfTheWavesEntity;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -16,11 +19,14 @@ public class MobEvent {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.FLAME_SPIRIT.get(), FlameSpiritEntity.createAttributes().build());
+        event.put(ModEntities.GUARDIAN_OF_THE_WAVES.get(), GuardianOfTheWavesEntity.createAttributes().build());
     }
 
     @SubscribeEvent
     public static void registerSpawnPlacement(SpawnPlacementRegisterEvent event) {
         event.register(ModEntities.FLAME_SPIRIT.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(ModEntities.GUARDIAN_OF_THE_WAVES.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Animal::checkAnimalSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
     }
 }

@@ -13,7 +13,11 @@ public enum ModArmorMaterial implements ArmorMaterial {
     EMBERSTONE("emberstone", 26, new int[]{4, 7, 6, 4}, 18,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0f, () -> Ingredient.of(ModItems.EMBERSTONE_INGOT.get())),
     HYDROSTONE("hydrostone", 27, new int[]{5, 7, 6, 5}, 19,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0.2f, () -> Ingredient.of(ModItems.HYDROSTONE_INGOT.get()));
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0.2f, () -> Ingredient.of(ModItems.HYDROSTONE_INGOT.get())),
+    EMBERITE("emberite", 28, new int[]{5, 8, 7, 5}, 20,
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 1.5f, 0.3f, () -> Ingredient.of(ModItems.EMBERITE_INGOT.get())),
+    AQUALITE("aqualite", 28, new int[]{5, 8, 8, 6}, 20,
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 1.8f, 0.4f, () -> Ingredient.of(ModItems.AQUALITE_INGOT.get()));
 
 
 
