@@ -1,6 +1,6 @@
 # Elementary
 
-<img src = "https://imgur.com/a/uzxGnEj" alt="">
+<img src = "https://imgur.com/LViaQAo" height="50">
 
 ### Description
 
