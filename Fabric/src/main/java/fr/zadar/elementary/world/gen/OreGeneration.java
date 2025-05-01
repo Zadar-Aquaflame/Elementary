@@ -16,5 +16,7 @@ public class OreGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES, PlacedFeatures.HYDROSTONE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
             GenerationStep.Feature.UNDERGROUND_ORES, PlacedFeatures.FIRE_CRYSTAL_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_OCEAN),
+                GenerationStep.Feature.UNDERGROUND_ORES, PlacedFeatures.WATER_CRYSTAL_ORE_PLACED_KEY);
     }
 }

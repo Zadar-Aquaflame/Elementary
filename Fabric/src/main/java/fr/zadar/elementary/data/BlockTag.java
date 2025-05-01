@@ -21,12 +21,16 @@ public class BlockTag extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EMBERSTONE_ORE)
                 .add(ModBlocks.DEEPSLATE_EMBERSTONE_ORE)
                 .add(ModBlocks.NETHER_EMBERSTONE_ORE)
+
                 .add(ModBlocks.HYDROSTONE_BLOCK)
                 .add(ModBlocks.RAW_HYDROSTONE_BLOCK)
                 .add(ModBlocks.HYDROSTONE_ORE)
                 .add(ModBlocks.DEEPSLATE_HYDROSTONE_ORE)
+
                 .add(ModBlocks.FIRE_CRYSTAL_ORE)
-                .add(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
+                .add(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE)
+                .add(ModBlocks.WATER_CRYSTAL_ORE)
+                .add(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.EMBERSTONE_BLOCK)
@@ -34,11 +38,15 @@ public class BlockTag extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EMBERSTONE_ORE)
                 .add(ModBlocks.DEEPSLATE_EMBERSTONE_ORE)
                 .add(ModBlocks.NETHER_EMBERSTONE_ORE)
+
                 .add(ModBlocks.HYDROSTONE_BLOCK)
                 .add(ModBlocks.RAW_HYDROSTONE_BLOCK)
                 .add(ModBlocks.HYDROSTONE_ORE)
                 .add(ModBlocks.DEEPSLATE_HYDROSTONE_ORE)
+
                 .add(ModBlocks.FIRE_CRYSTAL_ORE)
-                .add(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
+                .add(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE)
+                .add(ModBlocks.WATER_CRYSTAL_ORE)
+                .add(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE);
     }
 }

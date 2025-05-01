@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "elementary:water_ferrocrystal_stick"
+    },
+    "S": {
+      "item": "elementary:aqualite_ingot"
+    }
+  },
+  "pattern": [
+    "SS",
+    "#S",
+    "# "
+  ],
+  "result": {
+    "item": "elementary:aqualite_axe"
+  },
+  "show_notification": true
+}

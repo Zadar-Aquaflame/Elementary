@@ -17,5 +17,9 @@ public class BlastingRecipes {
                 RecipeCategory.MISC, ModItems.EMBERSTONE_INGOT, 0.25f, 100, "emberstone_ingot");
         offerBlasting(consumer, List.of(ModItems.RAW_HYDROSTONE, ModBlocks.HYDROSTONE_ORE, ModBlocks.DEEPSLATE_HYDROSTONE_ORE),
                 RecipeCategory.MISC, ModItems.HYDROSTONE_INGOT, 0.3f, 100, "hydrostone_ingot");
+        offerBlasting(consumer, List.of(ModBlocks.FIRE_CRYSTAL_ORE, ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE),
+                RecipeCategory.MISC, ModItems.FIRE_CRYSTAL, 0.3f, 100, "fire_crystal");
+        offerBlasting(consumer, List.of(ModBlocks.WATER_CRYSTAL_ORE, ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE),
+                RecipeCategory.MISC, ModItems.WATER_CRYSTAL, 0.3f, 100, "water_crystal");
     }
 }

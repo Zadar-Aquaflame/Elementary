@@ -25,10 +25,15 @@ public class AddCreativeTabs {
         entries.add(ModItems.FIRE_CRYSTAL);
         entries.add(ModItems.MYSTIC_ASH);
         entries.add(ModItems.HEAT_ESSENCE);
+        entries.add(ModItems.WATER_CRYSTAL);
+        entries.add(ModItems.TEAR_DROP);
+        entries.add(ModItems.WAVE_ESSENCE);
         entries.add(ModItems.ETHEREAL_HEART);
         entries.add(ModItems.EMBERITE_INGOT);
         entries.add(ModItems.FIRE_FERROCRYSTAL_INGOT);
         entries.add(ModItems.FIRE_FERROCRYSTAL_STICK);
+        entries.add(ModItems.WATER_FERROCRYSTAL_INGOT);
+        entries.add(ModItems.WATER_FERROCRYSTAL_STICK);
     }
 
     private static void combatTab(FabricItemGroupEntries entries) {
@@ -52,6 +57,13 @@ public class AddCreativeTabs {
         entries.add(ModItems.EMBERITE_CHESTPLATE);
         entries.add(ModItems.EMBERITE_LEGGINGS);
         entries.add(ModItems.EMBERITE_BOOTS);
+
+        entries.add(ModItems.AQUALITE_SWORD);
+        entries.add(ModItems.AQUALITE_AXE);
+        entries.add(ModItems.AQUALITE_HELMET);
+        entries.add(ModItems.AQUALITE_CHESTPLATE);
+        entries.add(ModItems.AQUALITE_LEGGINGS);
+        entries.add(ModItems.AQUALITE_BOOTS);
     }
 
     private static void toolTab(FabricItemGroupEntries entries) {
@@ -69,6 +81,11 @@ public class AddCreativeTabs {
         entries.add(ModItems.EMBERITE_PICKAXE);
         entries.add(ModItems.EMBERITE_AXE);
         entries.add(ModItems.EMBERITE_HOE);
+
+        entries.add(ModItems.AQUALITE_SHOVEL);
+        entries.add(ModItems.AQUALITE_PICKAXE);
+        entries.add(ModItems.AQUALITE_AXE);
+        entries.add(ModItems.AQUALITE_HOE);
     }
 
     private static void buildingBlockTab(FabricItemGroupEntries entries) {
@@ -94,5 +111,6 @@ public class AddCreativeTabs {
 
     private static void spawnEggTab(FabricItemGroupEntries entries) {
         entries.add(ModItems.FLAME_SPIRIT_SPAWN_EGG);
+        entries.add(ModItems.GUARDIAN_OF_THE_WAVES_SPAWN_EGG);
     }
 }

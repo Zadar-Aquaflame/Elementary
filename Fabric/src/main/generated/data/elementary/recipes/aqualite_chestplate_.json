@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "elementary:aqualite_ingot"
+    }
+  },
+  "pattern": [
+    "S S",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "item": "elementary:aqualite_chestplate"
+  },
+  "show_notification": true
+}

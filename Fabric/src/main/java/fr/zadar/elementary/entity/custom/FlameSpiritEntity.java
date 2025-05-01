@@ -16,6 +16,9 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class FlameSpiritEntity extends HostileEntity {
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+
     public FlameSpiritEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -38,9 +41,6 @@ public class FlameSpiritEntity extends HostileEntity {
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4);
     }
-
-    public final AnimationState idleAnimationState = new AnimationState();
-    private int idleAnimationTimeout = 0;
 
     private void setupAnimationState() {
         if (this.idleAnimationTimeout <= 0) {

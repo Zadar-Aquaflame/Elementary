@@ -1,6 +1,6 @@
 # Elementary
 
-<img src = "https://imgur.com/LViaQAo" height="50">
+<img src = "https://i.imgur.com/LViaQAo.png" height="100" alt="Elementary logo">
 
 ### Description
 

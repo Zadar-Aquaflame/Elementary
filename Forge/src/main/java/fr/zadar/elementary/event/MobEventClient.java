@@ -1,8 +1,8 @@
 package fr.zadar.elementary.event;
 
 import fr.zadar.elementary.ElementaryForge;
-import fr.zadar.elementary.entity.client.FlameSpiritModel;
-import fr.zadar.elementary.entity.client.GuardianOfTheWavesModel;
+import fr.zadar.elementary.entity.client.model.FlameSpiritModel;
+import fr.zadar.elementary.entity.client.model.GuardianOfTheWavesModel;
 import fr.zadar.elementary.entity.client.ModModelLayers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;

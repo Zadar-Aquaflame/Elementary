@@ -2,7 +2,6 @@ package fr.zadar.elementary.event;
 
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.entity.ModEntities;
-import fr.zadar.elementary.entity.client.GuardianOfTheWavesModel;
 import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
 import fr.zadar.elementary.entity.custom.GuardianOfTheWavesEntity;
 import net.minecraft.world.entity.SpawnPlacements;

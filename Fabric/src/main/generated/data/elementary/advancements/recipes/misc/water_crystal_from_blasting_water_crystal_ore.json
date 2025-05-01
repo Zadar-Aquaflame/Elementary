@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:water_crystal_from_blasting_water_crystal_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_water_crystal_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementary:water_crystal_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_water_crystal_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:water_crystal_from_blasting_water_crystal_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

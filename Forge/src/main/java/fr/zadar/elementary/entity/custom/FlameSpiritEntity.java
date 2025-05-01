@@ -22,6 +22,9 @@ import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
 public class FlameSpiritEntity extends Monster {
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+
     public FlameSpiritEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
     }
@@ -44,11 +47,6 @@ public class FlameSpiritEntity extends Monster {
                 .add(Attributes.FOLLOW_RANGE, 20D)
                 .add(Attributes.ATTACK_DAMAGE, 4);
     }
-
-
-
-    public final AnimationState idleAnimationState = new AnimationState();
-    private int idleAnimationTimeout = 0;
 
     @Override
     public void tick() {

@@ -24,12 +24,16 @@ public class EntityLoot extends SimpleFabricLootTableProvider {
 
     @Override
     public void accept(BiConsumer<Identifier, LootTable.Builder> exporter) {
-        exporter.accept(ModEntities.FLAME_SPIRIT.getLootTableId(), LootTable.builder().pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f))
+        exporter.accept(ModEntities.FLAME_SPIRIT.getLootTableId(), LootTable.builder().pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1))
                 .with(ItemEntry.builder(ModItems.MYSTIC_ASH)
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
                         .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1))))
                 .with(ItemEntry.builder(ModItems.FIRE_CRYSTAL)
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
                         .conditionally(RandomChanceWithLootingLootCondition.builder(0.2f, 0.2f)))));
+        exporter.accept(ModEntities.GUARDIAN_OF_THE_WAVES.getLootTableId(), LootTable.builder().pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1))
+                .with(ItemEntry.builder(ModItems.TEAR_DROP)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
+                        .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1))))));
     }
 }

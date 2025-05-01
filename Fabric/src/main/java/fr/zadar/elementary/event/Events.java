@@ -4,5 +4,6 @@ public class Events {
     public static void register() {
         new PutEntityOnFire();
         new AddCreativeTabs();
+        ArmorEffectEvent.onTick();
     }
 }

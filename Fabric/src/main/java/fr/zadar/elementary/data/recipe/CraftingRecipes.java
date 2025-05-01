@@ -69,12 +69,26 @@ public class CraftingRecipes {
                 .criterion(hasItem(ModItems.MYSTIC_ASH), conditionsFromItem(ModItems.MYSTIC_ASH))
                 .offerTo(consumer, new Identifier(getRecipeName(ModItems.ETHEREAL_HEART) + "_"));
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETHEREAL_HEART)
+                .input(ModItems.WATER_CRYSTAL)
+                .input(ModItems.TEAR_DROP)
+                .criterion(hasItem(ModItems.WATER_CRYSTAL), conditionsFromItem(ModItems.WATER_CRYSTAL))
+                .criterion(hasItem(ModItems.TEAR_DROP), conditionsFromItem(ModItems.TEAR_DROP))
+                .offerTo(consumer, new Identifier(getRecipeName(ModItems.ETHEREAL_HEART) + "_1_"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FIRE_FERROCRYSTAL_STICK, 4)
                 .pattern("#")
                 .pattern("#")
                 .input('#', ModItems.FIRE_FERROCRYSTAL_INGOT)
                 .criterion(hasItem(ModItems.FIRE_FERROCRYSTAL_INGOT), conditionsFromItem(ModItems.FIRE_FERROCRYSTAL_INGOT))
                 .offerTo(consumer, new Identifier(getRecipeName(ModItems.FIRE_FERROCRYSTAL_STICK) + "_"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WATER_FERROCRYSTAL_STICK, 4)
+                .pattern("#")
+                .pattern("#")
+                .input('#', ModItems.WATER_FERROCRYSTAL_INGOT)
+                .criterion(hasItem(ModItems.WATER_FERROCRYSTAL_INGOT), conditionsFromItem(ModItems.WATER_FERROCRYSTAL_INGOT))
+                .offerTo(consumer, new Identifier(getRecipeName(ModItems.WATER_FERROCRYSTAL_STICK) + "_"));
     }
 
     private static void recipesTools(Consumer<RecipeJsonProvider> consumer) {
@@ -90,11 +104,17 @@ public class CraftingRecipes {
         recipeShovel(consumer, ModItems.HYDROSTONE_INGOT, Items.STICK, ModItems.HYDROSTONE_SHOVEL);
         recipeHoe(consumer, ModItems.HYDROSTONE_INGOT, Items.STICK, ModItems.HYDROSTONE_HOE);
 
-        recipeSword(consumer, ModItems.EMBERITE_INGOT, Items.STICK, ModItems.EMBERITE_SWORD);
-        recipePickaxe(consumer, ModItems.EMBERITE_INGOT, Items.STICK, ModItems.EMBERITE_PICKAXE);
-        recipeAxe(consumer, ModItems.EMBERITE_INGOT, Items.STICK, ModItems.EMBERITE_AXE);
-        recipeShovel(consumer, ModItems.EMBERITE_INGOT, Items.STICK, ModItems.EMBERITE_SHOVEL);
-        recipeHoe(consumer, ModItems.EMBERITE_INGOT, Items.STICK, ModItems.EMBERITE_HOE);
+        recipeSword(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_SWORD);
+        recipePickaxe(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_PICKAXE);
+        recipeAxe(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_AXE);
+        recipeShovel(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_SHOVEL);
+        recipeHoe(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_HOE);
+
+        recipeSword(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_SWORD);
+        recipePickaxe(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_PICKAXE);
+        recipeAxe(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_AXE);
+        recipeShovel(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_SHOVEL);
+        recipeHoe(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_HOE);
     }
 
     private static void recipesArmor(Consumer<RecipeJsonProvider> consumer) {
@@ -112,6 +132,11 @@ public class CraftingRecipes {
         recipeChestplate(consumer, ModItems.EMBERITE_INGOT, ModItems.EMBERITE_CHESTPLATE);
         recipeLeggings(consumer, ModItems.EMBERITE_INGOT, ModItems.EMBERITE_LEGGINGS);
         recipeBoots(consumer, ModItems.EMBERITE_INGOT, ModItems.EMBERITE_BOOTS);
+
+        recipeHelmet(consumer, ModItems.AQUALITE_INGOT, ModItems.AQUALITE_HELMET);
+        recipeChestplate(consumer, ModItems.AQUALITE_INGOT, ModItems.AQUALITE_CHESTPLATE);
+        recipeLeggings(consumer, ModItems.AQUALITE_INGOT, ModItems.AQUALITE_LEGGINGS);
+        recipeBoots(consumer, ModItems.AQUALITE_INGOT, ModItems.AQUALITE_BOOTS);
     }
 
     private static void recipeSword(Consumer<RecipeJsonProvider> consumer, final ItemConvertible material1, final ItemConvertible material2, final ItemConvertible result) {

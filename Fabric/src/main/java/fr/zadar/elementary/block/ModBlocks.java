@@ -38,6 +38,10 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE), UniformIntProvider.create(1, 4)));
     public static final Block DEEPSLATE_FIRE_CRYSTAL_ORE = registerBlock("deepslate_fire_crystal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE), UniformIntProvider.create(1, 4)));
+    public static final Block WATER_CRYSTAL_ORE = registerBlock("water_crystal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE), UniformIntProvider.create(1, 3)));
+    public static final Block DEEPSLATE_WATER_CRYSTAL_ORE = registerBlock("deepslate_water_crystal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE), UniformIntProvider.create(1, 3)));
 
     private static Block registerBlock(String id, Block block) {
         registerBlockItem(id, block);

@@ -15,7 +15,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
     HYDROSTONE("hydrostone", 27, new int[] {5, 7, 6, 5}, 19,
             SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1f, 0.2f, () -> Ingredient.ofItems(ModItems.HYDROSTONE_INGOT)),
     EMBERITE("emberite", 28, new int[] {5, 8, 7, 5}, 20,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.5f, 0.3f, () -> Ingredient.ofItems(ModItems.EMBERITE_INGOT));
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.5f, 0.3f, () -> Ingredient.ofItems(ModItems.EMBERITE_INGOT)),
+    AQUALITE("aqualite", 28, new int[]{5, 8, 8, 6}, 20,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.8f, 0.4f, () -> Ingredient.ofItems(ModItems.AQUALITE_INGOT));
 
     private final String name;
     private final int durabilityMultiplier;

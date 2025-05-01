@@ -35,16 +35,60 @@
   "item.elementary.hydrostone_shovel": "Hydrostone Shovel",
   "item.elementary.hydrostone_hoe": "Hydrostone Hoe",
 
+  "item.elementary.hydrostone_helmet": "Hydrostone Helmet",
+  "item.elementary.hydrostone_chestplate": "Hydrostone Chestplate",
+  "item.elementary.hydrostone_leggings": "Hydrostone Leggings",
+  "item.elementary.hydrostone_boots": "Hydrostone Boots",
+
   "block.elementary.elements_improvement": "Elements Improvement",
 
-  "block.elementary.fire_crystal_ore": "Fire Crystal Ore",
-  "block.elementary.deepslate_fire_crystal_ore": "Deepslate Fire Crystal Ore",
+  "item.elementary.ethereal_heart": "Ethereal Heart",
 
   "item.elementary.fire_crystal": "Fire Crystal",
   "item.elementary.mystic_ash": "Mystic Ash",
   "item.elementary.heat_essence": "Heat Essence",
-  "item.elementary.ethereal_heart": "Ethereal Heart",
+
+  "item.elementary.water_crystal": "Water Crystal",
+  "item.elementary.tear_drop": "Tear Drop",
+  "item.elementary.wave_essence": "Wave Essence",
+
+  "block.elementary.fire_crystal_ore": "Fire Crystal Ore",
+  "block.elementary.deepslate_fire_crystal_ore": "Deepslate Fire Crystal Ore",
+  "block.elementary.water_crystal_ore": "Water Crystal Ore",
+  "block.elementary.deepslate_water_crystal_ore": "Deepslate Water Crystal Ore",
+
+  "item.elementary.emberite_ingot": "Emberite Ingot",
+  "item.elementary.fire_ferrocrystal_ingot": "Ferrocrystal Ingot",
+  "item.elementary.fire_ferrocrystal_stick": "Ferrocrystal Stick",
+
+  "item.elementary.emberite_sword": "Emberite Sword",
+  "item.elementary.emberite_pickaxe": "Emberite Pickaxe",
+  "item.elementary.emberite_axe": "Emberite Axe",
+  "item.elementary.emberite_shovel": "Emberite Shovel",
+  "item.elementary.emberite_hoe": "Emberite Hoe",
+
+  "item.elementary.emberite_helmet": "Emberite Helmet",
+  "item.elementary.emberite_chestplate": "Emberite Chestplate",
+  "item.elementary.emberite_leggings": "Emberite Leggings",
+  "item.elementary.emberite_boots": "Emberite Boots",
+
+  "item.elementary.aqualite_ingot": "Aqualite Ingot",
+  "item.elementary.water_ferrocrystal_ingot": "Ferrocrystal Ingot",
+  "item.elementary.water_ferrocrystal_stick": "Ferrocrystal Stick",
+
+  "item.elementary.aqualite_sword": "Aqualite Sword",
+  "item.elementary.aqualite_pickaxe": "Aqualite Pickaxe",
+  "item.elementary.aqualite_axe": "Aqualite Axe",
+  "item.elementary.aqualite_shovel": "Aqualite Shovel",
+  "item.elementary.aqualite_hoe": "Aqualite Hoe",
+
+  "item.elementary.aqualite_helmet": "Aqualite Helmet",
+  "item.elementary.aqualite_chestplate": "Aqualite Chestplate",
+  "item.elementary.aqualite_leggings": "Aqualite Leggings",
+  "item.elementary.aqualite_boots": "Aqualite Boots",
 
   "entity.elementary.flame_spirit": "Flame Spirit",
-  "item.elementary.flame_spirit_spawn_egg": "Flame Spirit Spawn Egg"
+  "item.elementary.flame_spirit_spawn_egg": "Flame Spirit Spawn Egg",
+  "entity.elementary.guardian_of_the_waves": "Guardian Of The Waves",
+  "item.elementary.guardian_of_the_waves_spawn_egg": "Guardian Of The Waves Spawn Egg"
 }

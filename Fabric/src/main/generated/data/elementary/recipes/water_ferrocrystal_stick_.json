@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "elementary:water_ferrocrystal_ingot"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "elementary:water_ferrocrystal_stick"
+  },
+  "show_notification": true
+}

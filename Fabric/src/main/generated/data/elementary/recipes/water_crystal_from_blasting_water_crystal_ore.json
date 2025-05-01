@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "water_crystal",
+  "ingredient": {
+    "item": "elementary:water_crystal_ore"
+  },
+  "result": "elementary:water_crystal"
+}

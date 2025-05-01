@@ -4,6 +4,7 @@ import fr.zadar.elementary.block.ModBlocks;
 import fr.zadar.elementary.block.entity.ModBlockEntities;
 import fr.zadar.elementary.entity.ModEntities;
 import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
+import fr.zadar.elementary.entity.custom.GuardianOfTheWavesEntity;
 import fr.zadar.elementary.event.Events;
 import fr.zadar.elementary.item.ModItems;
 import fr.zadar.elementary.recipe.ModRecipes;
@@ -33,5 +34,6 @@ public class ElementaryFabric implements ModInitializer {
 		Events.register();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.FLAME_SPIRIT, FlameSpiritEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.GUARDIAN_OF_THE_WAVES, GuardianOfTheWavesEntity.createAttributes());
 	}
 }

@@ -1,0 +1,14 @@
+{
+  "type": "elementary:elements_improvement",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "elementary:wave_essence"
+    }
+  ],
+  "result": {
+    "item": "elementary:water_ferrocrystal_ingot"
+  }
+}

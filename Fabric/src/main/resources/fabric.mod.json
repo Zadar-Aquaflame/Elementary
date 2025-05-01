@@ -1,18 +1,17 @@
 {
 	"schemaVersion": 1,
 	"id": "elementary",
-	"version": "${version}",
+	"version": "0.0.1",
 	"name": "Elementary",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod add some ores, entities and others things based on the elements. \\\n  The mod still in developpement stage, but you can test it. Thank you to report any bug on GitHub.",
 	"authors": [
 		"Zadar"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Zadar-Aquaflame/Elementary"
 	},
 	"license": "Custom Licence (go to LICENCE file)",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/elementary/textures/logo.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

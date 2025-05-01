@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:water_ferrocrystal_stick_"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_water_ferrocrystal_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementary:water_ferrocrystal_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_water_ferrocrystal_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:water_ferrocrystal_stick_"
+    ]
+  },
+  "sends_telemetry_event": false
+}

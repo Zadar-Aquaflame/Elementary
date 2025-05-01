@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "item": "elementary:fire_ferrocrystal_stick"
     },
     "S": {
       "item": "elementary:emberite_ingot"
