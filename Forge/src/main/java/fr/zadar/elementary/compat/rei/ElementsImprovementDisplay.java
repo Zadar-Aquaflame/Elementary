@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ElementsImprovementDisplay extends BasicDisplay {
     public ElementsImprovementDisplay(ElementsImprovementRecipe recipe) {
-        super(getInputList(recipe), List.of(EntryIngredient.of(EntryStacks.of(recipe.getOutput(null)))));
+        super(getInputList(recipe), List.of(EntryIngredient.of(EntryStacks.of(recipe.getResultItem(null)))));
     }
 
     private static List<EntryIngredient> getInputList(ElementsImprovementRecipe recipe) {

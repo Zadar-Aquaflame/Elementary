@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -56,5 +57,9 @@ public class ElementaryForge {
 
             MenuScreens.register(ModMenuTypes.ELEMENTS_IMPROVEMENT_MENU.get(), ElementsImprovementScreen::new);
         }
+    }
+
+    public static String getVersion() {
+        return ModList.get().getModContainerById(MOD_ID).get().getModInfo().getVersion().toString();
     }
 }

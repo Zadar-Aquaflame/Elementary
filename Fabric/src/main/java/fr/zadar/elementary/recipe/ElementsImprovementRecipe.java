@@ -3,7 +3,6 @@ package fr.zadar.elementary.recipe;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
-import fr.zadar.elementary.ElementaryFabric;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -17,14 +16,12 @@ import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
-import java.util.List;
-
 public class ElementsImprovementRecipe implements Recipe<SimpleInventory> {
     private final ItemStack result;
-    private final List<Ingredient> recipeItems;
+    private final DefaultedList<Ingredient> recipeItems;
     private final Identifier id;
 
-    public ElementsImprovementRecipe(List<Ingredient> ingredients, ItemStack result, Identifier id) {
+    public ElementsImprovementRecipe(DefaultedList<Ingredient> ingredients, ItemStack result, Identifier id) {
         this.result = result;
         this.recipeItems = ingredients;
         this.id = id;
@@ -56,15 +53,12 @@ public class ElementsImprovementRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public DefaultedList<Ingredient> getIngredients() {
-        DefaultedList<Ingredient> list = DefaultedList.ofSize(this.recipeItems.size());
-        list.addAll(recipeItems);
-        return list;
+        return recipeItems;
     }
 
     @Override
     public Identifier getId() {
         return id;
-        //return new Identifier(ElementaryFabric.MOD_ID, Type.ID);
     }
 
     @Override

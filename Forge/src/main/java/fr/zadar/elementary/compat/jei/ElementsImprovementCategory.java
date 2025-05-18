@@ -1,4 +1,4 @@
-package fr.zadar.elementary.compat;
+package fr.zadar.elementary.compat.jei;
 
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.block.ModBlocks;

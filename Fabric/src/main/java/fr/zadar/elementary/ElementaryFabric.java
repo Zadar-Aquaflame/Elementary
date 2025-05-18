@@ -13,6 +13,7 @@ import fr.zadar.elementary.world.gen.WorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.loader.impl.FabricLoaderImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -35,5 +36,9 @@ public class ElementaryFabric implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.FLAME_SPIRIT, FlameSpiritEntity.createAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.GUARDIAN_OF_THE_WAVES, GuardianOfTheWavesEntity.createAttributes());
+	}
+
+	public static String getVersion() {
+		return FabricLoaderImpl.INSTANCE.getModContainer(MOD_ID).get().getMetadata().getVersion().toString();
 	}
 }

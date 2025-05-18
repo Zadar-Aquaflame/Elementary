@@ -1,14 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "elementary",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"name": "Elementary",
 	"description": "This mod add some ores, entities and others things based on the elements. \\\n  The mod still in developpement stage, but you can test it. Thank you to report any bug on GitHub.",
 	"authors": [
 		"Zadar"
 	],
 	"contact": {
-		"sources": "https://github.com/Zadar-Aquaflame/Elementary"
+		"sources": "https://github.com/Zadar-Aquaflame/Elementary",
+		"email": "zadar.aquaflame@gmail.com"
 	},
 	"license": "Custom Licence (go to LICENCE file)",
 	"icon": "assets/elementary/textures/logo.png",

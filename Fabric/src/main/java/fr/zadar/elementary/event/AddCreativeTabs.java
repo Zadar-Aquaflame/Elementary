@@ -30,6 +30,7 @@ public class AddCreativeTabs {
         entries.add(ModItems.WAVE_ESSENCE);
         entries.add(ModItems.ETHEREAL_HEART);
         entries.add(ModItems.EMBERITE_INGOT);
+        entries.add(ModItems.AQUALITE_INGOT);
         entries.add(ModItems.FIRE_FERROCRYSTAL_INGOT);
         entries.add(ModItems.FIRE_FERROCRYSTAL_STICK);
         entries.add(ModItems.WATER_FERROCRYSTAL_INGOT);

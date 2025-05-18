@@ -1,4 +1,4 @@
-package fr.zadar.elementary.compat;
+package fr.zadar.elementary.compat.jei;
 
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.recipe.ElementsImprovementRecipe;
@@ -11,13 +11,14 @@ import mezz.jei.api.registration.IRecipeRegistration;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeManager;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 @JeiPlugin
 public class JEIElementaryPlugin implements IModPlugin {
     @Override
-    public ResourceLocation getPluginUid() {
+    public @NotNull ResourceLocation getPluginUid() {
         return new ResourceLocation(ElementaryForge.MOD_ID, "jei_plugin");
     }
 

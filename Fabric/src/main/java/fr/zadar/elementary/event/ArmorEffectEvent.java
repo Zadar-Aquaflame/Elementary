@@ -11,7 +11,7 @@ import net.minecraft.item.ItemStack;
 
 public class ArmorEffectEvent {
     public static void onTick() {
-        ServerTickEvents.END_WORLD_TICK.register(world -> {
+        ServerTickEvents.END_WORLD_TICK.register((world) -> {
             for (PlayerEntity player : world.getPlayers()) {
                 if (hasFullArmorOn(player)) {
                     addEffects(player);

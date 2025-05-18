@@ -8,7 +8,7 @@ version="${mod_version}"
 displayName="${mod_name}"
 authors="${mod_authors}"
 description='''${mod_description}'''
-logoFile = "logo.png"
+logoFile = "assets/elementary/textures/logo.png"
 
 [[dependencies.modId]]
     modId="forge"

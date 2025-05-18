@@ -5,5 +5,6 @@ public class Events {
         new PutEntityOnFire();
         new AddCreativeTabs();
         ArmorEffectEvent.onTick();
+        UpdateChecker.checkForUpdate();
     }
 }

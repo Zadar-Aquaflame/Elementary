@@ -15,15 +15,19 @@ fabricApi {
 }
 
 repositories {
-	maven { url "https://maven.shedaniel.me" }
+	maven { url = "https://maven.blamejared.com/" } // Maven for JEI
+	maven { url "https://maven.shedaniel.me" } // Maven for REI
 }
 
 dependencies {
+	// Dependencies for Minecraft and Fabric Yarn
 	minecraft "net.minecraft:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	//modImplementation 'net.fabricmc.fabric-api:fabric-lifecycle-events-v1:2.2.35+54b4400ce9'
 
+	// Dependencies for REI
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}"
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}"
 }

@@ -89,5 +89,7 @@
   "entity.elementary.flame_spirit": "Flame Spirit",
   "item.elementary.flame_spirit_spawn_egg": "Flame Spirit Spawn Egg",
   "entity.elementary.guardian_of_the_waves": "Guardian Of The Waves",
-  "item.elementary.guardian_of_the_waves_spawn_egg": "Guardian Of The Waves Spawn Egg"
+  "item.elementary.guardian_of_the_waves_spawn_egg": "Guardian Of The Waves Spawn Egg",
+
+  "message.elementary.new_version": "A new version of the mod Elementary is available"
 }

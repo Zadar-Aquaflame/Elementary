@@ -1,0 +1,95 @@
+{
+  "item.elementary.emberstone_ingot": "Lingot d'Emberstone",
+  "item.elementary.raw_emberstone": "Emberstone Brut",
+
+  "block.elementary.emberstone_block": "Bloc d'Emberstone",
+  "block.elementary.raw_emberstone_block": "Bloc d'Emberstone Brut",
+
+  "block.elementary.emberstone_ore": "Minerai d'Emberstone",
+  "block.elementary.deepslate_emberstone_ore": "Minerai Emberstone des Abîmes",
+  "block.elementary.nether_emberstone_ore": "Minerai d'Emberstone du Nether",
+
+  "item.elementary.emberstone_sword": "Épée en Emberstone",
+  "item.elementary.emberstone_pickaxe": "Pioche en Emberstone",
+  "item.elementary.emberstone_axe": "Hache en Emberstone",
+  "item.elementary.emberstone_shovel": "Pelle en Emberstone",
+  "item.elementary.emberstone_hoe": "Houe en Emberstone",
+
+  "item.elementary.emberstone_helmet": "Casque en Emberstone",
+  "item.elementary.emberstone_chestplate": "Plastron en Emberstone",
+  "item.elementary.emberstone_leggings": "Jambières en Emberstone",
+  "item.elementary.emberstone_boots": "Bottes en Emberstone",
+
+  "item.elementary.hydrostone_ingot": "Lingot d'Hydrostone",
+  "item.elementary.raw_hydrostone": "Hydrostone Brut",
+
+  "block.elementary.hydrostone_block": "Bloc d'Hydrostone",
+  "block.elementary.raw_hydrostone_block": "Block d'Hydrostone Brut",
+  "block.elementary.hydrostone_ore": "Minerai d'Hydrostone",
+  "block.elementary.deepslate_hydrostone_ore": "Minerai d'Hydrostone des abîmes",
+
+  "item.elementary.hydrostone_sword": "Épée en Hydrostone",
+  "item.elementary.hydrostone_pickaxe": "Pioche en Hydrostone",
+  "item.elementary.hydrostone_axe": "Hache en Hydrostone",
+  "item.elementary.hydrostone_shovel": "Pelle en Hydrostone",
+  "item.elementary.hydrostone_hoe": "Houe en Hydrostone",
+
+  "item.elementary.hydrostone_helmet": "Casque en Hydrostone",
+  "item.elementary.hydrostone_chestplate": "Plastron en Hydrostone",
+  "item.elementary.hydrostone_leggings": "Jambières en Hydrostone",
+  "item.elementary.hydrostone_boots": "Bottes en Hydrostone",
+
+  "block.elementary.elements_improvement": "Amélioration des Éléments",
+
+  "item.elementary.ethereal_heart": "Coeur Éthéré",
+
+  "item.elementary.fire_crystal": "Cristal de Feu",
+  "item.elementary.mystic_ash": "Cendre Mystique",
+  "item.elementary.heat_essence": "Essence de Chaleur",
+
+  "item.elementary.water_crystal": "Cristal d'Eau",
+  "item.elementary.tear_drop": "Goutte de larmes",
+  "item.elementary.wave_essence": "Essence de vagues",
+
+  "block.elementary.fire_crystal_ore": "Minerai de Cristal de Feu",
+  "block.elementary.deepslate_fire_crystal_ore": "Minerai de Cristal de Feu des Abîmes",
+  "block.elementary.water_crystal_ore": "Minerai de Cristal d'Eau",
+  "block.elementary.deepslate_water_crystal_ore": "Minerai de Cristal d'Eau des Abîmes",
+
+  "item.elementary.emberite_ingot": "Lingot d'Emberite",
+  "item.elementary.fire_ferrocrystal_ingot": "Lingot de Ferrocristal",
+  "item.elementary.fire_ferrocrystal_stick": "Bâton de Ferrocristal",
+
+  "item.elementary.emberite_sword": "Épée en Emberite",
+  "item.elementary.emberite_pickaxe": "Pioche en Emberite",
+  "item.elementary.emberite_axe": "Hache en Emberite",
+  "item.elementary.emberite_shovel": "Pelle en Emberite",
+  "item.elementary.emberite_hoe": "Houe en Emberite",
+
+  "item.elementary.emberite_helmet": "Casque en Emberite",
+  "item.elementary.emberite_chestplate": "Plastron en Emberite",
+  "item.elementary.emberite_leggings": "Jambières en Emberite",
+  "item.elementary.emberite_boots": "Bottes en Emberite",
+
+  "item.elementary.aqualite_ingot": "Lingot en Aqualite",
+  "item.elementary.water_ferrocrystal_ingot": "Lingot de Ferrocristal",
+  "item.elementary.water_ferrocrystal_stick": "Bâton de Ferrocristal",
+
+  "item.elementary.aqualite_sword": "Épée en Aqualite",
+  "item.elementary.aqualite_pickaxe": "Pioche en Aqualite",
+  "item.elementary.aqualite_axe": "Hache en Aqualite",
+  "item.elementary.aqualite_shovel": "Pelle en Aqualite",
+  "item.elementary.aqualite_hoe": "Houe en Aqualite",
+
+  "item.elementary.aqualite_helmet": "Casque en Aqualite",
+  "item.elementary.aqualite_chestplate": "Plastron en Aqualite",
+  "item.elementary.aqualite_leggings": "Jambières en Aqualite",
+  "item.elementary.aqualite_boots": "Bottes en Aqualite",
+
+  "entity.elementary.flame_spirit": "Esprit de Flamme",
+  "item.elementary.flame_spirit_spawn_egg": "Oeuf d'apparition d'Esprit de Flamme",
+  "entity.elementary.guardian_of_the_waves": "Gardien des Flots",
+  "item.elementary.guardian_of_the_waves_spawn_egg": "Oeuf d'apparition du Gardien des Flots",
+
+  "message.elementary.new_version": "Une nouvelle version du mod Elementary est disponible"
+}
