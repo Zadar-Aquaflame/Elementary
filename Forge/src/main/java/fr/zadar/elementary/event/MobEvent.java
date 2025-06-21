@@ -2,6 +2,7 @@ package fr.zadar.elementary.event;
 
 import fr.zadar.elementary.ElementaryForge;
 import fr.zadar.elementary.entity.ModEntities;
+import fr.zadar.elementary.entity.custom.AerorupturaEntity;
 import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
 import fr.zadar.elementary.entity.custom.GuardianOfTheWavesEntity;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -19,6 +20,7 @@ public class MobEvent {
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.FLAME_SPIRIT.get(), FlameSpiritEntity.createAttributes().build());
         event.put(ModEntities.GUARDIAN_OF_THE_WAVES.get(), GuardianOfTheWavesEntity.createAttributes().build());
+        event.put(ModEntities.AERORUPTURA.get(), AerorupturaEntity.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -27,5 +29,7 @@ public class MobEvent {
                 Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
         event.register(ModEntities.GUARDIAN_OF_THE_WAVES.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Animal::checkAnimalSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(ModEntities.AERORUPTURA.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Monster::checkMonsterSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
     }
 }

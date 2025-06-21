@@ -42,6 +42,14 @@ public class BlockLoot extends BlockLootSubProvider {
         this.add(ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get(),
                 block -> oreDrops(ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get(), ModItems.RAW_HYDROSTONE.get()));
 
+        this.dropSelf(ModBlocks.AERITHIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.RAW_AERITHIUM_BLOCK.get());
+
+        this.add(ModBlocks.AERITHIUM_ORE.get(),
+                block -> oreDrops(ModBlocks.AERITHIUM_ORE.get(), ModItems.RAW_AERITHIUM.get()));
+        this.add(ModBlocks.DEEPSLATE_AERITHIUM_ORE.get(),
+                block -> oreDrops(ModBlocks.DEEPSLATE_AERITHIUM_ORE.get(), ModItems.RAW_AERITHIUM.get()));
+
         this.dropSelf(ModBlocks.ELEMENTS_IMPROVEMENT.get());
 
         this.add(ModBlocks.FIRE_CRYSTAL_ORE.get(),
@@ -53,6 +61,11 @@ public class BlockLoot extends BlockLootSubProvider {
                 block -> oreDrops(ModBlocks.WATER_CRYSTAL_ORE.get(), ModItems.WATER_CRYSTAL.get()));
         this.add(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE.get(),
                 block -> oreDrops(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE.get(), ModItems.WATER_CRYSTAL.get()));
+
+        this.add(ModBlocks.AIR_CRYSTAL_ORE.get(),
+                block -> oreDrops(ModBlocks.AIR_CRYSTAL_ORE.get(), ModItems.AIR_CRYSTAL.get()));
+        this.add(ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE.get(),
+                block -> oreDrops(ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE.get(), ModItems.AIR_CRYSTAL.get()));
     }
 
     protected LootTable.Builder oreDrops(Block pBlock, Item item) {

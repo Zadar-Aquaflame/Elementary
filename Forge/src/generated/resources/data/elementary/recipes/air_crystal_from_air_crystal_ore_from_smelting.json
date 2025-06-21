@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.45,
+  "group": "air_crystal",
+  "ingredient": {
+    "item": "elementary:air_crystal_ore"
+  },
+  "result": "elementary:air_crystal"
+}

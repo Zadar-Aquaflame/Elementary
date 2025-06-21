@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.45,
+  "group": "emberstone",
+  "ingredient": {
+    "item": "elementary:deepslate_emberstone_ore"
+  },
+  "result": "elementary:emberstone_ingot"
+}

@@ -1,6 +1,7 @@
 package fr.zadar.elementary.event;
 
 import fr.zadar.elementary.ElementaryForge;
+import fr.zadar.elementary.entity.client.model.AerorupturaModel;
 import fr.zadar.elementary.entity.client.model.FlameSpiritModel;
 import fr.zadar.elementary.entity.client.model.GuardianOfTheWavesModel;
 import fr.zadar.elementary.entity.client.ModModelLayers;
@@ -15,5 +16,6 @@ public class MobEventClient {
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ModModelLayers.FLAME_SPIRIT, FlameSpiritModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.GUARDIAN_OF_THE_WAVES, GuardianOfTheWavesModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.AERORUPTURA, AerorupturaModel::createBodyLayer);
     }
 }

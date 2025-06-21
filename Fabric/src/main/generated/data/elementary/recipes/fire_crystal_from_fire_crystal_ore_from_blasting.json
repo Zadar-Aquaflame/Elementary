@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.45,
+  "group": "fire_crystal",
+  "ingredient": {
+    "item": "elementary:fire_crystal_ore"
+  },
+  "result": "elementary:fire_crystal"
+}

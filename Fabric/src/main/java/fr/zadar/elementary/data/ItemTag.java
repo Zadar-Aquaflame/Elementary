@@ -26,6 +26,11 @@ public class ItemTag extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.HYDROSTONE_LEGGINGS)
                 .add(ModItems.HYDROSTONE_BOOTS)
 
+                .add(ModItems.AERITHIUM_HELMET)
+                .add(ModItems.AERITHIUM_CHESTPLATE)
+                .add(ModItems.AERITHIUM_LEGGINGS)
+                .add(ModItems.AERITHIUM_BOOTS)
+
                 .add(ModItems.EMBERITE_HELMET)
                 .add(ModItems.EMBERITE_CHESTPLATE)
                 .add(ModItems.EMBERITE_LEGGINGS)
@@ -34,6 +39,11 @@ public class ItemTag extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.AQUALITE_HELMET)
                 .add(ModItems.AQUALITE_CHESTPLATE)
                 .add(ModItems.AQUALITE_LEGGINGS)
-                .add(ModItems.AQUALITE_BOOTS);
+                .add(ModItems.AQUALITE_BOOTS)
+
+                .add(ModItems.AERILITE_HELMET)
+                .add(ModItems.AERILITE_CHESTPLATE)
+                .add(ModItems.AERILITE_LEGGINGS)
+                .add(ModItems.AERILITE_BOOTS);
     }
 }

@@ -18,16 +18,19 @@ public class BlockStates extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.EMBERSTONE_BLOCK);
         blockWithItem(ModBlocks.RAW_EMBERSTONE_BLOCK);
-
         blockWithItem(ModBlocks.EMBERSTONE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_EMBERSTONE_ORE);
         blockWithItem(ModBlocks.NETHER_EMBERSTONE_ORE);
 
         blockWithItem(ModBlocks.HYDROSTONE_BLOCK);
         blockWithItem(ModBlocks.RAW_HYDROSTONE_BLOCK);
-
         blockWithItem(ModBlocks.HYDROSTONE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
+
+        blockWithItem(ModBlocks.AERITHIUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_AERITHIUM_BLOCK);
+        blockWithItem(ModBlocks.AERITHIUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_AERITHIUM_ORE);
 
         simpleBlockWithItem(ModBlocks.ELEMENTS_IMPROVEMENT.get(), new ModelFile.UncheckedModelFile(modLoc("block/elements_improvement")));
 
@@ -35,6 +38,8 @@ public class BlockStates extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
         blockWithItem(ModBlocks.WATER_CRYSTAL_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE);
+        blockWithItem(ModBlocks.AIR_CRYSTAL_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

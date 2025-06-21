@@ -1,0 +1,20 @@
+{
+  "aeroruptura_ambient": {
+    "subtitles": "sounds.elementary.aeroruptura_ambient",
+    "sounds": [
+      "elementary:aeroruptura_ambient"
+    ]
+  },
+  "aeroruptura_hurt": {
+    "subtitles": "sounds.elementary.aeroruptura_hurt",
+    "sounds": [
+      "elementary:aeroruptura_hurt"
+    ]
+  },
+  "aeroruptura_death": {
+    "subtitles": "sounds.elementary.aeroruptura_death",
+    "sounds": [
+      "elementary:aeroruptura_death"
+    ]
+  }
+}

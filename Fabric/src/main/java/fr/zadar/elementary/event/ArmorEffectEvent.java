@@ -27,6 +27,10 @@ public class ArmorEffectEvent {
         if (hasCorrectArmorOn(ModArmorMaterials.HYDROSTONE, player)) {
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20, 0, false, false, true));
         }
+        if (hasCorrectArmorOn(ModArmorMaterials.AERITHIUM, player)) {
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 20, 0, false, false, true));
+        }
+
         if (hasCorrectArmorOn(ModArmorMaterials.EMBERITE, player)) {
             player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 60, 2, false, false, true));
         }

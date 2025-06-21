@@ -35,5 +35,9 @@ public class EntityLoot extends SimpleFabricLootTableProvider {
                 .with(ItemEntry.builder(ModItems.TEAR_DROP)
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 1)))
                         .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1))))));
+        exporter.accept(ModEntities.AERORUPTURA.getLootTableId(), LootTable.builder().pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1))
+                .with(ItemEntry.builder(ModItems.HURRICANE_FRAGMENT)
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(0, 2)))
+                        .apply(LootingEnchantLootFunction.builder(UniformLootNumberProvider.create(0, 1))))));
     }
 }

@@ -7,7 +7,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -31,12 +30,20 @@ public class ArmorEffectEvent {
         if (hasCorrectArmorOn(ModArmorMaterial.HYDROSTONE, player)) {
             player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 20, 0, false, false, true));
         }
+        if (hasCorrectArmorOn(ModArmorMaterial.AERITHIUM, player)) {
+            player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 20, 0, false, false, true));
+        }
+
         if (hasCorrectArmorOn(ModArmorMaterial.EMBERITE, player)) {
             player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 60, 2, false, false, true));
         }
         if (hasCorrectArmorOn(ModArmorMaterial.AQUALITE, player)) {
             player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60, 2, false, false, true));
             player.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 60, 2, false, false, true));
+        }
+        if (hasCorrectArmorOn(ModArmorMaterial.AERILITE, player)) {
+            player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 60, 1, false, false, true));
+            player.addEffect(new MobEffectInstance(MobEffects.JUMP, 60, 0, false, false, true));
         }
     }
 

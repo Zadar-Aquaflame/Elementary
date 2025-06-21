@@ -39,6 +39,25 @@
   "item.elementary.hydrostone_leggings": "Jambières en Hydrostone",
   "item.elementary.hydrostone_boots": "Bottes en Hydrostone",
 
+  "item.elementary.aerithium_ingot": "Lingot d'Aérithium",
+  "item.elementary.raw_aerithium": "Aérithium Brut",
+
+  "block.elementary.aerithium_block": "Bloc en Aérithium",
+  "block.elementary.raw_aerithium_block": "Block en Aérithium",
+  "block.elementary.aerithium_ore": "Minerai d'Aérithium",
+  "block.elementary.deepslate_aerithium_ore": "Minerai d'Aérithium des abîmes",
+
+  "item.elementary.aerithium_sword": "Épée en Aérithium",
+  "item.elementary.aerithium_pickaxe": "Pioche en Aérithium",
+  "item.elementary.aerithium_axe": "Hache en Aérithium",
+  "item.elementary.aerithium_shovel": "Pelle en Aérithium",
+  "item.elementary.aerithium_hoe": "Houe en Aérithium",
+
+  "item.elementary.aerithium_helmet": "Casque en Aérithium",
+  "item.elementary.aerithium_chestplate": "Plastron en Aérithium",
+  "item.elementary.aerithium_leggings": "Jambières en Aérithium",
+  "item.elementary.aerithium_boots": "Bottes en Aérithium",
+
   "block.elementary.elements_improvement": "Amélioration des Éléments",
 
   "item.elementary.ethereal_heart": "Coeur Éthéré",
@@ -50,6 +69,14 @@
   "item.elementary.water_crystal": "Cristal d'Eau",
   "item.elementary.tear_drop": "Goutte de larmes",
   "item.elementary.wave_essence": "Essence de vagues",
+
+  "item.elementary.air_crystal": "Cristal d'Air",
+  "item.elementary.hurricane_fragment": "Fragment d'Ouragan",
+  "item.elementary.storm_essence": "Essence de Tempête",
+
+  "item.elementary.spark_emerald": "Émeraude d'Étincelle",
+  "item.elementary.pond_emerald": "Émeraude d'Étang",
+  "item.elementary.squall_emerald": "Émeraude de Bourrasque",
 
   "block.elementary.fire_crystal_ore": "Minerai de Cristal de Feu",
   "block.elementary.deepslate_fire_crystal_ore": "Minerai de Cristal de Feu des Abîmes",
@@ -86,10 +113,27 @@
   "item.elementary.aqualite_leggings": "Jambières en Aqualite",
   "item.elementary.aqualite_boots": "Bottes en Aqualite",
 
+  "item.elementary.aerilite_ingot": "Lingot en Aérilite",
+  "item.elementary.air_ferrocrystal_ingot": "Lingot de Ferrocrystal",
+  "item.elementary.air_ferrocrystal_stick": "Bâton de Ferrocrystal",
+
+  "item.elementary.aerilite_sword": "Épée en Aérilite",
+  "item.elementary.aerilite_pickaxe": "Pioche en Aérilite",
+  "item.elementary.aerilite_axe": "Hache en Aérilite",
+  "item.elementary.aerilite_shovel": "Pelle en Aérilite",
+  "item.elementary.aerilite_hoe": "Houe en Aérilite",
+
+  "item.elementary.aerilite_helmet": "Casque en Aérilite",
+  "item.elementary.aerilite_chestplate": "Plastron en Aérilite",
+  "item.elementary.aerilite_leggings": "Jambières en Aérilite",
+  "item.elementary.aerilite_boots": "Bottes en Aérilite",
+
   "entity.elementary.flame_spirit": "Esprit de Flamme",
   "item.elementary.flame_spirit_spawn_egg": "Oeuf d'apparition d'Esprit de Flamme",
   "entity.elementary.guardian_of_the_waves": "Gardien des Flots",
   "item.elementary.guardian_of_the_waves_spawn_egg": "Oeuf d'apparition du Gardien des Flots",
+  "entity.elementary.aeroruptura": "Aeroruptura",
+  "item.elementary.aeroruptura_spawn_egg": "Oeuf d'apparition d'Aeroruptura",
 
   "message.elementary.new_version": "Une nouvelle version du mod Elementary est disponible"
 }

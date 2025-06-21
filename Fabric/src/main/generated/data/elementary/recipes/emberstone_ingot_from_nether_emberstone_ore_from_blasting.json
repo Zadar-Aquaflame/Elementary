@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.45,
+  "group": "emberstone",
+  "ingredient": {
+    "item": "elementary:nether_emberstone_ore"
+  },
+  "result": "elementary:emberstone_ingot"
+}

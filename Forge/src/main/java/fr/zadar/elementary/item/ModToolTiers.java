@@ -24,6 +24,13 @@ public class ModToolTiers {
             new ResourceLocation(ElementaryForge.MOD_ID, "hydrostone"),
         List.of(Tiers.DIAMOND),
             List.of());
+    public static final Tier AERITHIUM = TierSortingRegistry.registerTier(
+            new ForgeTier(4, 860, 3f, 5f, 17,
+                ModTags.Blocks.NEEDS_AERITHIUM_TOOL, () -> Ingredient.of(ModItems.AERITHIUM_INGOT.get())),
+            new ResourceLocation(ElementaryForge.MOD_ID, "aerithium"),
+            List.of(Tiers.IRON),
+            List.of());
+
     public static final Tier EMBERITE = TierSortingRegistry.registerTier(
             new ForgeTier(5, 1450, 5f, 6f, 20,
                     ModTags.Blocks.NEEDS_EMBERITE_TOOL, () -> Ingredient.of(ModItems.EMBERITE_INGOT.get())),
@@ -34,6 +41,12 @@ public class ModToolTiers {
             new ForgeTier(5, 1600, 4.5f, 6f, 20,
                     ModTags.Blocks.NEEDS_AQUALITE_TOOL, () -> Ingredient.of(ModItems.AQUALITE_INGOT.get())),
             new ResourceLocation(ElementaryForge.MOD_ID, "aqualite"),
+            List.of(Tiers.NETHERITE),
+            List.of());
+    public static final Tier AERILITE = TierSortingRegistry.registerTier(
+            new ForgeTier(5, 1470, 4.5f, 6f, 20,
+                    ModTags.Blocks.NEEDS_AERILITE_TOOL, () -> Ingredient.of(ModItems.AERILITE_INGOT.get())),
+            new ResourceLocation(ElementaryForge.MOD_ID, "aerilite"),
             List.of(Tiers.NETHERITE),
             List.of());
 }

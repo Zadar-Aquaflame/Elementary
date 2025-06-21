@@ -45,13 +45,6 @@ public class UpdateChecker {
 
                         player.sendMessage(Text.translatable("message.elementary.new_version"));
                         ElementaryFabric.LOGGER.info("A new version of the mod Elementary is available");
-
-
-                    /*List<ServerPlayerEntity> player = world.getPlayers();
-                    messageHasBeenSent = true;
-
-                    player.   .sendMessage(Text.translatable("message.elementary.new_version"));
-                    ElementaryFabric.LOGGER.info("A new version of the mod Elementary is available");*/
                     }
                 }
             });

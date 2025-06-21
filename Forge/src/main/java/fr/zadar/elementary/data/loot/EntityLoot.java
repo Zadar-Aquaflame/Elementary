@@ -32,5 +32,9 @@ public class EntityLoot extends EntityLootSubProvider {
                 .add(LootItem.lootTableItem(ModItems.TEAR_DROP.get())
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(0, 1)))
                         .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0, 1))))));
+        add(ModEntities.AERORUPTURA.get(), LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                .add(LootItem.lootTableItem(ModItems.HURRICANE_FRAGMENT.get())
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(0, 2)))
+                        .apply(LootingEnchantFunction.lootingMultiplier(UniformGenerator.between(0, 1))))));
     }
 }

@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "elementary",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"name": "Elementary",
 	"description": "This mod add some ores, entities and others things based on the elements. \\\n  The mod still in developpement stage, but you can test it. Thank you to report any bug on GitHub.",
 	"authors": [

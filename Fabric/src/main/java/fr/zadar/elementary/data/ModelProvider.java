@@ -33,12 +33,20 @@ public class ModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HYDROSTONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_HYDROSTONE_ORE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AERITHIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_AERITHIUM_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AERITHIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_AERITHIUM_ORE);
+
         blockStateModelGenerator.registerSimpleState(ModBlocks.ELEMENTS_IMPROVEMENT);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FIRE_CRYSTAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WATER_CRYSTAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AIR_CRYSTAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE);
     }
 
     @Override
@@ -71,6 +79,20 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.HYDROSTONE_BOOTS);
 
+        itemModelGenerator.register(ModItems.AERITHIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_AERITHIUM, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.AERITHIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERITHIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERITHIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERITHIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERITHIUM_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AERITHIUM_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AERITHIUM_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AERITHIUM_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AERITHIUM_BOOTS);
+
         itemModelGenerator.register(ModItems.FIRE_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.MYSTIC_ASH, Models.GENERATED);
         itemModelGenerator.register(ModItems.HEAT_ESSENCE, Models.GENERATED);
@@ -79,7 +101,15 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TEAR_DROP, Models.GENERATED);
         itemModelGenerator.register(ModItems.WAVE_ESSENCE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.AIR_CRYSTAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HURRICANE_FRAGMENT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STORM_ESSENCE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.ETHEREAL_HEART, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SPARK_EMERALD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.POND_EMERALD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SQUALL_EMERALD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.EMBERITE_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.FIRE_FERROCRYSTAL_INGOT, Models.GENERATED);
@@ -111,9 +141,26 @@ public class ModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AQUALITE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.AQUALITE_BOOTS));
 
+        itemModelGenerator.register(ModItems.AERILITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AIR_FERROCRYSTAL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AIR_FERROCRYSTAL_STICK, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.AERILITE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERILITE_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERILITE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERILITE_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.AERILITE_HOE, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.AERILITE_HELMET);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AERILITE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AERILITE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.AERILITE_BOOTS));
+
         itemModelGenerator.register(ModItems.FLAME_SPIRIT_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
         itemModelGenerator.register(ModItems.GUARDIAN_OF_THE_WAVES_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.AERORUPTURA_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }

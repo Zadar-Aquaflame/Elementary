@@ -49,6 +49,8 @@ minecraft {
 
         data {
             workingDirectory project.file('run-data')
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
         }
@@ -60,7 +62,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     maven { url = "https://maven.blamejared.com/" } // Maven for JEI
     maven { url = "https://maven.shedaniel.me" } // Maven for REI
-    maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
+    //maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
 }
 
 dependencies {

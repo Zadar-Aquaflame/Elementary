@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "elementary:air_ferrocrystal_stick"
+    },
+    "S": {
+      "item": "elementary:aerilite_ingot"
+    }
+  },
+  "pattern": [
+    "SS",
+    "# ",
+    "# "
+  ],
+  "result": {
+    "item": "elementary:aerilite_hoe"
+  },
+  "show_notification": true
+}

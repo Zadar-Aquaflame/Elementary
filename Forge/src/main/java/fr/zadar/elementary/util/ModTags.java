@@ -12,8 +12,11 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_EMBERSTONE_TOOL = tag("needs_emberstone_tool");
         public static final TagKey<Block> NEEDS_HYDROSTONE_TOOL = tag("needs_hydrostone_tool");
+        public static final TagKey<Block> NEEDS_AERITHIUM_TOOL = tag("needs_aerithium_tool");
+
         public static final TagKey<Block> NEEDS_EMBERITE_TOOL = tag("needs_emberite_tool");
         public static final TagKey<Block> NEEDS_AQUALITE_TOOL = tag("needs_aqualite_tool");
+            public static final TagKey<Block> NEEDS_AERILITE_TOOL = tag("needs_aerilite_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(ElementaryForge.MOD_ID, name));

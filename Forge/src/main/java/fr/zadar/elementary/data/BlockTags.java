@@ -24,12 +24,23 @@ public class BlockTags extends BlockTagsProvider {
                         ModBlocks.EMBERSTONE_ORE.get(),
                         ModBlocks.DEEPSLATE_EMBERSTONE_ORE.get(),
                         ModBlocks.NETHER_EMBERSTONE_ORE.get(),
+
+                        ModBlocks.HYDROSTONE_BLOCK.get(),
+                        ModBlocks.RAW_HYDROSTONE_BLOCK.get(),
                         ModBlocks.HYDROSTONE_ORE.get(),
                         ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get(),
+
+                        ModBlocks.AERITHIUM_BLOCK.get(),
+                        ModBlocks.RAW_AERITHIUM_BLOCK.get(),
+                        ModBlocks.AERITHIUM_ORE.get(),
+                        ModBlocks.DEEPSLATE_AERITHIUM_ORE.get(),
+
                         ModBlocks.FIRE_CRYSTAL_ORE.get(),
                         ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE.get(),
                         ModBlocks.WATER_CRYSTAL_ORE.get(),
-                        ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE.get());
+                        ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE.get(),
+                        ModBlocks.AIR_CRYSTAL_ORE.get(),
+                        ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE.get());
 
         this.tag(net.minecraft.tags.BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.EMBERSTONE_BLOCK.get(),
@@ -37,11 +48,22 @@ public class BlockTags extends BlockTagsProvider {
                         ModBlocks.EMBERSTONE_ORE.get(),
                         ModBlocks.DEEPSLATE_EMBERSTONE_ORE.get(),
                         ModBlocks.NETHER_EMBERSTONE_ORE.get(),
+
+                        ModBlocks.HYDROSTONE_BLOCK.get(),
+                        ModBlocks.RAW_HYDROSTONE_BLOCK.get(),
                         ModBlocks.HYDROSTONE_ORE.get(),
                         ModBlocks.DEEPSLATE_HYDROSTONE_ORE.get(),
+
+                        ModBlocks.AERITHIUM_BLOCK.get(),
+                        ModBlocks.RAW_AERITHIUM_BLOCK.get(),
+                        ModBlocks.AERITHIUM_ORE.get(),
+                        ModBlocks.DEEPSLATE_AERITHIUM_ORE.get(),
+
                         ModBlocks.FIRE_CRYSTAL_ORE.get(),
                         ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE.get(),
                         ModBlocks.WATER_CRYSTAL_ORE.get(),
-                        ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE.get());
+                        ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE.get(),
+                        ModBlocks.AIR_CRYSTAL_ORE.get(),
+                        ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE.get());
     }
 }

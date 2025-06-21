@@ -1,6 +1,7 @@
 package fr.zadar.elementary.entity;
 
 import fr.zadar.elementary.ElementaryFabric;
+import fr.zadar.elementary.entity.custom.AerorupturaEntity;
 import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
 import fr.zadar.elementary.entity.custom.GuardianOfTheWavesEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -18,4 +19,7 @@ public class ModEntities {
     public static final EntityType<GuardianOfTheWavesEntity> GUARDIAN_OF_THE_WAVES = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(ElementaryFabric.MOD_ID, "guardian_of_the_waves"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, GuardianOfTheWavesEntity::new).dimensions(EntityDimensions.fixed(1f, 2f)).build());
+    public static final EntityType<AerorupturaEntity> AERORUPTURA = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(ElementaryFabric.MOD_ID, "aeroruptura"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, AerorupturaEntity::new).dimensions(EntityDimensions.fixed(1f, 2f)).build());
 }

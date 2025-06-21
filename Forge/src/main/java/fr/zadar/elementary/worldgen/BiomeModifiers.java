@@ -10,7 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.GenerationStep;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,11 +20,15 @@ public class BiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_EMBERSTONE_ORE = registerKey("add_emberstone_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_EMBERSTONE_ORE = registerKey("add_nether_emberstone_ore");
     public static final ResourceKey<BiomeModifier> ADD_HYDROSTONE_ORE = registerKey("add_hydrostone_ore");
+    public static final ResourceKey<BiomeModifier> ADD_AERITHIUM_ORE = registerKey("add_aerithium_ore");
+
     public static final ResourceKey<BiomeModifier> ADD_FIRE_CRYSTAL_ORE = registerKey("add_fire_crystal_ore");
     public static final ResourceKey<BiomeModifier> ADD_WATER_CRYSTAL_ORE = registerKey("add_water_crystal_ore");
+    public static final ResourceKey<BiomeModifier> ADD_AIR_CRYSTAL_ORE = registerKey("add_air_crystal_ore");
 
     public static final ResourceKey<BiomeModifier> SPAWN_FLAME_SPIRIT = registerKey("spawn_flame_spirit");
     public static final ResourceKey<BiomeModifier> SPAWN_GUARDIAN_OF_THE_WAVES = registerKey("spawn_guardian_of_the_waves");
+    public static final ResourceKey<BiomeModifier> SPAWN_AERORUPTURA = registerKey("spawn_aeroruptura");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -46,6 +49,11 @@ public class BiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.HYDROSTONE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        context.register(ADD_AERITHIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.AERITHIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
         context.register(ADD_FIRE_CRYSTAL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.FIRE_CRYSTAL_ORE_PLACED_KEY)),
@@ -56,6 +64,11 @@ public class BiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.WATER_CRYSTAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        context.register(ADD_AIR_CRYSTAL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(PlacedFeatures.AIR_CRYSTAL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
         context.register(SPAWN_FLAME_SPIRIT, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.FLAME_SPIRIT.get(), 64, 1, 2))));
@@ -63,6 +76,10 @@ public class BiomeModifiers {
         context.register(SPAWN_GUARDIAN_OF_THE_WAVES, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_BEACH),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.GUARDIAN_OF_THE_WAVES.get(), 64, 1, 1))));
+
+        context.register(SPAWN_AERORUPTURA, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.AERORUPTURA.get(), 64, 1, 1))));
     }
 
 

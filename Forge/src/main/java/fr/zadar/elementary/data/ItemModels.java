@@ -68,6 +68,20 @@ public class ItemModels extends ItemModelProvider {
         trimmedArmorItem(ModItems.HYDROSTONE_LEGGINGS);
         trimmedArmorItem(ModItems.HYDROSTONE_BOOTS);
 
+        simpleItem(ModItems.AERITHIUM_INGOT);
+        simpleItem(ModItems.RAW_AERITHIUM);
+
+        handheldItem(ModItems.AERITHIUM_SWORD);
+        handheldItem(ModItems.AERITHIUM_PICKAXE);
+        handheldItem(ModItems.AERITHIUM_AXE);
+        handheldItem(ModItems.AERITHIUM_SHOVEL);
+        handheldItem(ModItems.AERITHIUM_HOE);
+
+        trimmedArmorItem(ModItems.AERITHIUM_HELMET);
+        trimmedArmorItem(ModItems.AERITHIUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.AERITHIUM_LEGGINGS);
+        trimmedArmorItem(ModItems.AERITHIUM_BOOTS);
+
         simpleItem(ModItems.ETHEREAL_HEART);
         simpleItem(ModItems.FIRE_CRYSTAL);
         simpleItem(ModItems.MYSTIC_ASH);
@@ -75,6 +89,13 @@ public class ItemModels extends ItemModelProvider {
         simpleItem(ModItems.TEAR_DROP);
         simpleItem(ModItems.WATER_CRYSTAL);
         simpleItem(ModItems.WAVE_ESSENCE);
+        simpleItem(ModItems.AIR_CRYSTAL);
+        simpleItem(ModItems.HURRICANE_FRAGMENT);
+        simpleItem(ModItems.STORM_ESSENCE);
+
+        simpleItem(ModItems.SPARK_EMERALD);
+        simpleItem(ModItems.POND_EMERALD);
+        simpleItem(ModItems.SQUALL_EMERALD);
 
         simpleItem(ModItems.EMBERITE_INGOT);
         simpleItem(ModItems.FIRE_FERROCRYSTAL_INGOT);
@@ -106,8 +127,24 @@ public class ItemModels extends ItemModelProvider {
         trimmedArmorItem(ModItems.AQUALITE_LEGGINGS);
         trimmedArmorItem(ModItems.AQUALITE_BOOTS);
 
+        simpleItem(ModItems.AERILITE_INGOT);
+        simpleItem(ModItems.AIR_FERROCRYSTAL_INGOT);
+        simpleItem(ModItems.AIR_FERROCRYSTAL_STICK);
+
+        handheldItem(ModItems.AERILITE_SWORD);
+        handheldItem(ModItems.AERILITE_PICKAXE);
+        handheldItem(ModItems.AERILITE_AXE);
+        handheldItem(ModItems.AERILITE_SHOVEL);
+        handheldItem(ModItems.AERILITE_HOE);
+
+        trimmedArmorItem(ModItems.AERILITE_HELMET);
+        trimmedArmorItem(ModItems.AERILITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.AERILITE_LEGGINGS);
+        trimmedArmorItem(ModItems.AERILITE_BOOTS);
+
         withExistingParent(ModItems.FLAME_SPIRIT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.GUARDIAN_OF_THE_WAVES_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.AERORUPTURA_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

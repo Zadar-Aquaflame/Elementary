@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_aerithium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementary:raw_aerithium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "elementary:aerithium_ingot_from_raw_aerithium_from_blasting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_aerithium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "elementary:aerithium_ingot_from_raw_aerithium_from_blasting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

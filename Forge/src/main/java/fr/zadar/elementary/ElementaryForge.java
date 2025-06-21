@@ -4,12 +4,14 @@ import com.mojang.logging.LogUtils;
 import fr.zadar.elementary.block.ModBlocks;
 import fr.zadar.elementary.block.entity.ModBlockEntities;
 import fr.zadar.elementary.entity.ModEntities;
+import fr.zadar.elementary.entity.client.renderer.AerorupturaRenderer;
 import fr.zadar.elementary.entity.client.renderer.FlameSpiritRenderer;
 import fr.zadar.elementary.entity.client.renderer.GuardianOfTheWavesRenderer;
 import fr.zadar.elementary.item.ModItems;
 import fr.zadar.elementary.recipe.ModRecipes;
 import fr.zadar.elementary.screen.ElementsImprovementScreen;
 import fr.zadar.elementary.screen.ModMenuTypes;
+import fr.zadar.elementary.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -39,6 +41,7 @@ public class ElementaryForge {
         ModMenuTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -54,6 +57,7 @@ public class ElementaryForge {
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.FLAME_SPIRIT.get(), FlameSpiritRenderer::new);
             EntityRenderers.register(ModEntities.GUARDIAN_OF_THE_WAVES.get(), GuardianOfTheWavesRenderer::new);
+            EntityRenderers.register(ModEntities.AERORUPTURA.get(), AerorupturaRenderer::new);
 
             MenuScreens.register(ModMenuTypes.ELEMENTS_IMPROVEMENT_MENU.get(), ElementsImprovementScreen::new);
         }

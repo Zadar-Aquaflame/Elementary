@@ -1,6 +1,7 @@
 package fr.zadar.elementary.entity;
 
 import fr.zadar.elementary.ElementaryForge;
+import fr.zadar.elementary.entity.custom.AerorupturaEntity;
 import fr.zadar.elementary.entity.custom.FlameSpiritEntity;
 import fr.zadar.elementary.entity.custom.GuardianOfTheWavesEntity;
 import net.minecraft.world.entity.EntityType;
@@ -20,6 +21,9 @@ public class ModEntities {
     public static final RegistryObject<EntityType<GuardianOfTheWavesEntity>> GUARDIAN_OF_THE_WAVES =
             ENTITY_TYPE.register("guardian_of_the_waves", () -> EntityType.Builder.of(GuardianOfTheWavesEntity::new, MobCategory.CREATURE)
                     .sized(1f, 2f).build("guardian_of_the_waves"));
+    public static final RegistryObject<EntityType<AerorupturaEntity>> AERORUPTURA =
+            ENTITY_TYPE.register("aeroruptura", () -> EntityType.Builder.of(AerorupturaEntity::new, MobCategory.MONSTER)
+                    .sized(1f, 2f).build("aeroruptura"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPE.register(eventBus);

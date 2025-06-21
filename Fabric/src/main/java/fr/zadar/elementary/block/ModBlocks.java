@@ -32,16 +32,31 @@ public class ModBlocks {
     public static final Block DEEPSLATE_HYDROSTONE_ORE = registerBlock("deepslate_hydrostone_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE), UniformIntProvider.create(2, 6)));
 
+    public static final Block AERITHIUM_BLOCK = registerBlock("aerithium_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).requiresTool()));
+    public static final Block RAW_AERITHIUM_BLOCK = registerBlock("raw_aerithium_block", new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).requiresTool()));
+
+    public static final Block AERITHIUM_ORE = registerBlock("aerithium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).requiresTool(), UniformIntProvider.create(3, 6)));
+    public static final Block DEEPSLATE_AERITHIUM_ORE = registerBlock("deepslate_aerithium_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE).requiresTool(), UniformIntProvider.create(3, 6)));
+
     public static final Block ELEMENTS_IMPROVEMENT = registerBlock("elements_improvement",
             new ElementsImprovementBlock(FabricBlockSettings.copyOf(Blocks.OBSIDIAN).nonOpaque()));
+
     public static final Block FIRE_CRYSTAL_ORE = registerBlock("fire_crystal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE), UniformIntProvider.create(1, 4)));
     public static final Block DEEPSLATE_FIRE_CRYSTAL_ORE = registerBlock("deepslate_fire_crystal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE), UniformIntProvider.create(1, 4)));
+
     public static final Block WATER_CRYSTAL_ORE = registerBlock("water_crystal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.GOLD_ORE), UniformIntProvider.create(1, 3)));
     public static final Block DEEPSLATE_WATER_CRYSTAL_ORE = registerBlock("deepslate_water_crystal_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_GOLD_ORE), UniformIntProvider.create(1, 3)));
+
+    public static final Block AIR_CRYSTAL_ORE = registerBlock("air_crystal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.LAPIS_ORE).requiresTool(), UniformIntProvider.create(2, 5)));
+    public static final Block DEEPSLATE_AIR_CRYSTAL_ORE = registerBlock("deepslate_air_crystal_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_LAPIS_ORE).requiresTool(), UniformIntProvider.create(2, 5)));
 
     private static Block registerBlock(String id, Block block) {
         registerBlockItem(id, block);

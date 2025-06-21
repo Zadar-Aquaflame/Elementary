@@ -25,9 +25,14 @@ public class BlockLoot extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.HYDROSTONE_ORE, oreDrops(ModBlocks.HYDROSTONE_ORE, ModItems.RAW_HYDROSTONE));
         addDrop(ModBlocks.DEEPSLATE_HYDROSTONE_ORE, oreDrops(ModBlocks.DEEPSLATE_HYDROSTONE_ORE, ModItems.RAW_HYDROSTONE));
 
+        addDrop(ModBlocks.AERITHIUM_BLOCK);
+        addDrop(ModBlocks.RAW_AERITHIUM_BLOCK);
+
         addDrop(ModBlocks.FIRE_CRYSTAL_ORE, oreDrops(ModBlocks.FIRE_CRYSTAL_ORE, ModItems.FIRE_CRYSTAL));
         addDrop(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE, oreDrops(ModBlocks.DEEPSLATE_FIRE_CRYSTAL_ORE, ModItems.FIRE_CRYSTAL));
         addDrop(ModBlocks.WATER_CRYSTAL_ORE, oreDrops(ModBlocks.WATER_CRYSTAL_ORE, ModItems.WATER_CRYSTAL));
         addDrop(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE, oreDrops(ModBlocks.DEEPSLATE_WATER_CRYSTAL_ORE, ModItems.WATER_CRYSTAL));
+        addDrop(ModBlocks.AIR_CRYSTAL_ORE, oreDrops(ModBlocks.AIR_CRYSTAL_ORE, ModItems.AIR_CRYSTAL));
+        addDrop(ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE, oreDrops(ModBlocks.DEEPSLATE_AIR_CRYSTAL_ORE, ModItems.AIR_CRYSTAL));
     }
 }

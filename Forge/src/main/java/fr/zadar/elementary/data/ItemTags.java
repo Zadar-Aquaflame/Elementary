@@ -30,6 +30,11 @@ public class ItemTags extends ItemTagsProvider {
                         ModItems.HYDROSTONE_LEGGINGS.get(),
                         ModItems.HYDROSTONE_BOOTS.get(),
 
+                        ModItems.AERITHIUM_HELMET.get(),
+                        ModItems.AERITHIUM_CHESTPLATE.get(),
+                        ModItems.AERITHIUM_LEGGINGS.get(),
+                        ModItems.AERITHIUM_BOOTS.get(),
+
                         ModItems.EMBERITE_HELMET.get(),
                         ModItems.EMBERITE_CHESTPLATE.get(),
                         ModItems.EMBERITE_LEGGINGS.get(),
@@ -38,6 +43,11 @@ public class ItemTags extends ItemTagsProvider {
                         ModItems.AQUALITE_HELMET.get(),
                         ModItems.AQUALITE_CHESTPLATE.get(),
                         ModItems.AQUALITE_LEGGINGS.get(),
-                        ModItems.AQUALITE_BOOTS.get());
+                        ModItems.AQUALITE_BOOTS.get(),
+
+                        ModItems.AERILITE_HELMET.get(),
+                        ModItems.AERILITE_CHESTPLATE.get(),
+                        ModItems.AERILITE_LEGGINGS.get(),
+                        ModItems.AERILITE_BOOTS.get());
     }
 }

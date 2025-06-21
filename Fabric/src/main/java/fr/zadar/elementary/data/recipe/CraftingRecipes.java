@@ -2,7 +2,6 @@ package fr.zadar.elementary.data.recipe;
 
 import fr.zadar.elementary.block.ModBlocks;
 import fr.zadar.elementary.item.ModItems;
-import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -104,6 +103,12 @@ public class CraftingRecipes {
         recipeShovel(consumer, ModItems.HYDROSTONE_INGOT, Items.STICK, ModItems.HYDROSTONE_SHOVEL);
         recipeHoe(consumer, ModItems.HYDROSTONE_INGOT, Items.STICK, ModItems.HYDROSTONE_HOE);
 
+        recipeSword(consumer, ModItems.AERITHIUM_INGOT, Items.STICK, ModItems.AERITHIUM_SWORD);
+        recipePickaxe(consumer, ModItems.AERITHIUM_INGOT, Items.STICK, ModItems.AERITHIUM_PICKAXE);
+        recipeAxe(consumer, ModItems.AERITHIUM_INGOT, Items.STICK, ModItems.AERITHIUM_AXE);
+        recipeShovel(consumer, ModItems.AERITHIUM_INGOT, Items.STICK, ModItems.AERITHIUM_SHOVEL);
+        recipeHoe(consumer, ModItems.AERITHIUM_INGOT, Items.STICK, ModItems.AERITHIUM_HOE);
+
         recipeSword(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_SWORD);
         recipePickaxe(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_PICKAXE);
         recipeAxe(consumer, ModItems.EMBERITE_INGOT, ModItems.FIRE_FERROCRYSTAL_STICK, ModItems.EMBERITE_AXE);
@@ -115,6 +120,12 @@ public class CraftingRecipes {
         recipeAxe(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_AXE);
         recipeShovel(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_SHOVEL);
         recipeHoe(consumer, ModItems.AQUALITE_INGOT, ModItems.WATER_FERROCRYSTAL_STICK, ModItems.AQUALITE_HOE);
+
+        recipeSword(consumer, ModItems.AERILITE_INGOT, ModItems.AIR_FERROCRYSTAL_STICK, ModItems.AERILITE_SWORD);
+        recipePickaxe(consumer, ModItems.AERILITE_INGOT, ModItems.AIR_FERROCRYSTAL_STICK, ModItems.AERILITE_PICKAXE);
+        recipeAxe(consumer, ModItems.AERILITE_INGOT, ModItems.AIR_FERROCRYSTAL_STICK, ModItems.AERILITE_AXE);
+        recipeShovel(consumer, ModItems.AERILITE_INGOT, ModItems.AIR_FERROCRYSTAL_STICK, ModItems.AERILITE_SHOVEL);
+        recipeHoe(consumer, ModItems.AERILITE_INGOT, ModItems.AIR_FERROCRYSTAL_STICK, ModItems.AERILITE_HOE);
     }
 
     private static void recipesArmor(Consumer<RecipeJsonProvider> consumer) {
@@ -128,6 +139,11 @@ public class CraftingRecipes {
         recipeLeggings(consumer, ModItems.HYDROSTONE_INGOT, ModItems.HYDROSTONE_LEGGINGS);
         recipeBoots(consumer, ModItems.HYDROSTONE_INGOT, ModItems.HYDROSTONE_BOOTS);
 
+        recipeHelmet(consumer, ModItems.AERITHIUM_INGOT, ModItems.AERITHIUM_HELMET);
+        recipeChestplate(consumer, ModItems.AERITHIUM_INGOT, ModItems.AERITHIUM_CHESTPLATE);
+        recipeLeggings(consumer, ModItems.AERITHIUM_INGOT, ModItems.AERITHIUM_LEGGINGS);
+        recipeBoots(consumer, ModItems.AERITHIUM_INGOT, ModItems.AERITHIUM_BOOTS);
+
         recipeHelmet(consumer, ModItems.EMBERITE_INGOT, ModItems.EMBERITE_HELMET);
         recipeChestplate(consumer, ModItems.EMBERITE_INGOT, ModItems.EMBERITE_CHESTPLATE);
         recipeLeggings(consumer, ModItems.EMBERITE_INGOT, ModItems.EMBERITE_LEGGINGS);
@@ -137,6 +153,11 @@ public class CraftingRecipes {
         recipeChestplate(consumer, ModItems.AQUALITE_INGOT, ModItems.AQUALITE_CHESTPLATE);
         recipeLeggings(consumer, ModItems.AQUALITE_INGOT, ModItems.AQUALITE_LEGGINGS);
         recipeBoots(consumer, ModItems.AQUALITE_INGOT, ModItems.AQUALITE_BOOTS);
+
+        recipeHelmet(consumer, ModItems.AERILITE_INGOT, ModItems.AERILITE_HELMET);
+        recipeChestplate(consumer, ModItems.AERILITE_INGOT, ModItems.AERILITE_CHESTPLATE);
+        recipeLeggings(consumer, ModItems.AERILITE_INGOT, ModItems.AERILITE_LEGGINGS);
+        recipeBoots(consumer, ModItems.AERILITE_INGOT, ModItems.AERILITE_BOOTS);
     }
 
     private static void recipeSword(Consumer<RecipeJsonProvider> consumer, final ItemConvertible material1, final ItemConvertible material2, final ItemConvertible result) {

@@ -29,6 +29,8 @@ public class CraftingRecipes {
         recipeFullBlock(consumer, ModItems.RAW_EMBERSTONE.get(), ModBlocks.RAW_EMBERSTONE_BLOCK.get());
         recipeFullBlock(consumer, ModItems.HYDROSTONE_INGOT.get(), ModBlocks.HYDROSTONE_BLOCK.get());
         recipeFullBlock(consumer, ModItems.RAW_HYDROSTONE.get(), ModBlocks.RAW_HYDROSTONE_BLOCK.get());
+        recipeFullBlock(consumer, ModItems.AERITHIUM_INGOT.get(), ModBlocks.AERITHIUM_BLOCK.get());
+        recipeFullBlock(consumer, ModItems.AERITHIUM_INGOT.get(), ModBlocks.RAW_AERITHIUM_BLOCK.get());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ELEMENTS_IMPROVEMENT.get())
                 .pattern(" S ")
@@ -55,13 +57,23 @@ public class CraftingRecipes {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.HYDROSTONE_INGOT.get(), 9)
                 .requires(ModBlocks.HYDROSTONE_BLOCK.get())
-                .unlockedBy("has_emberstone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.HYDROSTONE_INGOT.get()))
+                .unlockedBy("has_hydrostone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.HYDROSTONE_INGOT.get()))
                 .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "hydrostone_ingot_from_hydrostone_block"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_HYDROSTONE.get(), 9)
                 .requires(ModBlocks.RAW_HYDROSTONE_BLOCK.get())
-                .unlockedBy("has_raw_emberstone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_HYDROSTONE.get()))
+                .unlockedBy("has_raw_hydrostone_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.RAW_HYDROSTONE.get()))
                 .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "raw_hydrostone_from_raw_hydrostone_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AERITHIUM_INGOT.get(), 9)
+                .requires(ModBlocks.AERITHIUM_BLOCK.get())
+                .unlockedBy("has_aerithium_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.AERITHIUM_INGOT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "aerithium_ingot_from_aerithium_block"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AERITHIUM_INGOT.get(), 9)
+                .requires(ModBlocks.RAW_AERITHIUM_BLOCK.get())
+                .unlockedBy("has_raw_aerithium_block", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.AERITHIUM_INGOT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "raw_aerithium_from_raw_aerithium_block"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ETHEREAL_HEART.get())
                 .requires(ModItems.FIRE_CRYSTAL.get())
@@ -70,13 +82,6 @@ public class CraftingRecipes {
                 .unlockedBy("has_mystic_ash", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.MYSTIC_ASH.get()))
                 .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "ethereal_heart"));
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_FERROCRYSTAL_STICK.get(), 4)
-                .pattern("#")
-                .pattern("#")
-                .define('#', ModItems.FIRE_FERROCRYSTAL_INGOT.get())
-                .unlockedBy("has_fire_ferrocrystal_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.FIRE_FERROCRYSTAL_INGOT.get()))
-                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "fire_ferrocrystal_stick"));
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ETHEREAL_HEART.get())
                 .requires(ModItems.WATER_CRYSTAL.get())
                 .requires(ModItems.TEAR_DROP.get())
@@ -84,12 +89,33 @@ public class CraftingRecipes {
                 .unlockedBy("has_tear_drop", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.TEAR_DROP.get()))
                 .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "ethereal_heart_1"));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ETHEREAL_HEART.get())
+                .requires(ModItems.AIR_CRYSTAL.get())
+                .requires(ModItems.HURRICANE_FRAGMENT.get())
+                .unlockedBy("has_air_crystal", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.AIR_CRYSTAL.get()))
+                .unlockedBy("has_hurricane_fragment", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.HURRICANE_FRAGMENT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "ethereal_heart_2"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_FERROCRYSTAL_STICK.get(), 4)
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModItems.FIRE_FERROCRYSTAL_INGOT.get())
+                .unlockedBy("has_fire_ferrocrystal_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.FIRE_FERROCRYSTAL_INGOT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "fire_ferrocrystal_stick"));
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WATER_FERROCRYSTAL_STICK.get(), 4)
                 .pattern("#")
                 .pattern("#")
                 .define('#', ModItems.WATER_FERROCRYSTAL_INGOT.get())
                 .unlockedBy("has_water_ferrocrystal_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.WATER_FERROCRYSTAL_INGOT.get()))
                 .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "water_ferrocrystal_stick"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AIR_FERROCRYSTAL_STICK.get(), 4)
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModItems.AIR_FERROCRYSTAL_INGOT.get())
+                .unlockedBy("has_air_ferrocrystal_ingot", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.AIR_FERROCRYSTAL_INGOT.get()))
+                .save(consumer, new ResourceLocation(ElementaryForge.MOD_ID, "air_ferrocrystal_stick"));
     }
 
     private static void recipesTools(Consumer<FinishedRecipe> consumer) {
@@ -105,6 +131,12 @@ public class CraftingRecipes {
         recipeShovel(consumer, ModItems.HYDROSTONE_INGOT.get(), Items.STICK, ModItems.HYDROSTONE_SHOVEL.get());
         recipeHoe(consumer, ModItems.HYDROSTONE_INGOT.get(), Items.STICK, ModItems.HYDROSTONE_HOE.get());
 
+        recipeSword(consumer, ModItems.AERITHIUM_INGOT.get(), Items.STICK, ModItems.AERITHIUM_SWORD.get());
+        recipePickaxe(consumer, ModItems.AERITHIUM_INGOT.get(), Items.STICK, ModItems.AERITHIUM_PICKAXE.get());
+        recipeAxe(consumer, ModItems.AERITHIUM_INGOT.get(), Items.STICK, ModItems.AERITHIUM_AXE.get());
+        recipeShovel(consumer, ModItems.AERITHIUM_INGOT.get(), Items.STICK, ModItems.AERITHIUM_SHOVEL.get());
+        recipeHoe(consumer, ModItems.AERITHIUM_INGOT.get(), Items.STICK, ModItems.AERITHIUM_HOE.get());
+
         recipeSword(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_SWORD.get());
         recipePickaxe(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_PICKAXE.get());
         recipeAxe(consumer, ModItems.EMBERITE_INGOT.get(), ModItems.FIRE_FERROCRYSTAL_STICK.get(), ModItems.EMBERITE_AXE.get());
@@ -116,6 +148,12 @@ public class CraftingRecipes {
         recipeAxe(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_AXE.get());
         recipeShovel(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_SHOVEL.get());
         recipeHoe(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.WATER_FERROCRYSTAL_STICK.get(), ModItems.AQUALITE_HOE.get());
+
+        recipeSword(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AIR_FERROCRYSTAL_STICK.get(), ModItems.AERILITE_SWORD.get());
+        recipePickaxe(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AIR_FERROCRYSTAL_STICK.get(), ModItems.AERILITE_PICKAXE.get());
+        recipeAxe(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AIR_FERROCRYSTAL_STICK.get(), ModItems.AERILITE_AXE.get());
+        recipeShovel(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AIR_FERROCRYSTAL_STICK.get(), ModItems.AERILITE_SHOVEL.get());
+        recipeHoe(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AIR_FERROCRYSTAL_STICK.get(), ModItems.AERILITE_HOE.get());
     }
 
     private static void recipesArmor(Consumer<FinishedRecipe> consumer) {
@@ -129,6 +167,11 @@ public class CraftingRecipes {
         recipeLeggings(consumer, ModItems.HYDROSTONE_INGOT.get(), ModItems.HYDROSTONE_LEGGINGS.get());
         recipeBoots(consumer, ModItems.HYDROSTONE_INGOT.get(), ModItems.HYDROSTONE_BOOTS.get());
 
+        recipeHelmet(consumer, ModItems.AERITHIUM_INGOT.get(), ModItems.AERITHIUM_HELMET.get());
+        recipeChestplate(consumer, ModItems.AERITHIUM_INGOT.get(), ModItems.AERITHIUM_CHESTPLATE.get());
+        recipeLeggings(consumer, ModItems.AERITHIUM_INGOT.get(), ModItems.AERITHIUM_LEGGINGS.get());
+        recipeBoots(consumer, ModItems.AERITHIUM_INGOT.get(), ModItems.AERITHIUM_BOOTS.get());
+
         recipeHelmet(consumer, ModItems.EMBERSTONE_INGOT.get(), ModItems.EMBERITE_HELMET.get());
         recipeChestplate(consumer, ModItems.EMBERSTONE_INGOT.get(), ModItems.EMBERITE_CHESTPLATE.get());
         recipeLeggings(consumer, ModItems.EMBERSTONE_INGOT.get(), ModItems.EMBERITE_LEGGINGS.get());
@@ -138,6 +181,11 @@ public class CraftingRecipes {
         recipeChestplate(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.AQUALITE_CHESTPLATE.get());
         recipeLeggings(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.AQUALITE_LEGGINGS.get());
         recipeBoots(consumer, ModItems.AQUALITE_INGOT.get(), ModItems.AQUALITE_BOOTS.get());
+
+        recipeHelmet(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AERILITE_HELMET.get());
+        recipeChestplate(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AERILITE_CHESTPLATE.get());
+        recipeLeggings(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AERILITE_LEGGINGS.get());
+        recipeBoots(consumer, ModItems.AERILITE_INGOT.get(), ModItems.AERILITE_BOOTS.get());
     }
 
     private static void recipeSword(@NotNull final Consumer<FinishedRecipe> consumer, final Item material1, final Item material2, final ItemLike result) {
