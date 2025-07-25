@@ -82,6 +82,8 @@
   "block.elementary.deepslate_fire_crystal_ore": "Minerai de Cristal de Feu des Abîmes",
   "block.elementary.water_crystal_ore": "Minerai de Cristal d'Eau",
   "block.elementary.deepslate_water_crystal_ore": "Minerai de Cristal d'Eau des Abîmes",
+  "block.elementary.air_crystal_ore": "Minerai de Cristal d'Air",
+  "block.elementary.deepslate_air_crystal_ore": "Minerai de Cristal d'Air des Abîmes",
 
   "item.elementary.emberite_ingot": "Lingot d'Emberite",
   "item.elementary.fire_ferrocrystal_ingot": "Lingot de Ferrocristal",

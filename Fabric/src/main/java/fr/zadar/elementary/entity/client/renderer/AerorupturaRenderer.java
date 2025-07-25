@@ -14,7 +14,7 @@ public class AerorupturaRenderer extends MobEntityRenderer<AerorupturaEntity, Ae
     private static final Identifier TEXTURE = new Identifier(ElementaryFabric.MOD_ID, "textures/entity/guardian_of_the_waves.png");
 
     public AerorupturaRenderer(EntityRendererFactory.Context context) {
-        super(context, new AerorupturaModel<>(context.getPart(ModModelLayers.GUARDIAN_OF_THE_WAVES)), 1f);
+        super(context, new AerorupturaModel<>(context.getPart(ModModelLayers.AERORUPTURA)), 1f);
     }
 
     @Override

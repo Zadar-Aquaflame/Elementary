@@ -7,6 +7,7 @@ import fr.zadar.elementary.entity.ModEntities;
 import fr.zadar.elementary.entity.client.renderer.AerorupturaRenderer;
 import fr.zadar.elementary.entity.client.renderer.FlameSpiritRenderer;
 import fr.zadar.elementary.entity.client.renderer.GuardianOfTheWavesRenderer;
+import fr.zadar.elementary.event.ToolEvents;
 import fr.zadar.elementary.item.ModItems;
 import fr.zadar.elementary.recipe.ModRecipes;
 import fr.zadar.elementary.screen.ElementsImprovementScreen;
@@ -22,6 +23,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -29,7 +31,6 @@ import org.slf4j.Logger;
 public class ElementaryForge {
     public static final String MOD_ID = "elementary";
     public static final Logger LOGGER = LogUtils.getLogger();
-
 
     public ElementaryForge(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
@@ -43,7 +44,12 @@ public class ElementaryForge {
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
 
+        modEventBus.addListener(this::onCommonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    public void onCommonSetup(FMLCommonSetupEvent event) {
+        ToolEvents.initialize();
     }
 
     @SubscribeEvent

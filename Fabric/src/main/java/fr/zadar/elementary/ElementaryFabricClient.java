@@ -1,8 +1,10 @@
 package fr.zadar.elementary;
 
 import fr.zadar.elementary.entity.ModEntities;
+import fr.zadar.elementary.entity.client.model.AerorupturaModel;
 import fr.zadar.elementary.entity.client.model.FlameSpiritModel;
 import fr.zadar.elementary.entity.client.model.GuardianOfTheWavesModel;
+import fr.zadar.elementary.entity.client.renderer.AerorupturaRenderer;
 import fr.zadar.elementary.entity.client.renderer.FlameSpiritRenderer;
 import fr.zadar.elementary.entity.client.ModModelLayers;
 import fr.zadar.elementary.entity.client.renderer.GuardianOfTheWavesRenderer;
@@ -20,6 +22,8 @@ public class ElementaryFabricClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.FLAME_SPIRIT, FlameSpiritModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.GUARDIAN_OF_THE_WAVES, GuardianOfTheWavesRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GUARDIAN_OF_THE_WAVES, GuardianOfTheWavesModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.AERORUPTURA, AerorupturaRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.AERORUPTURA, AerorupturaModel::getTexturedModelData);
 
         HandledScreens.register(ModScreenHandlers.ELEMENTS_IMPROVEMENT_SCREEN_HANDLER, ElementsImprovementScreen::new);
     }

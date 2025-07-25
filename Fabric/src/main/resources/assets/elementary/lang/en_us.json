@@ -83,6 +83,8 @@
   "block.elementary.deepslate_fire_crystal_ore": "Deepslate Fire Crystal Ore",
   "block.elementary.water_crystal_ore": "Water Crystal Ore",
   "block.elementary.deepslate_water_crystal_ore": "Deepslate Water Crystal Ore",
+  "block.elementary.air_crystal_ore": "Air Crystal Ore",
+  "block.elementary.deepslate_air_crystal_ore": "Deepslate Air Crystal Ore",
 
   "item.elementary.emberite_ingot": "Emberite Ingot",
   "item.elementary.fire_ferrocrystal_ingot": "Ferrocrystal Ingot",

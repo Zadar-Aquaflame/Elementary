@@ -3,6 +3,7 @@ package fr.zadar.elementary.event;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import fr.zadar.elementary.ElementaryForge;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.api.distmarker.Dist;
@@ -47,11 +48,14 @@ public class UpdateChecker {
                 Player player = event.player;
                 messageHasBeenSent = true;
 
-                player.sendSystemMessage(Component.translatable("message.elementary.new_version"));
+                player.sendSystemMessage(Component.literal("[")
+                        .append(Component.literal("Elementary").withStyle(ChatFormatting.GOLD))
+                        .append(Component.literal("] "))
+                        .append(Component.translatable("message.elementary.new_version")));
                 ElementaryForge.LOGGER.info("A new version of the mod Elementary is available");
             }
         } catch (Exception e) {
-            ElementaryForge.LOGGER.warn("Last version's verification failed : " + e.getMessage());
+            ElementaryForge.LOGGER.warn("Last version's verification failed : {}", e.getMessage());
         }
     }
 

@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ElementsImprovementCategory implements DisplayCategory<BasicDisplay> {
     public static final ResourceLocation TEXTURE =
-            new ResourceLocation(ElementaryForge.MOD_ID, "textures/gui/rei/elements_improvement_gui_rei.png");
+            new ResourceLocation(ElementaryForge.MOD_ID, "textures/gui/compat/elements_improvement_gui_simplified.png");
     public static final CategoryIdentifier<ElementsImprovementDisplay> ELEMENTS_IMPROVEMENT =
             CategoryIdentifier.of(ElementaryForge.MOD_ID, "elements_improvement");
 

@@ -2,7 +2,7 @@ package fr.zadar.elementary.event;
 
 public class Events {
     public static void register() {
-        new PutEntityOnFire();
+        ToolEvents.registerToolEvents();
         new AddCreativeTabs();
         ArmorEffectEvent.onTick();
         AddTrades.addWanderingTrades();

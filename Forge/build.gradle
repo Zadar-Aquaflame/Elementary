@@ -3,6 +3,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = mod_version
@@ -61,8 +62,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven { url = "https://maven.blamejared.com/" } // Maven for JEI
-    maven { url = "https://maven.shedaniel.me" } // Maven for REI
-    //maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
+    maven { url = "https://maven.shedaniel.me/" } // Maven for REI
 }
 
 dependencies {
@@ -70,16 +70,23 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     // dependencies for JEI
-    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
-    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
-    runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
 
     // dependencies for REI
     compileOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-api-forge:${rei_version}")
     runtimeOnly fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:${rei_version}")
 
+
+    // dependencies for Architectury and Cloth Config (require by REI)
     implementation fg.deobf("me.shedaniel.cloth:cloth-config-forge:${cloth_config_version}")
     implementation fg.deobf("dev.architectury:architectury-forge:${architectury_version}")
+}
+
+mixin {
+    add sourceSets.main, "mixins.elementary.refmap.json"
+    config "elementary.mixins.json"
 }
 
 tasks.named('processResources', ProcessResources).configure {

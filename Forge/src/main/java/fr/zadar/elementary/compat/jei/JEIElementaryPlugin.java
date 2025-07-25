@@ -37,7 +37,7 @@ public class JEIElementaryPlugin implements IModPlugin {
 
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
-        registration.addRecipeClickArea(ElementsImprovementScreen.class, 55, 34, 55, 17,
+        registration.addRecipeClickArea(ElementsImprovementScreen.class, 0, 0, 34, 17,
                 ElementsImprovementCategory.ELEMENTS_IMPROVEMENT_TYPE);
     }
 }

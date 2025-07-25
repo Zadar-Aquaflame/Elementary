@@ -9,4 +9,6 @@ public class ModModelLayers {
             new EntityModelLayer(new Identifier(ElementaryFabric.MOD_ID, "flame_spirit"), "main");
     public static final EntityModelLayer GUARDIAN_OF_THE_WAVES =
             new EntityModelLayer(new Identifier(ElementaryFabric.MOD_ID, "guardian_of_the_waves"), "main");
+    public static final EntityModelLayer AERORUPTURA =
+            new EntityModelLayer(new Identifier(ElementaryFabric.MOD_ID, "aeroruptura"), "main");
 }

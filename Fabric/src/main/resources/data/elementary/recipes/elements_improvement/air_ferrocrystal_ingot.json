@@ -2,7 +2,7 @@
   "type": "elementary:elements_improvement",
   "ingredients": [
     {
-      "item": "minecraft_iron_ingot"
+      "item": "minecraft:iron_ingot"
     },
     {
       "item": "elementary:storm_essence"

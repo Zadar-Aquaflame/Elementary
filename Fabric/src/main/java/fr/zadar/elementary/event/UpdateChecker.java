@@ -5,7 +5,10 @@ import com.google.gson.JsonParser;
 import fr.zadar.elementary.ElementaryFabric;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.text.Style;
 import net.minecraft.text.Text;
+import net.minecraft.text.TextColor;
+import net.minecraft.util.Formatting;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -43,7 +46,10 @@ public class UpdateChecker {
                     for (PlayerEntity player : world.getPlayers()) {
                         messageHasBeenSent = true;
 
-                        player.sendMessage(Text.translatable("message.elementary.new_version"));
+                        player.sendMessage(Text.literal("[")
+                                        .append(Text.literal("Elementary").setStyle(Style.EMPTY.withColor(TextColor.fromFormatting(Formatting.GOLD))))
+                                        .append(Text.literal("]"))
+                                        .append(Text.translatable("message.elementary.new_version")));
                         ElementaryFabric.LOGGER.info("A new version of the mod Elementary is available");
                     }
                 }

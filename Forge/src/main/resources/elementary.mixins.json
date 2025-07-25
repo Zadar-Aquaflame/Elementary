@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "fr.zadar.elementary.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "WeatherCommandMixin"
+  ],
+  "client": [],
+  "server": []
+}
