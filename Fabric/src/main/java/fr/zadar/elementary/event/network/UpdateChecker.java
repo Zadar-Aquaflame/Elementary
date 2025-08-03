@@ -1,4 +1,4 @@
-package fr.zadar.elementary.event;
+package fr.zadar.elementary.event.network;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

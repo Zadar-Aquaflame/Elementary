@@ -1,7 +1,7 @@
 package fr.zadar.elementary.block.custom;
 
-import fr.zadar.elementary.block.entity.ModBlockEntities;
 import fr.zadar.elementary.block.entity.ElementsImprovementBlockEntity;
+import fr.zadar.elementary.block.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -56,7 +56,7 @@ public class ElementsImprovementBlock extends BaseEntityBlock {
         if (!level.isClientSide()) {
             BlockEntity entity = level.getBlockEntity(pos);
             if (entity instanceof ElementsImprovementBlockEntity) {
-                NetworkHooks.openScreen(((ServerPlayer)player), (ElementsImprovementBlockEntity)entity, pos);
+                NetworkHooks.openScreen(((ServerPlayer) player), (ElementsImprovementBlockEntity) entity, pos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing");
             }

@@ -144,7 +144,7 @@ public class ElementsImprovementBlockEntity extends BlockEntity implements MenuP
 
     private void craftItem() {
         Optional<ElementsImprovementRecipe> recipe = getCurrentRecipe();
-        ItemStack result = recipe.get().getResultItem(null);
+        ItemStack result = recipe.get().getResultItem(getLevel().registryAccess());
 
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
         this.itemHandler.extractItem(INPUT_SLOT_2, 1, false);
