@@ -1,3 +1,7 @@
 {
-  "latest_version": "0.0.4"
+  "latest_version": "0.0.4",
+  "supported_languages": [
+    "en_us",
+    "fr_fr"
+  ]
 }
